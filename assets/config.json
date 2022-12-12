@@ -1,4 +1,4 @@
-{
+ {
     "article": {
         "1": {
             "title": "Chia Network奇亞幣挖礦！成為農夫詳細安裝教學",
@@ -48,7 +48,7 @@
                 "自動化"
             ],
             "description": "在「Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1」文章中，手把手帶領您申請屬於自己的GCP平台，並取得NLP的憑證檔案。接下來我們將利用先前申請好的json憑證檔案，開始分析消費者在網路上的輿論。",
-            "cover-image": "assets/images/article_cover/Python幫你自動化Google 自然語言分析 ，NLP套件大解密— part2.jpg",
+            "cover-image": "assets/images/article_cover/Python幫你自動化Google自然語言分析NLP套件大解密part2.jpg",
             "classification": "行銷與商業分析",
             "previous": "2",
             "next": "4",
@@ -67,7 +67,7 @@
                 "自動化"
             ],
             "description": "在前篇文章「Python幫你自動化Google 自然語言分析 ，NLP套件大解密 — part2」中，我們學會了如何使用Google串接Python，達到自動化的語意分析，但當我們知道消費者對我們的品牌的正負評價後，更想知道的是，顧客喜歡我們的甚麼？討厭我們的甚麼?",
-            "cover-image": "assets/images/article_cover/Python幫你自動化Google 自然語言分析 ，顧客在討論什麼？ — part3.jpg",
+            "cover-image": "assets/images/article_cover/Python幫你自動化Google自然語言分析顧客在討論什麼part3.jpg",
             "classification": "行銷與商業分析",
             "previous": "3",
             "next": "24",
@@ -257,7 +257,7 @@
                 "黑名單"
             ],
             "description": "資訊安全議題近年逐漸受到企業重視，尤其在金融科技進展的同時，金融界也注入可觀的資金在金融資訊安全，畢竟金融客戶的隱私比什麼都重要，當然也因為金融業有龐大的資金，才能投資大量資金到資訊安全中，一般中小企業就會有所取捨。資訊安全的領域非常廣，大家比較常見的是網域安全，例如：資料庫安全、",
-            "cover-image": "assets/images/article_cover/首部曲－最淺白的RCE攻擊，用python sendbox 模擬實戰攻擊.jpg",
+            "cover-image": "assets/images/article_cover/首部曲最淺白的RCE攻擊用pythonsendbox模擬實戰攻擊.jpg",
             "classification": "工程技術紀錄",
             "previous": "15",
             "next": "9",
@@ -371,7 +371,7 @@
                 "商業分析"
             ],
             "description": "關鍵輿論領袖（Key Opinion Leader, KOL）有一群死忠的粉絲，粉絲認同KOL的思維，自然也會相信KOL所說的話。而粉絲愛KOL不一定是外表，而是「態度」，因此儘管KOL外表普通、滿口髒話、穿著拉塌，但假設該KOL主打「隨興奔放」，那自然會有一群認同這位KOL的粉絲",
-            "cover-image": "assets/images/article_cover/想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 – 【概念篇】.jpg",
+            "cover-image": "assets/images/article_cover/想找意見領袖KOL來品牌行銷嗎超直觀挑選概念篇.jpg",
             "classification": "行銷與商業分析",
             "previous": "19",
             "next": "21",
@@ -390,7 +390,7 @@
                 "商業分析"
             ],
             "description": "有了前篇文章「想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 — 【概念篇】」的概念後，我們可以換從數據的角度來挑選適合的KOL。現在有數千個KOL活躍在Youtube影音平台，該如何做選擇呢？在Influencer網站中，幫我們整理了每個KOL的類別、粉絲數量、平均觀看數量、N",
-            "cover-image": "assets/images/article_cover/想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 —【 Python實戰篇】.jpg",
+            "cover-image": "assets/images/article_cover/想找意見領袖KOL來品牌行銷嗎超直觀挑選Python實戰篇.jpg",
             "classification": "行銷與商業分析",
             "previous": "19",
             "next": "22",
@@ -447,7 +447,7 @@
                 "TF-IDF"
             ],
             "description": "一般找出關鍵字最值觀的方式，就是直接計算這個詞「出現幾次」，出現越多次的，照理來說那個字詞就會越重要，但實際執行後，Top 10的字詞永遠都是「的」、「你」、「我」、「他」、「哈哈哈」，這些高頻率出現，但卻沒有任何分析幫助。TF-IDF演算法專門解決這種問題",
-            "cover-image": "assets/images/article_cover/關鍵字替代方案，比較TF-IDF演算法與Google NLP，誰與爭鋒？.jpg",
+            "cover-image": "assets/images/article_cover/關鍵字替代方案比較TFIDF演算法與GoogleNLP誰與爭鋒.jpg",
             "classification": "行銷與商業分析",
             "previous": "4",
             "next": "1",
@@ -472,7 +472,7 @@
             "next": "26",
             "time": "2021-04-21",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Anaconda安裝，手把手教學，最詳細的安裝步驟說明.md",
             "video": "https://www.youtube.com/embed/LIglQ5nc8UM"
         },
         "26": {
@@ -491,7 +491,7 @@
             "next": "27",
             "time": "2021-04-25",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Spyder使用教學.md",
             "video": "https://www.youtube.com/embed/kM3p7zTwk44"
         },
         "27": {
@@ -510,6 +510,7 @@
             "next": "28",
             "time": "2021-5-11",
             "download": "2021-05-11",
+            "article_url": "assets/article/Windows直接安裝Spyder，告別肥嘟嘟的Anaconda！.md",
             "video": "https://www.youtube.com/embed/pAcSSyteH_w"
         },
         "28": {
@@ -528,7 +529,7 @@
             "next": "29",
             "time": "2021-05-19",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/VS Code安裝與使用 ，2022年開發者最愛的IDE！.md",
             "video": "https://www.youtube.com/embed/fKWbYZLhSdo"
         },
         "29": {
@@ -547,7 +548,7 @@
             "next": "30",
             "time": "2021-05-20",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/VS Code安裝Jupyter Notebook，Interactive快.md",
             "video": "https://www.youtube.com/embed/Dnth8HP1wDY"
         },
         "30": {
@@ -566,7 +567,7 @@
             "next": "31",
             "time": "2021-05-25",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Windows直接裝Python，我只想要一個Python環境！.md",
             "video": "https://www.youtube.com/embed/K7jC4OcFKQo"
         },
         "31": {
@@ -585,7 +586,7 @@
             "next": "6",
             "time": "2021-05-30",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Spyder指定Python環境.md",
             "video": "https://www.youtube.com/embed/RH4IpNN4SrQ"
         },
         "32": {
@@ -2251,7 +2252,7 @@
                 "小工具"
             ],
             "description": "在mail中cc別人，是一個非常方便的功能，但有時候每個信件必須客製化，譬如在信件開頭必須打上「親愛的XXX小姐您好」，姓名的部分就必須要手動替換，非常麻煩，更別說會員還有上百，甚至上千個。其實用Python程式可以完全自動化這個過程，我們將以Gmail為範例帶領您走向自動化寄信的航道。",
-            "cover-image": "assets/images/article_cover/Python實現Gmail客製化信件大量發送 — 【基礎篇】.jpg",
+            "cover-image": "assets/images/article_cover/Python實現Gmail客製化信件大量發送基礎篇.jpg",
             "classification": "行銷與商業分析",
             "previous": "118",
             "next": "115",
