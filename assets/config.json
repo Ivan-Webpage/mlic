@@ -35,7 +35,7 @@
             "next": "3",
             "time": "2021-06-01",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1.md",
             "video": ""
         },
         "3": {
@@ -111,7 +111,7 @@
             "next": "32",
             "time": "2021-06-01",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/",
             "video": "https://www.youtube.com/embed/PXM2tWGdJTI"
         },
         "7": {
@@ -282,7 +282,7 @@
             "next": "7",
             "time": "2021-08-23",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/原來用Python實作行銷RFM model，可以那麼簡單！-【附Python程式碼】.md",
             "video": ""
         },
         "16": {
@@ -301,7 +301,7 @@
             "next": "17",
             "time": "2022-04-04",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/商標申請手把手教學.md",
             "video": ""
         },
         "17": {
@@ -320,7 +320,7 @@
             "next": "16",
             "time": "2022-04-30",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/商標檢索教學－看出企業的全球佈局.md",
             "video": ""
         },
         "18": {
@@ -339,7 +339,7 @@
             "next": "16",
             "time": "2022-05-07",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/這樣有保障嗎？最詳細了解專利種類－智慧財產權.md",
             "video": ""
         },
         "19": {
@@ -358,7 +358,7 @@
             "next": "20",
             "time": "2021-06-07",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/超實用！門市生意不好怎麼辦？要問誰？.md",
             "video": ""
         },
         "20": {
@@ -377,7 +377,7 @@
             "next": "21",
             "time": "2021-11-04",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 – 【概念篇】.md",
             "video": ""
         },
         "21": {
@@ -415,7 +415,7 @@
             "next": "23",
             "time": "2022-01-20",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/購物籃分析，最清楚概念-part1.md",
             "video": ""
         },
         "23": {
@@ -548,7 +548,7 @@
             "next": "30",
             "time": "2021-05-20",
             "download": "",
-            "article_url": "assets/article/VS Code安裝Jupyter Notebook，Interactive快.md",
+            "article_url": "assets/article/VS Code安裝Jupyter Notebook，Interactive.md",
             "video": "https://www.youtube.com/embed/Dnth8HP1wDY"
         },
         "30": {
@@ -1169,13 +1169,13 @@
                 "雲端佈署"
             ],
             "description": "Line自從2011年在日本發表後，風靡了亞洲，台灣、日本、泰國等地更是成了重度的用戶大宗。而隨著Line的普遍性越來越高，商業行銷也開始嗅到味道，想要加入官方帳戶、廣告行銷等，而Line的多項服務也順勢而生。在這樣的背景下，Line Bot得到大量的重視而快速的生長，相信您也...",
-            "cover-image": "assets/images/class_cover/linebot/Bot流程與架構介紹【Line Bot申請與串接】.webp",
+            "cover-image": "assets/images/class_cover/linebot/Bot流程與架構介紹LineBot申請與串接.webp",
             "classification": "Line Bot 聊天機器人",
             "previous": "61",
             "next": "63",
             "time": "2021-09-28",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Bot流程與架構介紹【Line Bot申請與串接】.md",
             "video": "https://www.youtube.com/embed/SREWZbOYucA"
         },
         "63": {
@@ -1194,7 +1194,7 @@
             "next": "64",
             "time": "2021-09-30",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/申請Github.md",
             "video": "https://www.youtube.com/embed/CXJfCUMspCo"
         },
         "64": {
@@ -1207,13 +1207,13 @@
                 "雲端佈署"
             ],
             "description": "Heroku是支援多種程式語言的雲端平台服務。簡單來說，就是您租用了美國的某台電腦，並將機器人的程式碼傳到上面。我們大家都有電腦，為什麼還要特別租一台電腦呢？因為程式碼放在您自己的電腦，那您的電腦就要24小時不斷電，否則機器人服務會停止。且放在自己電腦，就要承擔所有資安...",
-            "cover-image": "assets/images/class_cover/linebot/申請Heroku｜Line 聊天機器人免費佈署上去.webp",
+            "cover-image": "assets/images/class_cover/linebot/申請Heroku｜Line聊天機器人免費佈署上去.webp",
             "classification": "Line Bot 聊天機器人",
             "previous": "63",
             "next": "65",
             "time": "2021-10-01",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/申請Heroku.md",
             "video": "https://www.youtube.com/embed/jKFnpUS_78I"
         },
         "65": {
@@ -1226,13 +1226,13 @@
                 "雲端佈署"
             ],
             "description": "近年來Line經過多次的改革，將原本的Line developer跟分隔成原本的Line developer 與 Line manager（之後兩者都會用到）。商管人可能對於 Line manager會比較熟係，最有名就是Line @，但最近修改條約後，收費大幅度上升，相對我們...",
-            "cover-image": "assets/images/class_cover/linebot/申請Line Bot｜Line Developer 帳號與專案申請.webp",
+            "cover-image": "assets/images/class_cover/linebot/申請LineBotLineDeveloper號與專案申請.webp",
             "classification": "Line Bot 聊天機器人",
             "previous": "64",
             "next": "66",
             "time": "2021-10-05",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/申請LineBot.md",
             "video": "https://www.youtube.com/embed/tsvIqoDxUJo"
         },
         "66": {
@@ -1245,7 +1245,7 @@
                 "雲端佈署"
             ],
             "description": "在執行程式碼前，若為Mac的作業系統，打開Termail。若為Windows作業系統並使用Anaconda，請打開Anaconda Prompt，並輸入以下指令安裝Line Bot所需之套件。機器人的主程式，本文章會修改的程式碼都在這個檔案中。檔案內的方法handle_mess...",
-            "cover-image": "assets/images/class_cover/linebot/Line Bot機器人串接與測試.webp",
+            "cover-image": "assets/images/class_cover/linebot/LineBot機器人串接與測試.webp",
             "classification": "Line Bot 聊天機器人",
             "previous": "65",
             "next": "67",
@@ -1264,7 +1264,7 @@
                 "雲端佈署"
             ],
             "description": "reply message必須要使用者先對機器人傳送訊息，機器人才會「回應」，相對的push message就是機器人可以主動傳訊息給使用者，在「推播文字push_message.py」的檔案中有所介紹。push message的主動回應是透過程式，因此可以直接使用Python..",
-            "cover-image": "assets/images/class_cover/linebot/推播push message與回覆reply message.webp",
+            "cover-image": "assets/images/class_cover/linebot/推播pushreplymessage.webp",
             "classification": "Line Bot 聊天機器人",
             "previous": "66",
             "next": "68",
@@ -1536,7 +1536,7 @@
             "next": "82",
             "time": "2021-11-23",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/資料傳遞：Get與Post差異，網路封包傳送的差異.md",
             "video": "https://www.youtube.com/embed/d5R-tK8ruSw"
         },
         "82": {
@@ -1745,7 +1745,7 @@
             "next": "93",
             "time": "2022-01-19",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/Selenium介紹｜Python爬動態網頁的利器.md",
             "video": "https://www.youtube.com/embed/COgqA6-_JOo"
         },
         "93": {
@@ -1802,7 +1802,7 @@
             "next": "96",
             "time": "2022-01-29",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/爬蟲前的工具選擇｜我該怎麼選擇爬蟲的方式？.md",
             "video": "https://www.youtube.com/embed/hkyiSx0n5bw"
         },
         "96": {
@@ -1935,7 +1935,7 @@
             "next": "104",
             "time": "2022-02-27",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/IG品牌規劃｜想要在Instagram開品牌粉專？先看看如何品牌定位吧.md",
             "video": "https://www.youtube.com/embed/L542SSN3r-E"
         },
         "103": {
@@ -2182,7 +2182,7 @@
             "next": "117",
             "time": "2022-04-27",
             "download": "",
-            "article_url": "",
+            "article_url": "assets/article/",
             "video": "https://www.youtube.com/embed/k4AhztE_h-E"
         },
         "116": {
