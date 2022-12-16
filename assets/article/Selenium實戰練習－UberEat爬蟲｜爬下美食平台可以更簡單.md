@@ -1,10 +1,10 @@
 # Selenium實戰練習－UberEat爬蟲｜爬下美食平台可以更簡單
 ![圖片取自：Uber Eats官網畫面](https://i.imgur.com/7MYam1P.png)
-在課程「Selenium介紹」與「Selenium環境設定與測試」中，已經將我們Selenium爬蟲所需要的環境準備好了，接下來我們就以爬下UberEat為範例來進行爬蟲了！
+在課程「[Selenium介紹」與「Selenium環境設定與測試](/class?c=3&a=93)」中，已經將我們Selenium爬蟲所需要的環境準備好了，接下來我們就以爬下UberEat為範例來進行爬蟲了！
 
 首先到UberEat首頁中，輸入想爬取的地區資料，利用 find_element_by_xpath()方法來進行爬取。
 
-> [find_element_by_xpath 方法解說]()
+> [find_element_by_xpath 方法解說](/class?c=3&a=92)
 
 ```python
 #--- 輸入外送地址
@@ -16,7 +16,7 @@ getblock.send_keys('\ue007') # 按下Enter
 
 首先先使用 find_elements_by_class_name()方法來抓下每個店家的名稱，但此方法會有一些限制。一方面，若想爬取的資料沒有 class 這個標籤，會無法爬取。另一方面，若這個class 被大量使用，可能會爬到許多無意義的資料。
 
-> [find_elements_by_class_name 方法解說]()
+> [find_elements_by_class_name 方法解說](/class?c=3&a=92)
 
 ```python
 #方法1：利用class抓取
