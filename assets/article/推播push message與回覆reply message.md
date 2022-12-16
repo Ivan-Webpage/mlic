@@ -1,6 +1,6 @@
 # 推播push_message與回覆reply_message
 ![成品參考](https://i.imgur.com/4gVtarC.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試]()」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/class?c=2&a=66)」中的影片教學。
 
 push message 與 reply message兩者的差異很大，為了讓您更快明白，製作了以上比較表供您參考，主要差別有三個項目：
 
