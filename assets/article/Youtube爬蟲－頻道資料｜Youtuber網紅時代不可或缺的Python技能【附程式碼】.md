@@ -5,7 +5,7 @@
 本教學使用Python 的Selenium 套件進行爬蟲，經由本次的教學，可以爬下您指定的Youtuber頻道中，頻道名稱、頻道網址、開始經營時間、觀看總數、總訂閱數、國家位置、以及該Youtuber頻道中其他子頻道的資料。
 ![可交付成果](https://i.imgur.com/v7f9piv.png)
 ## Selenium 登入Youtube
-若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器]()」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver]()」。
+若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/class?c=3&a=92)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/class?c=3&a=93)」。
 ```python
 # selenium
 from selenium.webdriver import DesiredCapabilities
