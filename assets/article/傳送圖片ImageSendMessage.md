@@ -1,6 +1,6 @@
 # 傳送圖片ImageSendMessage
 ![成品參考](https://i.imgur.com/CoyQTQ6.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試]()」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/class?c=2&a=66)」中的影片教學。
 
 傳送圖片需要輸入以下2個參數：
 
