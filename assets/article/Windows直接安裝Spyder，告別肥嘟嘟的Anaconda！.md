@@ -16,5 +16,5 @@ Spyder的下載就是取得exe執行檔案，直接執行即可。Python的下�
 
 若現在電腦基本上都是64位元，因此選擇要找「Windows x86–64」的類型，另外excutable installer就是直接安裝的exe執行檔案，因此我們要選擇的是「[Windows x86–64 excutable installer](https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe)」這個選項。
 
-我們接著看如何在Windows中下載Python：[Windows直接裝Python]()
-以及如何將下載好的Spyder指定我們想要的Python環境：[Spyder指定Python環境]()
+我們接著看如何在Windows中下載Python：[Windows直接裝Python](/class?c=1&a=27)
+以及如何將下載好的Spyder指定我們想要的Python環境：[Spyder指定Python環境](/class?c=1&a=31)
