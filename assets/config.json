@@ -13,7 +13,6 @@
             "cover-image": "assets/images/article_cover/Chia_Network奇亞幣挖礦！成為農夫詳細安裝教學.jpg",
             "classification": "工程技術紀錄",
             "previous": "4",
-            "next": "2",
             "time": "2021-05-03",
             "download": "",
             "article_url": "assets/article/Chia Network奇亞幣挖礦！成為農夫詳細安裝教學.md",
@@ -96,7 +95,7 @@
             "video": ""
         },
         "6": {
-            "title": "安裝套件教學ModuleNotFoundError: No module named",
+            "title": "安裝套件教學ModuleNotFoundError",
             "tag": [
                 "python",
                 "環境安裝",
