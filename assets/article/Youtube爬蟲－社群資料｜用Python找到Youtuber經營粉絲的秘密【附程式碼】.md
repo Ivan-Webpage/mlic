@@ -1,4 +1,4 @@
-# Youtube爬蟲－社群資料
+# Youtube爬蟲－社群資料｜用Python找到Youtuber經營粉絲的秘密【附程式碼】
 在前一堂課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】]()」當中，我們將每個Youtube頻道爬下來，我們會延續上堂課的結果進行爬蟲。
 
 ## 可交付成果
