@@ -5,14 +5,14 @@
 ```
 ![台灣股市資訊網的錯誤訊息](https://i.imgur.com/8QUoVwQ.png)
 
-> 你必須要先學會：[資料傳遞Get與Post差異！！]()
+> 你必須要先學會：[資料傳遞Get與Post差異！！](/class?c=3&a=81)
 
 因為Goodinfo!台灣股市資訊網會檢查封包中的「User-Agent」，若沒有則判定為機器人， 「User-Agent」 的位置可以在網頁F12 > Network > 點選任一封包 > Headers，在request 的資料內容裡面就可以發現 User-Agent」 ，如下圖所示。
 ![「User-Agent」 的位置](https://i.imgur.com/8f0fjNm.png)
 
 程式碼的 headers 變數內容就是從以上的方式取得。
 
-接下來的爬蟲方式與「Html爬蟲Get教學－Yahoo」課程和「Html爬蟲Get實戰－FoodPanda」課程教導的非常相似，都是利用 requests 與BS4 進行爬蟲即可。
+接下來的爬蟲方式與「[Html爬蟲Get教學－Yahoo](/class?c=3&a=82)」課程和「[Html爬蟲Get實戰－FoodPanda](/class?c=3&a=84)」課程教導的非常相似，都是利用 requests 與BS4 進行爬蟲即可。
 ```python
 #請求網站
 list_req = requests.post(url, headers=headers)
