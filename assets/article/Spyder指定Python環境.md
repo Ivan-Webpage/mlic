@@ -1,5 +1,5 @@
 # Spyder指定Python環境
-在課程「Spyder使用教學」我們已經下載完Spyder，並且再「Windows直接裝Python」帶領您如何直接再Windows直接安裝Python。在 「Windows直接裝Python」課程中的Python路徑直接貼在Spyder的「Preferences（板手圖案）-> Python interpreter」，選擇「Use the following Python interpreter」並貼上Python路徑，後面必須加上「\python.exe」指定這個執行檔。
+在課程「[Spyder使用教學](/class?c=1&a=26)」我們已經下載完Spyder，並且再「[Windows直接裝Python](/class?c=1&a=27)」帶領您如何直接再Windows直接安裝Python。在 「[Windows直接裝Python](/class?c=1&a=27)」課程中的Python路徑直接貼在Spyder的「Preferences（板手圖案）-> Python interpreter」，選擇「Use the following Python interpreter」並貼上Python路徑，後面必須加上「\python.exe」指定這個執行檔。
 ![](https://i.imgur.com/B0AkFtz.png)
 ```
 C:\Users\你的使用者名稱\AppData\Local\Programs\Python\Python39\python.exe
