@@ -1,4 +1,4 @@
-# 申請Line Bot
+# 申請Line Bot｜Line Developer 帳號與專案申請
 近年來Line經過多次的改革，將原本的Line developer跟分隔成原本的Line developer 與 Line manager（之後兩者都會用到）。商管人可能對於 Line manager會比較熟係，最有名就是Line @，但最近修改條約後，收費大幅度上升，相對我們今天的主軸，Line bot的價格便宜了很多。
 
 ## Line@收費
