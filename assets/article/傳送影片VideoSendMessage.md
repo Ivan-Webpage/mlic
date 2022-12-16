@@ -1,6 +1,6 @@
 # 傳送影片VideoSendMessage
 ![成品參考](https://i.imgur.com/xuUyvWo.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試]()」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/class?c=2&a=66)」中的影片教學。
 
 傳送影片的參數有以下2種：
 
