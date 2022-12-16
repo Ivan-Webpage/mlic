@@ -1,6 +1,6 @@
 # 想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 —【 Python實戰篇】
 
-有了前篇文章[「想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 — 【概念篇】」]()的概念後，我們可以換從數據的角度來挑選適合的KOL。現在有數千個KOL活躍在[Youtube影音平台](https://www.youtube.com/)，該如何做選擇呢？在[Influencer](https://tw.noxinfluencer.com/)網站中，幫我們整理了每個KOL的類別、粉絲數量、平均觀看數量、Nox評分。
+有了前篇文章[「想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 — 【概念篇】」](/article?a=20)的概念後，我們可以換從數據的角度來挑選適合的KOL。現在有數千個KOL活躍在[Youtube影音平台](https://www.youtube.com/)，該如何做選擇呢？在[Influencer](https://tw.noxinfluencer.com/)網站中，幫我們整理了每個KOL的類別、粉絲數量、平均觀看數量、Nox評分。
 ![台灣Youtuber排行](https://i.imgur.com/sGjdVED.png)
 
 雖然有這些資料，但還是不知道如何選擇KOL嗎？
