@@ -269,15 +269,3 @@ Error Your account got flagged by our internal fraud protection service, please 
 ![Error We need your payment information to continue! Add a credit card or buy credit: https://fly.io/dashboard/ppc4088-gmail-com/billing](https://i.imgur.com/VlKE4Je.png)
 這代表您的帳號還沒有設定付款方式，請到您帳號左手邊欄位的Billing按鈕當中設定。
 ![新增信用卡](https://i.imgur.com/eBBwYPu.png)
-
-### flyctl lunch出現error
-![Error: name argument or flag must be specified when not running interactively，圖片由Chen Bo-yan提供](https://i.imgur.com/KTFiAsF.jpg)
-您執行了`flyctl lunch`，並且問您是否建立Proflie，不管您按下是還是否，都出現以下的錯誤：
-```
-Error: name argument or flag must be specified when not running interactively
-```
-在此情況下，我們必須換另一種指令來建立專案：
-```
-flyctl launch --name 【你的APP名稱】 --region yyz
-```
-「你的APP名稱」這個部分是隨意命名的，就是為自己即將建立的fly專案命名，因此不要跟自己原有的專案名稱重複就好了，當然若您是第一次使用，則沒有這個問題
