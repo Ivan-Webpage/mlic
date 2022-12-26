@@ -1,3 +1,3 @@
 # TF-IDF關鍵字分析
-TF-IDF的演算方式在文章「[演算法與Google NLP，誰與爭鋒？](/article?a=24)」中解釋了，能夠避免高度出現的垃圾字詞，篩選出真正有意義的關鍵字。
+TF-IDF的演算方式在文章「[演算法與Google NLP，誰與爭鋒？](/classification/marketing/24)」中解釋了，能夠避免高度出現的垃圾字詞，篩選出真正有意義的關鍵字。
 

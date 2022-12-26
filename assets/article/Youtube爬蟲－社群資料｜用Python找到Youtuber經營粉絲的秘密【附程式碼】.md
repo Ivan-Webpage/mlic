@@ -1,11 +1,11 @@
 # Youtube爬蟲－社群資料｜用Python找到Youtuber經營粉絲的秘密【附程式碼】
-在前一堂課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/class?c=3&a=104)」當中，我們將每個Youtube頻道爬下來，我們會延續上堂課的結果進行爬蟲。
+在前一堂課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/classification/crawler_king/104)」當中，我們將每個Youtube頻道爬下來，我們會延續上堂課的結果進行爬蟲。
 
 ## 可交付成果
 本次教學教您如何使用Python 的Selenium套件，爬下各個Youtube頻道中的社群資料，其中包含Youtube頻道貼文的頻道名稱、頻道網址、文章連結、文章內容、發文時間、按讚數、留言數量、留言內容。並將結果儲存成CSV檔案，之後也可以直接用Excel直接觀看或編輯喔！
 
 ## Selenium 登入Youtube
-若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/class?c=3&a=92)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/class?c=3&a=93)」。
+若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/classification/crawler_king/92)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/classification/crawler_king/92)」。
 ```python
 # 設定基本參數
 desired_capabilities = DesiredCapabilities.PHANTOMJS.copy()
@@ -53,7 +53,7 @@ def scroll(driver, xpathText):
 ```
 
 ## 準備目標頻道
-本次的爬蟲會利用到前面的課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/class?c=3&a=104)」所取得的CSV檔案，因此若還沒看過前面的課程，趕快手刀點擊喔！
+本次的爬蟲會利用到前面的課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/classification/crawler_king/104)」所取得的CSV檔案，因此若還沒看過前面的課程，趕快手刀點擊喔！
 ```python
 #抓取Youtuber_頻道資料.csv
 getdata = pd.read_csv('Youtuber_頻道資料.csv', encoding = 'utf-8-sig')

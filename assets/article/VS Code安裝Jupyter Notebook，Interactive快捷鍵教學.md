@@ -1,5 +1,5 @@
 # VS Code安裝Jupyter Notebook，Interactive快捷鍵教學
-在學習完「[VS Code安裝與使用](/class?c=1&a=28)」課程後，會發現VS Code內建的Python執行是使用Console的方式，並沒有其他任何的輔助工具，若面對DataFrame這種表格式的資料，在Console上呈現非常難以閱讀。
+在學習完「[VS Code安裝與使用](/classification/python_foundation/28)」課程後，會發現VS Code內建的Python執行是使用Console的方式，並沒有其他任何的輔助工具，若面對DataFrame這種表格式的資料，在Console上呈現非常難以閱讀。
 
 Interactive是在VS Code中非常好的一個工具，能夠如Spyder一般，呈現出表格的資料，如下圖所示。
 ![呈現DataFrame資料格式](https://i.imgur.com/7kJpr2v.png)

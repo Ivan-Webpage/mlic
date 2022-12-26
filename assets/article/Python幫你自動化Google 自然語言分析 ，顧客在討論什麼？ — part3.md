@@ -3,7 +3,7 @@
 > 關鍵字分析，是AI時代的基本盤
 
 ## 前情提要
-在前篇文章[「Python幫你自動化Google 自然語言分析 ，NLP套件大解密 — part2」](/article?a=3&c=0)中，我們學會了如何使用Google串接Python，達到自動化的語意分析，但當我們知道消費者對我們的品牌的正負評價後，更想知道的是，顧客喜歡我們的甚麼？討厭我們的甚麼?
+在前篇文章[「Python幫你自動化Google 自然語言分析 ，NLP套件大解密 — part2」](/classification/marketing/3)中，我們學會了如何使用Google串接Python，達到自動化的語意分析，但當我們知道消費者對我們的品牌的正負評價後，更想知道的是，顧客喜歡我們的甚麼？討厭我們的甚麼?
 
 ## Google 關鍵字分析
 ![完整程式碼](https://i.imgur.com/GFgLcNw.png)
@@ -67,4 +67,4 @@ for entity in response.entities:
 找到消費者所討論的關鍵字固然重要，但您可能會覺得，Google的收費有點高。
 
 > 其實演算法可以幫您解決問題
-> [「演算法與Google NLP，誰與爭鋒？」](/article?a=24&c=0)文章將告訴您，如何利用「算」的方式，算出消費者所討論的關鍵字，並比較他與Google雲端運算的差異程度。看到這裡，您還不快手刀點擊下一篇文章！
+> [「演算法與Google NLP，誰與爭鋒？」](/classification/marketing/24)文章將告訴您，如何利用「算」的方式，算出消費者所討論的關鍵字，並比較他與Google雲端運算的差異程度。看到這裡，您還不快手刀點擊下一篇文章！

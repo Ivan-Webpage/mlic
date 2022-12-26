@@ -1,5 +1,5 @@
 # Youtube爬蟲－影片資料｜不用API也能爬下所有影片與留言資訊【附程式碼】
-在前一堂課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/class?c=3&a=104)」當中，我們將每個Youtube頻道爬下來，並且在「[Youtube爬蟲－社群資料｜用Python找到Youtuber經營粉絲的秘密【附程式碼】](/class?c=3&a=105)」課程中取得了Youtuber們辛苦經營的社群資料與留言資料。相信敏銳的您一定會想問：那影片的留言資料呢？現在就讓我們來解密。
+在前一堂課程「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/classification/crawler_king/104)」當中，我們將每個Youtube頻道爬下來，並且在「[Youtube爬蟲－社群資料｜用Python找到Youtuber經營粉絲的秘密【附程式碼】](/classification/crawler_king/105)」課程中取得了Youtuber們辛苦經營的社群資料與留言資料。相信敏銳的您一定會想問：那影片的留言資料呢？現在就讓我們來解密。
 
 ## 可交付成果
 ![](https://cdn-images-1.medium.com/max/1200/1*QoLW47-zaBlDPs8EFZxvCw.png)
@@ -7,7 +7,7 @@
 可爬下Youtube每個影片的影片連結、發布時間、讚數、觀看次數、影片文案、留言數量、留言內容，並且留言內容可記錄發言者、發言者的留言、發言者的頻道、讚數，以及回復發言者的留言都會記錄，並最終將結果儲存為CSV檔案，以方便後續分析使用。
 
 ## Selenium 登入Youtube
-若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/class?c=3&a=92)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/class?c=3&a=93)」。
+若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/classification/crawler_king/92)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/classification/crawler_king/93)」。
 ```python
 # 設定基本參數
 desired_capabilities = DesiredCapabilities.PHANTOMJS.copy()
@@ -25,7 +25,7 @@ time.sleep(5)
 ```
 
 ## 爬蟲前準備
-首先，我們需要用到「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/class?c=3&a=104)」課程的成果CSV，因此在這裡需要匯入CSV檔案。
+首先，我們需要用到「[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/classification/crawler_king/104)」課程的成果CSV，因此在這裡需要匯入CSV檔案。
 ```python
 #抓取csv資料
 getdata = pd.read_csv('Youtuber_頻道資料.csv', encoding = 'utf-8-sig')
