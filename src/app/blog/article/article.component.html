@@ -1,0 +1,117 @@
+<div class="container-fluid" style="padding: 0;">
+    <div class="sidenav-container row justify-content-end" style="--mdb-gutter-x:0;">
+
+        <!-- 目錄選單start -->
+        <div class="col-sm-3 catalog">
+            <button type="button" class="ask-teacher btn ask-btn back-yellow-ten text-white" onclick="location.href='https://www.facebook.com/marketingliveincode';">
+                <fa-icon [icon]="faFacebook"></fa-icon> 我想問老師問題
+            </button>
+            <button type="button" class="ask-teacher btn ask-btn back-blow-ten text-white" *ngIf="showDownload"
+                (click)="downloadZip()">
+                <fa-icon [icon]="faGithub"></fa-icon> 下載程式碼
+            </button>
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let h2 of catalog_arr[0];let recordIndex = index"
+                    (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    hideToggle={{!catalog_map.has(h2)}} disabled={{!catalog_map.has(h2)}}>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <!-- <a href="/classification/{{this.postData_classification}}/{{postData_article}}#{{h2}}">{{recordIndex+1}}. {{h2}}</a> -->
+                            <a class="mat-title" (click)="scroll(h2)">{{recordIndex+1}}. {{h2}}</a>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <mat-expansion-panel *ngFor="let h3 of catalog_map.get(h2);let recordIndex = index"
+                        (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                        hideToggle={{!catalog_map.has(h3)}} disabled={{!catalog_map.has(h3)}}>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <a class="mat-title" (click)="scroll(h3)">{{recordIndex+1}}. {{h3}}</a>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+
+                        <mat-expansion-panel *ngFor="let h4 of catalog_map.get(h3);let recordIndex = index"
+                            (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                            hideToggle={{!catalog_map.has(h4)}} disabled={{!catalog_map.has(h4)}}>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <a class="mat-title" (click)="scroll(h4)">{{recordIndex+1}}. {{h4}}</a>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <mat-expansion-panel *ngFor="let h5 of catalog_map.get(h4);let recordIndex = index"
+                                (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                                hideToggle={{!catalog_map.has(h5)}} disabled={{!catalog_map.has(h5)}}>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        <a class="mat-title" (click)="scroll(h5)">{{recordIndex+1}}. {{h5}}</a>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <mat-expansion-panel *ngFor="let h6 of catalog_map.get(h5);let recordIndex = index"
+                                    (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                                    hideToggle='false' disabled='false'>
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            <a class="mat-title" (click)="scroll(h6)">{{recordIndex+1}}. {{h6}}</a>
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                </mat-expansion-panel>
+                            </mat-expansion-panel>
+                        </mat-expansion-panel>
+                    </mat-expansion-panel>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+        </div>
+
+        <!-- 目錄選單over -->
+
+        <!-- 文章內容over -->
+        <div class="col-sm-9 artilebox">
+            <div class="artile">
+                <div class="hero-image"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url({{cover}});">
+                    <div class="hero-text">
+                        <h1>{{ article_title }}</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center " style="--mdb-gutter-x: 0;">
+                    <markdown lineNumbers clipboard class="md-box {{article_col}}" src={{article}}></markdown>
+                    <div class="md-box {{article_col}}">
+                        <p style="text-align: right;">作者：楊超霆 行銷搬進大程式 創辦人</p>
+                    </div>
+                    <div class="md-box {{article_col}}">
+                        <div class="row" style="--mdb-gutter-x:0;">
+                            <div class="col-sm-6">
+
+                                <a type="button" class="back-blow-ten text-white btn next-button" [routerLink]="['/classification', this.config['article'][this.prev_art]['classification'], this.prev_art]" target="_blank">
+                                    <fa-icon [icon]="faChevronLeft"></fa-icon>
+                                    <fa-icon [icon]="faChevronLeft"></fa-icon>
+                                    <fa-icon [icon]="faChevronLeft"></fa-icon>
+                                    上一篇<br>
+                                    {{this.config['article'][this.prev_art]['title']}}
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a type="button" class="back-blow-ten text-white btn next-button" [routerLink]="['/classification', this.config['article'][this.next_art]['classification'], this.next_art]" target="_blank">
+                                    下一篇
+                                    <fa-icon [icon]="faChevronRight"></fa-icon>
+                                    <fa-icon [icon]="faChevronRight"></fa-icon>
+                                    <fa-icon [icon]="faChevronRight"></fa-icon>
+                                    <br>
+                                    {{this.config['article'][this.next_art]['title']}}
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 文章內容over -->
+
+
+    </div>
+</div>

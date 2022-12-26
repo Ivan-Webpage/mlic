@@ -1,0 +1,26 @@
+<!-- 最新文章標題 -->
+<div class="container-fluid showblock text-center article-title-back text-black">
+    <h1>{{title}}</h1>
+    <p>樂於分享知識的增長，歡迎建言與投稿喔!</p>
+</div>
+
+<div class="container-fluid showblock text-center article-back text-white">
+    <div class="container mt-5">
+        <div class="row" style="--mdb-gutter-x:0;">
+            <a *ngFor="let mm of masonryImages; let recordIndex = index" class="col-sm-4 slide-container"
+                [routerLink]="['/classification', config[mm]['classification'], mm]" target="_blank">
+                <img [src]="config[mm]['cover-image']" alt="Avatar" class="slide-image rounded">
+                <div class="overlay rounded">
+                    <div class="slide-text-title">{{config[mm]['title']}}</div>
+                    <p class="slide-text-content">{{config[mm]['description']}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="text-center text-white" style="margin: 20px;">
+        <button *ngIf="limit < howlong" (click)="showMoreImages()"
+            class="btn btn back-yellow-ten text-white">我要看更多</button>
+        <h6 *ngIf="limit >= howlong">沒有更多了...筆者努力中！</h6>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<nav #myNavbar sticky class="navbar fixed-top navbar-expand-lg back-major-ten mg-navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="行銷搬進大程式" class="rounded-pill title-img" loading="lazy">
+            <small class="title text-white">行銷搬進大程式</small>
+        </a>
+
+
+        <button class="navbar-toggler collapsed" type="button" (click)="basicNavbar.toggle()" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse to-left" mdbCollapse #basicNavbar="mdbCollapse">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                    <a class="nav-link active nav-button" aria-current="page" (click)="hideNavbar()">服務項目</a>
+                </li> -->
+
+                <li  mdbDropdown class="nav-item dropdown" #dropdown1>
+                    <a class="nav-link dropdown-toggle text-white nav-button" id="articleDropdownMenuLink" role="button"
+                        mdbDropdownToggle aria-expanded="false">文章分類</a>
+                    <ul mdbDropdownMenu class="dropdown-menu back-major-ten dropdownbox" aria-labelledby="articleDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'marketing']" (click)="hideNavbar()">行銷與商業分析</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'financial']" (click)="hideNavbar()">投資與程式金融</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'technology']" (click)="hideNavbar()">工程技術紀錄</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'manage']" (click)="hideNavbar()">管理與經理人思維</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li  mdbDropdown class="nav-item dropdown" #dropdown2>
+                    <a class="nav-link dropdown-toggle text-white nav-button" id="classDropdownMenuLink" role="button"
+                        mdbDropdownToggle aria-expanded="false">所有線上課程</a>
+                    <ul mdbDropdownMenu class="dropdown-menu back-major-ten dropdownbox" aria-labelledby="classDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'python_foundation', 25]" (click)="hideNavbar()" target="_blank">Python 基礎教學</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'lineBot', 62]" (click)="hideNavbar()" target="_blank">Line Bot 聊天機器人</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'crawler_king', 80]" (click)="hideNavbar()" target="_blank">行銷人轉職爬蟲王實戰｜5大社群＋2大電商</a>
+                        </li>
+                        <!-- <li>
+                            <a class="dropdown-item" class="text-white" [routerLink]="'class'"
+                                [queryParams]="{c:4,a:1}" (click)="hideNavbar()">Telegram Bot 聊天機器人</a>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-button">
+                    <a class="nav-link active" aria-current="page" [routerLink]="'about'" (click)="hideNavbar()">關於Ivan</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

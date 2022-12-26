@@ -1,0 +1,51 @@
+<div class="bg-image img1" style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url({{cover}});"></div>
+
+<div class="container rounded">
+  <div class="row class-title">
+    <h1>{{classObj['title']}}</h1>
+  </div>
+  <div class="tv-box row">
+    <div class="col-sm-8 rounded">
+      <iframe [src]=video frameborder="0" allowfullscreen="" class="videostyle"></iframe>
+    </div>
+    <div class="catalog col-sm-4 video-list rounded">
+
+      <mat-expansion-panel *ngFor="let cp of chapter; let recordIndex = index" (opened)="true" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{recordIndex+1}}. {{cp}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <a *ngFor="let art of classObj['chapter'][cp]; let recordIndex2 = index" [routerLink]="['/classification', this.postData_classification, art]">
+          <p>{{recordIndex2+1}}. {{config['article'][art]['title']}}</p>
+        </a>
+      </mat-expansion-panel>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid back-blue-ten text-white" style="text-align: center; padding: 20px;">
+  <strong style="font-size: 25px;letter-spacing: 2px;">課程介紹 & 程式碼</strong>
+</div>
+<!-- <app-article></app-article> -->
+<!-- <div class="row"  style="--mdb-gutter-x:0"> -->
+  
+  <!-- <mat-tab-group dynamicHeight mat-align-tabs="center" [color]="'accent'" class="rounded" style="z-index:-1">
+    <mat-tab label="課程介紹 & 程式碼" style="overflow: inherit;">
+      <div class="mat-elevation-z4">
+        <app-article></app-article>
+      </div>
+    </mat-tab>
+    <mat-tab label="Debug日記">
+      <div class="mat-elevation-z4" style="height: 300px;">
+        <h1>還在準備中...</h1>
+      </div>
+    </mat-tab>
+    <mat-tab label="問題討論">
+      <div class="mat-elevation-z4" style="height: 300px;">
+        <h1>還在準備中...</h1>
+      </div>
+    </mat-tab>
+  </mat-tab-group> -->
+<!-- </div> -->

@@ -1,0 +1,385 @@
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+/*---------- 參數設定 ----------*/
+$one: 0.1;
+$three: 0.3;
+$five: 0.5;
+$seven: 0.7;
+$nine: 0.9;
+$ten: 1;
+
+
+$monochromatic_color: rgb(0,36,82); // 單色
+$eye_catching_color: rgb(218,162,27); // 醒目色
+$contrasting_color: rgb(155,124,70); // 對比色
+
+/*---------- CSS ----------*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  outline : 0 none ;
+  padding : 0 ;
+}
+html {height: 100%;}
+
+
+body {
+  /* height: 100%; */
+  margin: 0;
+  font-size: 15px;
+  font-family: Microsoft JhengHei, DFKai-sb, Arial, '新細明體', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+}
+
+table, th, td {
+  // text-align: left;
+  border: 1px solid rgb(93,130,187);
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+}
+
+svg {
+  height: 1em;
+}
+
+/*--- 背景顏色使用 ---*/
+// 藍色，主色系 
+.back-major-one, .md-h2 {background-color: rgb(93,130,187, $one)!important;}  
+.back-major-three,.video-list {background-color: rgb(93,130,187, $three)!important;}  
+.back-major-five {background-color: rgb(93,130,187, $five)!important;}  
+.back-major-seven {background-color: rgb(93,130,187, $seven)!important;}  
+.back-major-nine {background-color: rgb(93,130,187, $nine)!important;}  
+.back-major-ten, .catalogButton, ::-webkit-scrollbar, thead {background-color: rgb(93,130,187, $ten);}  
+
+// 白色，背景淡色
+.back-white-one {background-color: rgb(227,229,235, $one)!important;}  
+.back-white-three {background-color: rgb(227,229,235, $three)!important;}  
+.back-white-five {background-color: rgb(227,229,235, $five)!important;}  
+.back-white-seven {background-color: rgb(227,229,235, $seven)!important;}  
+.back-white-nine {background-color: rgb(227,229,235, $nine)!important;}  
+.back-white-ten {background-color: rgb(227,229,235, $ten)!important;}  
+
+// 深藍，單色
+.back-blue-one {background-color: rgb(0,36,82, $one)!important;}  
+.back-blue-three {background-color: rgb(0,36,82, $three)!important;}  
+.back-blue-five {background-color: rgb(0,36,82, $five)!important;}  
+.back-blue-seven {background-color: rgb(0,36,82, $seven)!important;}  
+.back-blue-nine {background-color: rgb(0,36,82, $nine)!important;}  
+.back-blue-ten, ::-webkit-scrollbar-thumb, .mat-tab-labels {background-color: rgb(0,36,82, $ten);}  
+
+// 黃色，醒目色
+.back-yellow-one {background-color: rgb(218,162,27, $one)!important;}  
+.back-yellow-three {background-color: rgb(218,162,27, $three)!important;}  
+.back-yellow-five, .ask-btn:hover {background-color: rgb(218,162,27, $five)!important;}  
+.back-yellow-seven {background-color: rgb(218,162,27, $seven)!important;}  
+.back-yellow-nine {background-color: rgb(218,162,27, $nine)!important;}  
+.back-yellow-ten {background-color: rgb(218,162,27, $ten)!important;}  
+
+// 褐色，對比色
+.back-blow-one {background-color: rgb(155,124,70, $one)!important;}  
+.back-blow-three {background-color: rgb(155,124,70, $three)!important;}  
+.back-blow-five {background-color: rgb(155,124,70, $five)!important;}  
+.back-blow-seven {background-color: rgb(155,124,70, $seven)!important;}  
+.back-blow-nine {background-color: rgb(155,124,70, $nine)!important;}  
+.back-blow-ten, .dropdown-item:hover {background-color: rgb(155,124,70, $ten)!important;}  
+
+// 其餘背景小配色
+.back-green {background-color: rgb(4, 170, 109, $ten);}
+.back-red {background-color: rgb(244, 67, 54, $ten);}
+.back-gray {background-color: rgb(85, 85, 85, $ten);}
+.back-black {background-color: rgb(17, 17, 17, $ten);}
+
+/*--- 文字顏色使用 ---*/
+.text-major {color: rgb(93,130,187)!important;} // 藍色，主色系 
+.text-white, .catalogButton, .mat-tab-label-content, .class-title, thead {color: rgb(227,229,235)!important;} // 白色，背景淡色
+.text-blue, .mat-title {color: rgb(0,36,82)!important;} // 深藍，單色
+.text-yellow {color: rgb(218,162,27)!important;} // 黃色，醒目色
+.text-blow, .md-h3 {color: rgb(155,124,70)!important;} // 褐色，對比色
+.text-black {color: rgb(30,30,30)!important;} // 黑色
+
+// 漸層背景，因此另外設定
+.article-title-back {
+  background: rgb(227,229,235); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(227,229,235,0.9) 0%, rgba(227,229,235,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(227,229,235,0.9) 0%,rgba(227,229,235,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(227,229,235,0.9) 0%,rgba(227,229,235,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e5eb', endColorstr='#e3e5eb',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+}
+
+.article-back {
+  background: rgb(227,229,235); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(227,229,235,0.5) 0%, rgba(0,36,82, 0.9) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(227,229,235,0.5) 0%,rgba(0,36,82, 0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(227,229,235,0.5) 0%,rgba(0,36,82, 0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e5eb', endColorstr='#e3e5eb',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+}
+
+.grid-sizer{
+  width: 30%;
+}
+
+.slide-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  transition: .5s ease;
+
+  background: -moz-linear-gradient(bottom,  rgba(155,124,70,0.9) 0%, rgba(155,124,70,0.7) 47%, rgba(255,255,255,0.01) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom,  rgba(155,124,70,0.9) 0%,rgba(155,124,70,0.7) 47%,rgba(255,255,255,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top,  rgba(155,124,70,0.9) 0%,rgba(155,124,70,0.7) 47%,rgba(255,255,255,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e69b7c46', endColorstr='#03ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.slide-container:hover .overlay {
+  height: 100%;
+}
+.slide-container:hover .slide-text-title {
+  top: 20%;
+}
+.slide-container:hover .slide-text-content {
+  top: 70%;
+}
+
+.slide-text-title {
+  // 標題長度限制
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /*行數*/
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+  color: white;
+  font-size: 18px;
+  font-weight:bold;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  transition: .5s ease;
+  letter-spacing: 2px;
+}
+
+.slide-text-content {
+  // 文字長度限制
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4; /*行數*/
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+  color: white;
+  // font-size: 20px;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 250px;
+  transition: 1s ease;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+.slide-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.catalog {
+  // position: absolute;
+  position: sticky;
+  left: 0;
+  top: 0;
+  padding-top: 70px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+/*--- 畫面滾動，背景變色 ---*/
+[data-stuck] {
+  transition: background 1s;   
+}
+
+[data-stuck='false'] {
+  // transform: translate3d(0, -100%, 0);
+  // transition: transform 0.3s 0.5s;
+  background: -moz-linear-gradient(top, rgba(93,130,187,0.8) 0%, rgba(255,255,255,0.01) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(93,130,187,0.8) 0%,rgba(255,255,255,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(93,130,187,0.8) 0%,rgba(255,255,255,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5d82bb', endColorstr='#1affffff',GradientType=0 ); /* IE6-9 */
+}
+
+.leave-top-0 { top: 0px; }
+.leave-top-60 { top: 60px; }
+
+/*--- markdown的格式 ---*/
+.line-style {
+  // float: right;
+  border: 0;
+  height: 1px;
+  width: 100%;
+}
+
+.md-box {
+  text-align: center;
+}
+
+.md-h2, .md-h3, .md-h4, .md-h5, .md-h6 {
+  margin: 30px 0px 10px 0px;
+  line-height: 40px;
+  letter-spacing: -0.016em;
+  font-weight:bold;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+  border-radius: 4px;
+ }
+ .md-box p, .md-box img, .md-box pre {
+  margin: 15px 0px 10px 0px;
+ }
+ .md-h1 { font-size: 32px; text-align: center;} 
+ .md-h2 { font-size: 29px; } 
+ .md-h3 { font-size: 26px; padding-left: 20px;} 
+ .md-h4 { font-size: 22px; padding-left: 30px;}
+ .md-h5 { font-size: 22px; padding-left: 40px;} 
+ .md-h6 { font-size: 21px; padding-left: 50px;}
+
+ .md-box p {
+  text-align: left;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.003em;
+ }
+
+ .md-box img {
+  width: 80%;
+  text-align: center;
+ }
+
+ .md-box ul {
+  text-align: left;
+  padding: 0;
+  // list-style: none;
+  list-style-image: none;
+ }
+
+ .md-box li {
+  text-align: left;
+  font-size: 20px;
+  // margin: 10px 100px 10px 130px;
+  letter-spacing: -0.003em;
+  line-height: 28px;
+ }
+
+ .md-box table {
+  // margin: 10px 100px 10px 100px;
+ }
+
+ .md-box pre {
+  // padding-left: 100px;
+ }
+
+ .md-box code {
+  z-index: -1;
+  // padding-left: 100px;
+ }
+
+ .showblock {
+  padding: 70px 0px 50px 0px;
+}
+@media screen and (max-width: 1000px) {
+  h1 { font-size: 25px; } 
+  h2 { font-size: 23px; } 
+  h3 { font-size: 21px; } 
+  h4 { font-size: 19px; } 
+  h5 { font-size: 18px; } 
+  h6 { font-size: 15px; } 
+  p { font-size: 14px; } 
+
+  .lide-text-title{
+    font-size: 15px;
+  }
+
+  
+}
+
+@media screen and (max-width: 580px) {
+  .lide-text-title{
+    font-size: 14px;
+  }
+  .slide-container{
+    width: 90%;
+  }
+  .showblock{
+    padding: 30px 10px 30px 10px;
+  }
+  .md-h2, .md-h3, .md-h4, .md-h5, .md-h6 {
+    margin: 20px 0px 10px 0px;
+    line-height: 40px;
+    letter-spacing: -0.016em;
+    padding: 0px 0px 0px 0px;
+   }
+   .md-box {
+    padding: 40px;
+   }
+   .md-box p, .md-box img, .md-box pre {
+    margin: 15px 0px 10px 0px;
+   }
+   .md-h1 { font-size: 23px;} 
+   .md-h2 { font-size: 21px; } 
+   .md-h3 { font-size: 20px; padding-left: 5px;} 
+   .md-h4 { font-size: 19px; padding-left: 10px;}
+   .md-h5 { font-size: 18px; padding-left: 15px;} 
+   .md-h6 { font-size: 17px; padding-left: 20px;}
+  
+   .md-box p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.003em;
+   }
+
+   .md-box li {
+    font-size: 13px;
+  }
+
+  .slide-text-title {
+    width: 250px;
+  }
+
+}

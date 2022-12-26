@@ -1,0 +1,104 @@
+<!-- 背景影片 -->
+<video autoplay muted loop id="myVideo" >
+    <source src="assets/images/hero.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<!-- hero -->
+<div class="container-fluid mt-5 herobox">
+    <div class="row" style="height: 100%;">
+        <div class="col-sm-5" style="height: 100%;">
+            <div class="container" style="position:relative; height: 100%;">
+                <div class="hero-text">
+                    <h2 class="showoff">當住進大程式<br>才知道生活可以這麼舒服</h2>
+                    <!-- <button type="button" class="back-yellow-ten text-white btn" style="margin-top: 40px;">程式外包</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 rightpar" style="height: 100%;">
+            <div class="container" style="position:relative; height: 100%;">
+                <div
+                    style="position:absolute; text-align: center; transform: translate(-50%, -50%); top: 50%; left: 50%; width: 100%;">
+                    <div class="row">
+                        <div class="col-sm-6 rightparbox">
+                            <a class="class-container" [routerLink]="['/classification', 'python_foundation', 25]">
+                                <img src="assets/images/class_cover/python.jpg" class="rounded slide-image" alt="Python 基礎課程">
+                                <div class="img-center-text-box rounded">
+                                    <p class="square-text">Python 基礎課程</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 rightparbox">
+                            <a href="" class="class-container" [routerLink]="['/classification', 'lineBot', 62]">
+                                <img src="assets/images/class_cover/line.jpg" class="rounded slide-image" alt="Line Bot 聊天機器人">
+                                <div class="img-center-text-box rounded">
+                                    <p class="square-text">Line Bot 聊天機器人</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-6 rightparbox">
+                            <a href="" class="class-container" [routerLink]="['/classification', 'crawler_king', 80]">
+                                <img src="assets/images/class_cover/crawler.jpg" class="rounded slide-image" alt="行銷人轉職爬蟲王｜5大社群＋2大電商">
+                                <div class="img-center-text-box rounded">
+                                    <p class="square-text">爬蟲｜5大社群＋2大電商</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 rightparbox">
+                            <!-- <a href="" class="class-container" [routerLink]="'class'" [queryParams]="{c:4,a:1}"> -->
+                            <a href="" class="class-container" [routerLink]="['/']">
+                                <img src="assets/images/class_cover/telegram.jpg" class="rounded slide-image" alt="Telegram Bot 聊天機器人">
+                                <div class="img-center-text-box rounded">
+                                    <p class="square-text">Telegram Bot 聊天機器人<br>(準備中)</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 服務介紹 -->
+<div class="container-fluid back-major-nine text-white">
+    <div class="row showblock">
+        <div class="col-sm-4 text-center">
+            <fa-icon [icon]="star_icon" class="fa-3x"></fa-icon>
+            <h3 class="solgen">專業</h3>
+            <h6 class="pair-solgen">力求進步的動力，才能戰勝自己</h6>
+        </div>
+        <div class="col-sm-4 text-center">
+            <fa-icon [icon]="star_icon" class="fa-3x"></fa-icon>
+            <h3 class="solgen">誠信</h3>
+            <h6 class="pair-solgen">值得信賴的夥伴，透明的服務</h6>
+        </div>
+        <div class="col-sm-4 text-center">
+            <fa-icon [icon]="star_icon" class="fa-3x"></fa-icon>
+            <h3 class="solgen">學習</h3>
+            <h6 class="pair-solgen">人都有知的權利，致力於人類福祉</h6>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid back-blow-nine text-white" style="width: 100%;">
+    <div class="row align-items-center showblock2">
+        <div class="embed-container col-sm-5 rounded">
+            <iframe
+                src="https://www.youtube.com/embed/xh4aECbPaHQ?&autoplay=1&amp;showinfo=1&amp;modestbranding=1&amp;rel=0"
+                frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="col-sm-7 introduce">
+            <h3 class="solgen">免費教學－最豐富爬蟲教學</h3>
+            <h6 class="pair-solgen text-blue">#FB #IG #PTT #Dcard #Youtube #Amazon #蝦皮</h6>
+            <p>想學爬蟲技能，增加競爭力卻不知從何開始嗎？想取得網路消費者輿情，卻只能漫無目的的瀏覽網頁嗎？提出的企畫案缺乏數據佐證，一直被老闆打搶嗎？在數據的時代，您值得去做更有價值的事情，這些工作都交給程式吧！本課程分為兩個階段，新兵營階段，會從最基礎的網頁架構，來帶領您深入了解爬蟲原理...
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 文章方塊 -->
+<app-gallery></app-gallery>
