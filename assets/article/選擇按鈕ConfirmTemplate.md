@@ -1,6 +1,6 @@
 # 選擇按鈕ConfirmTemplate
 ![成品參考](https://i.imgur.com/4jNESB4.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/class?c=2&a=66)」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/66)」中的影片教學。
 範例中使用PostbackAction() 方法與MessageAction() 方法，分別使用post概念傳送資料，與直接傳送文字資料的方式。每個參數的解釋如下：
 
 * text：問題標題

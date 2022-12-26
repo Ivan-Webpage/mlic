@@ -45,4 +45,4 @@ SK-II這次不是找國際影星，而是選擇請台灣之光陳嵐舒來訴說
 ## 我還想學更多
 更多行銷案例文章，推薦給您[米卡的行銷放肆 Marketing Funs](https://www.jabamay.com/)，穆忠強老師把市場最新的行銷方式整理給您！
 
-下篇文章[「想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 — 【Python實戰篇】」](/article?a=21)，將用Python直觀的告訴您，如何挑選最好的KOL，來互相創造雙贏。
+下篇文章[「想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 — 【Python實戰篇】」](/classification/marketing/21)，將用Python直觀的告訴您，如何挑選最好的KOL，來互相創造雙贏。

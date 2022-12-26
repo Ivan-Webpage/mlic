@@ -1,5 +1,5 @@
 # 資料分析實戰｜利用PTT資料進行消費者關鍵字分析，消費者都在討論什麼？
-在學「[PPT爬蟲｜爬下全台最大電子布告欄](/class?c=3&a=96)」課程後，我們就以品牌的角度來實作，如何分析消費者眼中的品牌。以下為實際爬下來的範例資料，共有「8,759筆」資料，其資料來自於PPT的folklore、womentalk、boy-girl、Urban_Plan、Gossiping、Nantou、TaichungBun這幾個版。而這次課程中我們的產業定位為「服飾業」，想要勘查「花襯衫」的市場如何。
+在學「[PPT爬蟲｜爬下全台最大電子布告欄](/classification/crawler_king/96)」課程後，我們就以品牌的角度來實作，如何分析消費者眼中的品牌。以下為實際爬下來的範例資料，共有「8,759筆」資料，其資料來自於PPT的folklore、womentalk、boy-girl、Urban_Plan、Gossiping、Nantou、TaichungBun這幾個版。而這次課程中我們的產業定位為「服飾業」，想要勘查「花襯衫」的市場如何。
 
 ## 挑出有關鍵字的文章
 「8,759筆」資料代表有 8,759篇文章，但並不是每篇文章都一定會提到「花襯衫」這個關鍵字，因此要先用pandas套件中的 str.contains()方法來挑選出標題、內文、所有留言中有提到「花襯衫」這個關鍵字的文章。
@@ -34,7 +34,7 @@ for i in replaceList:
     allstr = allstr.replace(i,'')
 ```
 ## 尋找關鍵字
-在課程「關鍵字替代方案，比較TF-IDF演算法與Google NLP，誰與爭鋒？」有分享使用TF-IDF演算法來進行關鍵字分析，使用 jieba.analyse.extract_tags()方法進行分析。如果老闆或主管不了解TF-IDF演算法如何計算，又不方便跟他們解釋的話，納建議還是使用下一個「土法煉鋼」的方式。
+在課程「[關鍵字替代方案，比較TF-IDF演算法與Google NLP，誰與爭鋒？](/classification/marketing/24)」有分享使用TF-IDF演算法來進行關鍵字分析，使用 jieba.analyse.extract_tags()方法進行分析。如果老闆或主管不了解TF-IDF演算法如何計算，又不方便跟他們解釋的話，納建議還是使用下一個「土法煉鋼」的方式。
 ### TF-IDF演算法
 ```python
 # 用TF-IDF演算法，尋找top 100 關鍵字
