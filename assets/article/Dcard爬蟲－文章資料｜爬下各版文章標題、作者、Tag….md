@@ -1,9 +1,9 @@
 # Dcard爬蟲－文章資料｜爬下各版文章標題、作者、Tag…
-> 次課程使用Json爬蟲，所以你要先看「[Json爬蟲教學－Google趨勢搜尋](/class?c=3&a=85)」教學喔！
+> 次課程使用Json爬蟲，所以你要先看「[Json爬蟲教學－Google趨勢搜尋](/classification/crawler_king/85)」教學喔！
 
 Dcard是現在台灣年輕組群較長使用的社群軟體，如同年輕一代的PTT。因此若您的品牌目標受眾（TA）屬於30歲之前的年紀，那在Dcard您一定會收到很多使用者回饋。本課程會教您如何找到Dcard的Json封包，並且解析封包後，轉換成CSV檔案進行儲存。
 
-首先利用我們在課程「[Json爬蟲教學－Google趨勢搜尋](/class?c=3&a=85)」與「[Json爬蟲實戰－24小時電商PChome爬蟲｜雖然我不是個數學家但這聽起來很不錯吧](/class?c=3&a=86)」教導的方式取得Json封包的連結如下：
+首先利用我們在課程「[Json爬蟲教學－Google趨勢搜尋](/classification/crawler_king/85)」與「[Json爬蟲實戰－24小時電商PChome爬蟲｜雖然我不是個數學家但這聽起來很不錯吧](/classification/crawler_king/86)」教導的方式取得Json封包的連結如下：
 ```
 https://www.dcard.tw/service/api/v2/forums/talk/posts?limit=30 
 ```

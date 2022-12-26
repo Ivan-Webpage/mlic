@@ -1,6 +1,6 @@
 # Json爬蟲教學－Google趨勢搜尋｜掌握最火關鍵字
 ![Google 趨勢最新消息](https://i.imgur.com/rcIscpV.png)
-> [Json是什麼東西？先了解資料傳遞Get與Post差異吧！](/class?c=3&a=81)
+> [Json是什麼東西？先了解資料傳遞Get與Post差異吧！](/classification/crawler_king/81)
 
 相信不少人使用過[Google趨勢搜尋](https://trends.google.com.tw/trends/trendingsearches/daily?geo=TW)，而每次都要上網搜尋相當費時。Python爬蟲可以幫您解決這個問題！在[Google趨勢搜尋](https://trends.google.com.tw/trends/trendingsearches/daily?geo=TW)的頁面，按下「F12」按鈕，並重新整理網頁，即可攔下資料封包，利用此發法即可擷取即時資料的Json檔案，如下圖所示。
 

@@ -1,10 +1,10 @@
 # Amazon爬蟲－留言資料｜雖然我不是個數學家，但全部爬下來很棒吧！【附Python程式碼】
 ## 可交付成果
 ![可交付成果](https://cdn-images-1.medium.com/max/1200/1*8jek2_TdrN_4XLF3auGeOA.png)
-接續前面課程「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/class?c=3&a=113)」所爬下來的商品結果，進到每個商品中爬下所有的留言內容，其內容包含商品名稱、留言網址、留言者、星等、留言時間、留言地點(區域)、SKU、留言內容、覺得留言有用的人數。
+接續前面課程「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/classification/crawler_king/113)」所爬下來的商品結果，進到每個商品中爬下所有的留言內容，其內容包含商品名稱、留言網址、留言者、星等、留言時間、留言地點(區域)、SKU、留言內容、覺得留言有用的人數。
 
 ## 爬蟲前準備
-在開始本課程的爬蟲之前，必須要先將前一堂課「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/class?c=3&a=113)」的結果放在程式的工作目錄內，若不知道如何在Spyder 中設定工作目錄，也可以參考課程「[Spyder使用教學](/class?c=1&a=26)」。
+在開始本課程的爬蟲之前，必須要先將前一堂課「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/classification/crawler_king/113)」的結果放在程式的工作目錄內，若不知道如何在Spyder 中設定工作目錄，也可以參考課程「[Spyder使用教學](/classification/python_foundation/26)」。
 ```python
 productData = pd.read_csv('Amazon商品資料.csv', encoding = 'utf-8')
 ```

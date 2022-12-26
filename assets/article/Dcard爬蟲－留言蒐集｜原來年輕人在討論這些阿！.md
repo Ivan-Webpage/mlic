@@ -1,7 +1,7 @@
 # Dcard爬蟲－留言蒐集｜原來年輕人在討論這些阿！
-> 先看看前一堂課「[Dcard爬蟲－文章資料](/class?c=3&a=98)」
+> 先看看前一堂課「[Dcard爬蟲－文章資料](/classification/crawler_king/98)」
 
-若您已經成功爬下Dcard文章資料，我們接著就來爬Dcard留言資料。 首先利用我們在課程「[Json爬蟲教學－Google趨勢搜尋](/class?c=3&a=85)」與「[Json爬蟲實戰－24小時電商PChome爬蟲｜雖然我不是個數學家但這聽起來很不錯吧](/class?c=3&a=86)」教導的方式取得Json封包的連結如下：
+若您已經成功爬下Dcard文章資料，我們接著就來爬Dcard留言資料。 首先利用我們在課程「[Json爬蟲教學－Google趨勢搜尋](/class?c=3&a=85)」與「[Json爬蟲實戰－24小時電商PChome爬蟲｜雖然我不是個數學家但這聽起來很不錯吧](/classification/crawler_king/86)」教導的方式取得Json封包的連結如下：
 ```
 https://www.dcard.tw/service/api/v2/posts/235996273/comments?after=60 
 ```

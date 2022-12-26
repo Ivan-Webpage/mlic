@@ -1,7 +1,7 @@
 # Html爬蟲Get實戰－全台最大美食平台FoodPanda爬蟲，把熊貓抓回家
 [FoodPanda](https://www.foodpanda.com.tw/)是台灣現在最具知名的美食外送平台，他改變了整個消費者的飲食習慣，創造出一個獨特的線上通路，也讓商家的消費族群不再侷限於方圓一公里內。能爬下[Foodpanda](https://www.foodpanda.com.tw/)等於能夠了解當地的飲食習慣，對於要切入該市場的你，這是很具有參考價值的！
 
-在學習完「[Html爬蟲Get教學－Yahoo](/class?c=3&a=82)」課程以後，本篇文章將帶領您朝向下一個實戰。課程的可交付成果，是爬下地區的「店家名稱、評分、標籤、外送費用」，並將結果整理成CSV檔案，以便日後分析。
+在學習完「[Html爬蟲Get教學－Yahoo](/classification/crawler_king/82)」課程以後，本篇文章將帶領您朝向下一個實戰。課程的可交付成果，是爬下地區的「店家名稱、評分、標籤、外送費用」，並將結果整理成CSV檔案，以便日後分析。
 
 課程中首先利用figcaption這個特殊的標籤，抓下class名稱為vendor-info的資料，此舉能爬下所有店家的相關資料，後續只需要將此資料進行擷取，找出每家店的 「店家名稱、評分、標籤、外送費用」 即可。
 ![figcaption 標籤在網站中的位置](https://i.imgur.com/R3WSHKI.png)
