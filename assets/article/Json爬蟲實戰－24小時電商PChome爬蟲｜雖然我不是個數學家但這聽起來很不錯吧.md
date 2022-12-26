@@ -1,7 +1,7 @@
 # Json爬蟲實戰－24小時電商PChome爬蟲｜雖然我不是個數學家但這聽起來很不錯吧
-> [還沒學過Json爬蟲？先用Google趨勢練習一下吧！](/class?c=3&a=85)
+> [還沒學過Json爬蟲？先用Google趨勢練習一下吧！](/classification/crawler_king/85)
 
-在上完「[Json爬蟲教學－Google趨勢搜尋](/class?c=3&a=85)」課程以後，接著就來實際爬下PChome商品資料！這次的可交付成果是爬下各個商品的商品名稱、商品ID、價格、品牌、商品文案等，全部爬下來。
+在上完「[Json爬蟲教學－Google趨勢搜尋](/classification/crawler_king/85)」課程以後，接著就來實際爬下PChome商品資料！這次的可交付成果是爬下各個商品的商品名稱、商品ID、價格、品牌、商品文案等，全部爬下來。
 
 要找到Json的封包，首先依然在網頁中按下「F12」並且向下滑動商品頁，以取得商品的封包。
 ![按下「F12」並且向下滑動商品頁，以取得商品的封包](https://i.imgur.com/pYHtVU5.png)
@@ -37,7 +37,7 @@ for i in range(1,10):
     time.sleep(5) #拖延時間
 ```
 
-> [忘了Pandas存檔嗎？看這裡](/class?c=1&a=47)
+> [忘了Pandas存檔嗎？看這裡](/classification/python_foundation/47)
 
 最後將爬下來的資料進行儲存。
 ```python

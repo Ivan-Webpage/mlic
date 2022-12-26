@@ -1,6 +1,6 @@
 # Pandas爬蟲教學－Yahoo股市爬蟲｜不想再盯盤
-> 還不知道Get與Post請看「[資料傳遞Get與Post差異](/class?c=3&a=81)」
-在課程「[Html爬蟲Get教學－Yahoo](/class?c=3&a=82)」中使用get的方式爬蟲，在課程中也有提到此方法的不便之處。當要爬取Table 標籤內的資料，會因為標籤名稱都一樣，難以取得資料內容。在本課程使用Pandas 套件，利用 pd.read_html 方法，能直接取得網頁中所有的Table 標籤。
+> 還不知道Get與Post請看「[資料傳遞Get與Post差異](/classification/crawler_king/81)」
+在課程「[Html爬蟲Get教學－Yahoo](/classification/crawler_king/82)」中使用get的方式爬蟲，在課程中也有提到此方法的不便之處。當要爬取Table 標籤內的資料，會因為標籤名稱都一樣，難以取得資料內容。在本課程使用Pandas 套件，利用 pd.read_html 方法，能直接取得網頁中所有的Table 標籤。
 ```python
 getdata=pd.read_html(
     url, #想爬的網址

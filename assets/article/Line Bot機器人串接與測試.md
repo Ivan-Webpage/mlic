@@ -3,10 +3,10 @@
 
 ```pip3 install line-bot-sdk```
 介紹如何將Github、Heroku、Line Developers三個平台串接再一起。請觀看完成前面課程在觀看本次課程：
-1. [Bot流程與架構介紹](/class?c=2&a=62)
-2. [申請Github](/class?c=2&a=63)
-3. [申請Heroku]()
-4. [申請Line Bot]()
+1. [Bot流程與架構介紹](/classification/lineBot/62)
+2. [申請Github](/classification/lineBot/63)
+3. [申請Heroku](/classification/lineBot/64)
+4. [申請Line Bot](/classification/lineBot/65)
 
 ## 程式碼內容解釋
 ### Procfile
