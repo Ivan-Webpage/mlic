@@ -2259,6 +2259,25 @@
             "download": "https://github.com/Marketing-Live-in-Code/gmail_customize_send/archive/refs/heads/main.zip",
             "article_url": "https://raw.githubusercontent.com/Marketing-Live-in-Code/gmail_customize_send/main/README.md",
             "video": ""
+        },
+        "120": {
+            "title": "高速取得全台股價資訊，馬上用黃金交叉練習看看【附Python程式碼】",
+            "tag": [
+                "python",
+                "選股",
+                "自動化",
+                "黃金交叉",
+                "投資"
+            ],
+            "description": "本文章會介紹目前Python的函式庫中，大家最常使用於取得技術分析五個數值「開盤價、收盤價、最高點、最低點、成交量」的套件pandas_datareader，也會使用學完的套件，挑選出全台灣每日「短期突破長期」的股票，也就是俗稱的「黃金交叉」股，是每天全台灣的所有上市櫃股票通通掃一遍喔！",
+            "cover-image": "assets/images/article_cover/高速取得全台股價資訊馬上用黃金交叉練習看看.jpg",
+            "classification": "financial",
+            "previous": "118",
+            "next": "115",
+            "time": "2022-12-30",
+            "download": "https://github.com/Marketing-Live-in-Code/golden_cross/archive/refs/heads/main.zip",
+            "article_url": "https://raw.githubusercontent.com/Marketing-Live-in-Code/golden_cross/main/README.md",
+            "video": ""
         }
     },
     "class": {
