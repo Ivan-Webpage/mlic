@@ -10,7 +10,7 @@
                 "區塊鍊"
             ],
             "description": "虛擬幣因為市場金融的影響，成為全球的焦點，連Fed都為此出了不少政策。這次奇亞幣（Chia XCH，以下簡稱Chia）的出現卻吸引了我，最近非常火紅的Chia其實在2017年就註冊成立了，其特點在於Chia使用「空间和时间证明（Proof of Space and Time）」",
-            "cover-image": "assets/images/article_cover/Chia_Network奇亞幣挖礦！成為農夫詳細安裝教學.jpg",
+            "cover-image": "assets/images/article_cover/Chia_Network.jpg",
             "classification": "technology",
             "previous": "4",
             "time": "2021-05-03",
@@ -28,7 +28,7 @@
                 "自動化"
             ],
             "description": "自然語言分析（Natural Language Processing，NLP）在AI與大數據的熱潮上，人人都想跟上時代，因此想要把任何耗人工的事情全都交給電腦處理，但您真的了解其中差異嗎？本文章手把手帶領您建置GCP專案，並利用Google NLP 套件的API連接Python",
-            "cover-image": "assets/images/article_cover/Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1.jpg",
+            "cover-image": "assets/images/article_cover/GoogleNLPpart1.jpg",
             "classification": "marketing",
             "previous": "8",
             "next": "3",
@@ -47,7 +47,7 @@
                 "自動化"
             ],
             "description": "在「Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1」文章中，手把手帶領您申請屬於自己的GCP平台，並取得NLP的憑證檔案。接下來我們將利用先前申請好的json憑證檔案，開始分析消費者在網路上的輿論。",
-            "cover-image": "assets/images/article_cover/Python幫你自動化Google自然語言分析NLP套件大解密part2.jpg",
+            "cover-image": "assets/images/article_cover/GoogleNLPpart2.jpg",
             "classification": "marketing",
             "previous": "2",
             "next": "4",
@@ -66,7 +66,7 @@
                 "自動化"
             ],
             "description": "在前篇文章「Python幫你自動化Google 自然語言分析 ，NLP套件大解密 — part2」中，我們學會了如何使用Google串接Python，達到自動化的語意分析，但當我們知道消費者對我們的品牌的正負評價後，更想知道的是，顧客喜歡我們的甚麼？討厭我們的甚麼?",
-            "cover-image": "assets/images/article_cover/Python幫你自動化Google自然語言分析顧客在討論什麼part3.jpg",
+            "cover-image": "assets/images/article_cover/GoogleNLPpart3.jpg",
             "classification": "marketing",
             "previous": "3",
             "next": "24",
@@ -85,7 +85,7 @@
                 "自動化"
             ],
             "description": "如果您之前有看過我的LineBot聊天機器人文章，您對Heroku肯定不陌生，介面非常好用又方便佈署我們的LineBot機器人。很不幸的是Heroku即將在2022/11/28停止免費的服務，換句話說，LineBot聊天機器人文章教您的機器人不能用了！這對於行銷搬進大程式...",
-            "cover-image": "assets/images/article_cover/Heroku要收費了我的LineBot怎麼辦？Fly.io正在向你招手，聊天機器人手把手建置【2022年最新Python更新版】.jpg",
+            "cover-image": "assets/images/article_cover/LineBot_Flyio.jpg",
             "classification": "marketing",
             "previous": "13",
             "next": "8",
@@ -104,7 +104,7 @@
                 "手把手教學"
             ],
             "description": "",
-            "cover-image": "assets/images/class_cover/安裝套件教學ModuleNotFoundError.webp",
+            "cover-image": "assets/images/class_cover/python/ModuleNotFoundError.webp",
             "classification": "python_foundation",
             "previous": "31",
             "next": "32",
@@ -123,7 +123,7 @@
                 "商業分析"
             ],
             "description": "有不少朋友問我：「所以RFM切割的依據是什麼？」，以前我總是回答「要看產業」、「你應該比我了解」、「大概抓一個區間」。後來我想想，以資料科學的角度，決策必須有憑有據，不能全靠直覺判斷，因此本篇文章，將以科學的角度，告訴您「怎麼切割RFM比較好」切割RFM資料也是一門藝術，絕對不...",
-            "cover-image": "assets/images/article_cover/RFM顧客分類模型實戰教學【附Python程式碼】.jpg",
+            "cover-image": "assets/images/article_cover/RFM.jpg",
             "classification": "marketing",
             "previous": "2",
             "next": "8",
@@ -142,7 +142,7 @@
                 "自動化"
             ],
             "description": "Telegram成了品牌與使用者溝通的下一個平台，除了主打免費外，群組人數最多可達20萬人，大大超越Line的500人。其中令我著迷的是，Telegram在機器人上，有許多令我欣喜若狂的資源，但在本篇文章不會介紹，我們先以做出一個「會重複說話」的機器人，為可交付成果。",
-            "cover-image": "assets/images/article_cover/Telegram聊天機器人超詳細懶人包，商管人都看得懂【附Python程式碼】.jpg",
+            "cover-image": "assets/images/article_cover/Telegram.jpg",
             "classification": "marketing",
             "previous": "20",
             "next": "5",
@@ -161,7 +161,7 @@
                 "黑名單"
             ],
             "description": "在首部曲－最淺白的RCE攻擊，用python sendbox 模擬實戰攻擊文章中有示範，毫無防護的sendbox，是可以輕易地下指令的，這時聰明的您一定會想到，那就把一些有安全疑慮的指令全部排除，不就能達到有效的防護了嗎？其實不盡然，就用簡單的範例帶領您了解。 ",
-            "cover-image": "assets/images/article_cover/二部曲－最淺白的RCE攻擊，黑名單防禦大法.jpg",
+            "cover-image": "assets/images/article_cover/RCE2.jpg",
             "classification": "technology",
             "previous": "14",
             "next": "10",
@@ -180,7 +180,7 @@
                 "黑名單"
             ],
             "description": "利用del在sendbox執行之前，先將__dict__中所有有安全問題的方法全部刪除（make_secure()方法），這樣有心人士想使用這些危險的函數、方法，也沒得用了，應該安全了吧？您可能會發現，在make_secure()方法中的kill陣列，裏頭刪除的函數只有open、",
-            "cover-image": "assets/images/article_cover/三部曲－最淺白的RCE攻擊，誅九族大法.jpg",
+            "cover-image": "assets/images/article_cover/RCE3.jpg",
             "classification": "technology",
             "previous": "9",
             "next": "11",
@@ -199,7 +199,7 @@
                 "刷粉絲"
             ],
             "description": "我以自己的帳號實驗，將個人吉他的影片上傳，並將所有風格經過整理。每三天使用一次機器人按愛心，一個月大約增加200粉絲。。經過實測，IG一天按愛心的數量，大約是400次，若超過該帳號會被封鎖一天不能按愛心，若有多次這樣的紀錄，甚至會封鎖3天、一星期，以此類推，因此請適度的使用...",
-            "cover-image": "assets/images/article_cover/小編神器，IG愛心大放送，selenium在IG上的實做.jpg",
+            "cover-image": "assets/images/article_cover/IG_selenium.jpg",
             "classification": "marketing",
             "previous": "13",
             "next": "12",
@@ -218,7 +218,7 @@
                 "自動發文"
             ],
             "description": "我曾經做過一陣子的小編，負責將粉絲團的文章廣發到各個社團，這個過程枯燥且乏味，就是一直不斷地按分享社團。我一天大約要分享70多個社團，因此每天得花一小時左右來做這項「機械式」的工作。phantomjs是Selenium的控制器，等於是將python程式碼變成機器人的工具...",
-            "cover-image": "assets/images/article_cover/小編神器，從此不用發文發到死，selenium在FB上的實做.jpg",
+            "cover-image": "assets/images/article_cover/FB_selenium.jpg",
             "classification": "marketing",
             "previous": "11",
             "next": "13",
@@ -237,7 +237,7 @@
                 "自動化"
             ],
             "description": "經過Line的大改版，Github被微軟收購後，整個Line預警機器人操作，明顯與之前不同。相信商管背景的您，對於系統的架構感到陌生，因此我們撰寫本篇文章，讓即刻想打造預警機器人的您，可以立馬上手。Heroku是支援多種程式語言的雲端平台服務。簡單來說，就是您租用了美國的某台電...",
-            "cover-image": "assets/images/article_cover/打造聊天機器人，商管人也看得懂的最詳細步驟【2020年最新更新版本】.jpg",
+            "cover-image": "assets/images/article_cover/linebot.jpg",
             "classification": "marketing",
             "previous": "8",
             "next": "5",
@@ -256,7 +256,7 @@
                 "黑名單"
             ],
             "description": "資訊安全議題近年逐漸受到企業重視，尤其在金融科技進展的同時，金融界也注入可觀的資金在金融資訊安全，畢竟金融客戶的隱私比什麼都重要，當然也因為金融業有龐大的資金，才能投資大量資金到資訊安全中，一般中小企業就會有所取捨。資訊安全的領域非常廣，大家比較常見的是網域安全，例如：資料庫安全、",
-            "cover-image": "assets/images/article_cover/首部曲.jpg",
+            "cover-image": "assets/images/article_cover/RCE1.jpg",
             "classification": "technology",
             "previous": "15",
             "next": "9",
@@ -275,7 +275,7 @@
                 "商業分析"
             ],
             "description": "RFM存在至今已過半百，為何大家仍想要引進呢？因為RFM只需要基本的銷售資料，就能做出強大的顧客分群，等同於市場區隔（Segmentation），且邏輯清晰明瞭。一般的CRM資料一定有有購買者ID、銷售ID、購買時間、購買金額，這麼少的欄位，這時候RFM",
-            "cover-image": "assets/images/article_cover/RFM顧客分類模型實戰教學【附Python程式碼】.jpg",
+            "cover-image": "assets/images/article_cover/RFM.jpg",
             "classification": "marketing",
             "previous": "2",
             "next": "7",
@@ -294,7 +294,7 @@
                 "經驗"
             ],
             "description": "在文章「商標檢索教學－看出企業的全球佈局」中有說明了商標的重要性與超高的CP值，另外也講述了如何在商標申請前，先檢視自己的商標是否在市場上有獨特性。這一切完備後，就可以開始進行商標申請，教學使用電子線上教學，並且使用自然人認證方式，因此商標申請需要以下幾個資源",
-            "cover-image": "assets/images/article_cover/商標申請手把手教學.jpg",
+            "cover-image": "assets/images/article_cover/trademark.jpg",
             "classification": "manage",
             "previous": "15",
             "next": "17",
@@ -313,7 +313,7 @@
                 "全球觀"
             ],
             "description": "台灣傳統企業大多不重視商標的重要性，其實商標的申請比其專利來說，堪稱是最便宜的了，其能達到的效益與保護更是超乎想像，商標收費的規費在「商標規費收費標準 第2條」中表示：商標或團體商標，依指定使用之商品或服務類別合併計收之，其各類之金額計算方式如下：指定使用在第1類至第34類者...",
-            "cover-image": "assets/images/article_cover/商標檢索教學－看出企業的全球佈局.jpg",
+            "cover-image": "assets/images/article_cover/trademark_search.jpg",
             "classification": "manage",
             "previous": "18",
             "next": "16",
@@ -332,7 +332,7 @@
                 "專利權"
             ],
             "description": "你可能會覺得跑法律程序很花錢，其實不是的。我們可以到經濟部智慧財產局的網站中看到，每個申請流程所需的費用，可以發現破萬者不多，等於每年需要付出的成本大約在萬元左右而已。萬元你說很多嗎？這跟買行車紀錄器一樣，出一次車禍就划算了，如果被有心人士侵害IP，一告可能把之前繳的費用連本帶...",
-            "cover-image": "assets/images/article_cover/這樣有保障嗎？最詳細了解專利種類－智慧財產權.jpg",
+            "cover-image": "assets/images/article_cover/copyright.jpg",
             "classification": "manage",
             "previous": "17",
             "next": "16",
@@ -351,7 +351,7 @@
                 "老闆思維"
             ],
             "description": "在數據分析的這些年，與各個產業的老闆接觸過，發現一件很有趣的事情：除了比較大的企業外，台灣大多數的中小企業主，並不知道自己賺的錢從哪來。我們討論的不是財報上的收入，而是一整個公司的品牌意象，更淺白的來說，是不知道消費者為什麼對我的品牌忠誠。因此，我們從最宏觀的品牌開始為您釐清。",
-            "cover-image": "assets/images/article_cover/超實用！門市生意不好怎麼辦？要問誰？.jpg",
+            "cover-image": "assets/images/article_cover/shop_sale.jpg",
             "classification": "manage",
             "previous": "18",
             "next": "20",
@@ -370,7 +370,7 @@
                 "商業分析"
             ],
             "description": "關鍵輿論領袖（Key Opinion Leader, KOL）有一群死忠的粉絲，粉絲認同KOL的思維，自然也會相信KOL所說的話。而粉絲愛KOL不一定是外表，而是「態度」，因此儘管KOL外表普通、滿口髒話、穿著拉塌，但假設該KOL主打「隨興奔放」，那自然會有一群認同這位KOL的粉絲",
-            "cover-image": "assets/images/article_cover/想找意見領袖KOL來品牌行銷嗎超直觀挑選概念篇.jpg",
+            "cover-image": "assets/images/article_cover/KOL1.jpg",
             "classification": "marketing",
             "previous": "19",
             "next": "21",
@@ -389,7 +389,7 @@
                 "商業分析"
             ],
             "description": "有了前篇文章「想找意見領袖（KOL）來品牌行銷嗎？超直觀挑選 — 【概念篇】」的概念後，我們可以換從數據的角度來挑選適合的KOL。現在有數千個KOL活躍在Youtube影音平台，該如何做選擇呢？在Influencer網站中，幫我們整理了每個KOL的類別、粉絲數量、平均觀看數量、N",
-            "cover-image": "assets/images/article_cover/想找意見領袖KOL來品牌行銷嗎超直觀挑選Python實戰篇.jpg",
+            "cover-image": "assets/images/article_cover/KOL2.jpg",
             "classification": "marketing",
             "previous": "19",
             "next": "22",
@@ -408,7 +408,7 @@
                 "市場行銷"
             ],
             "description": "在以往的行銷中，都是使用老闆經驗的判斷，直覺性的當消費者買A產品，它可能會需要B產品當輔助，因此對消費者進行B商品的推銷，但這會有兩個盲點：有些組合是老闆永遠不會想到、觀察到的，譬如啤酒與尿布的例子，又有誰會想到，去超市買尿布的新手父親，會順便買幾瓶啤酒呢？老闆記憶有限，也只能記..",
-            "cover-image": "assets/images/article_cover/購物籃分析，最清楚概念-part1.jpg",
+            "cover-image": "assets/images/article_cover/cart1.jpg",
             "classification": "marketing",
             "previous": "21",
             "next": "23",
@@ -427,7 +427,7 @@
                 "市場行銷"
             ],
             "description": "在前篇文章「購物籃分析，最清楚概念-part1」中，已經介紹購物籃分析中，最重要的三個變數，接下來課程將以實作的方式，並且帶領您管理意涵。實作案例中，裡面只有購買清單（order_id）與產品名稱（product_name）兩個欄位，apyori套件所要餵進去的格式非常簡單，只...",
-            "cover-image": "assets/images/article_cover/購物籃分析-part2【附Python程式碼】.jpg",
+            "cover-image": "assets/images/article_cover/cart2.jpg",
             "classification": "marketing",
             "previous": "22",
             "next": "24",
@@ -446,7 +446,7 @@
                 "TF-IDF"
             ],
             "description": "一般找出關鍵字最值觀的方式，就是直接計算這個詞「出現幾次」，出現越多次的，照理來說那個字詞就會越重要，但實際執行後，Top 10的字詞永遠都是「的」、「你」、「我」、「他」、「哈哈哈」，這些高頻率出現，但卻沒有任何分析幫助。TF-IDF演算法專門解決這種問題",
-            "cover-image": "assets/images/article_cover/關鍵字替代方案比較TFIDF演算法與GoogleNLP誰與爭鋒.jpg",
+            "cover-image": "assets/images/article_cover/TFIDF_GoogleNLP.jpg",
             "classification": "marketing",
             "previous": "4",
             "next": "1",
@@ -465,7 +465,7 @@
                 "手把手教學"
             ],
             "description": "Anaconda是整合了眾多程式編輯器的整合開發環境（Integrated Development Environment，簡稱IDE），主要編寫語言為Python和R語言，致力於計算科學，因此在大數據的時代被許多初學者廣為使用。Anaconda所整合的程式編輯器有以下幾項....",
-            "cover-image": "assets/images/class_cover/python/Anaconda安裝，手把手教學，最詳細的安裝步驟說明.jpg",
+            "cover-image": "assets/images/class_cover/python/Anaconda.jpg",
             "classification": "python_foundation",
             "previous": "13",
             "next": "26",
@@ -484,7 +484,7 @@
                 "手把手教學"
             ],
             "description": "介紹各個程式編輯器（IDE）的差異，並且詳細介紹Spyder的編輯區塊、Console區塊，功能區塊、按鈕與快捷鍵。許多Python的初學者喜歡使用jupyter notebook這個程式編輯器，但jupyter對於開發大型的專案來說，並不是非常合適的。原因在於jupyter...",
-            "cover-image": "assets/images/class_cover/python/Spyder使用教學.jpg",
+            "cover-image": "assets/images/class_cover/python/Spyder.jpg",
             "classification": "python_foundation",
             "previous": "25",
             "next": "27",
@@ -503,7 +503,7 @@
                 "手把手教學"
             ],
             "description": "首先到Spyder官方網站，依照自己的作業系統進行下載，在課程範例中，我所使用的作業系統為Windows，因此將會以Windows為範例。在網站下方按鈕Dowload for Windows按鈕點擊下去，即可進行安裝。若您是Mac想要不透過Anaconda直接安裝Spyder....",
-            "cover-image": "assets/images/class_cover/python/Windows直接安裝Spyder，告別肥嘟嘟的Anaconda！.webp",
+            "cover-image": "assets/images/class_cover/python/Windows_Spyder.webp",
             "classification": "python_foundation",
             "previous": "26",
             "next": "28",
@@ -522,7 +522,7 @@
                 "手把手教學"
             ],
             "description": "VS Code是由微軟開發的程式編輯器，能夠支援編輯多種語言，包含C、C++、Java、Python、Html、PHP、CSS...等，並且可以通過下載擴充元件達到多種功能，因此客製化程度也較高，身受開發者喜愛。微軟在2015年4月29日公布 VS Code 的開發計畫.......",
-            "cover-image": "assets/images/class_cover/python/VS Code安裝與使用 ，2022年開發者最愛的IDE！.webp",
+            "cover-image": "assets/images/class_cover/python/VS_Code.webp",
             "classification": "python_foundation",
             "previous": "27",
             "next": "29",
@@ -541,7 +541,7 @@
                 "手把手教學"
             ],
             "description": "在學習完「VS Code安裝與使用」課程後，會發現VS Code內建的Python執行是使用Console的方式，並沒有其他任何的輔助工具，若面對DataFrame這種表格式的資料，在Console上呈現非常難以閱讀。ode中非常好的一個工具，能夠如Spyder一般，呈.....",
-            "cover-image": "assets/images/class_cover/python/VS Code安裝Jupyter Notebook，Interactive快捷鍵教學.webp",
+            "cover-image": "assets/images/class_cover/python/VSCode_Interactive.webp",
             "classification": "python_foundation",
             "previous": "28",
             "next": "30",
@@ -560,7 +560,7 @@
                 "手把手教學"
             ],
             "description": "er」中自行建立Spyder，或者在「VS Code安裝與使用」課程中使用VS Code編輯器，我們想要這兩個編輯器都指向同一個Python環境，最好就是我們的C槽只有一個Python環境，所以編輯器、終端機都使用這個環境，這樣最不會造成困擾，也能夠大大節省電腦空間...",
-            "cover-image": "assets/images/class_cover/python/Windows直接裝Python，我只想要一個Python環境！.webp",
+            "cover-image": "assets/images/class_cover/python/Windows_Python.webp",
             "classification": "python_foundation",
             "previous": "29",
             "next": "31",
@@ -579,7 +579,7 @@
                 "手把手教學"
             ],
             "description": "也許您做完以上的作業，直接打開Spyder，終於要開始大顯身手時，竟然發現跳出這個錯誤： An error ocurred while starting the kernel， 這是代表說這個Python環境中沒有spyder-kernels這個套件，要有這個套件...",
-            "cover-image": "assets/images/class_cover/python/Spyder指定Python環境.webp",
+            "cover-image": "assets/images/class_cover/python/Spyder_Python.webp",
             "classification": "python_foundation",
             "previous": "30",
             "next": "6",
@@ -598,7 +598,7 @@
                 "手把手教學"
             ],
             "description": "何謂變數？等號「=」是什麼？Python中 「=」 與 「==」的差別？整數（Int）與浮點數（Float）的差別？原因在於早期的年代，電腦的記憶體容量不多，每份記憶體都「寸土寸金」。整數（Int）的範圍只有正無限大到負無限大而以，相對地浮點數（Float）的範圍除了正無...",
-            "cover-image": "assets/images/class_cover/python/基本變數－數字int、float，Int與Float的差別？.jpg",
+            "cover-image": "assets/images/class_cover/python/python_int_float.jpg",
             "classification": "python_foundation",
             "previous": "31",
             "next": "33",
@@ -617,7 +617,7 @@
                 "手把手教學"
             ],
             "description": "字串（str）的處理是程式人的一大功課，因此初學程式的您，這絕對是必經之路。字串（str）顧名思義就是「將一個個字元串接起來」，而字元（Char）的概念只在C、C++...等等中，會有此劃分。在Python中，只要由單引號「'」或雙引號「\"」 符號包覆起來的就是字串（str）型態。",
-            "cover-image": "assets/images/class_cover/python/基本變數－文字str，字串處理.jpg",
+            "cover-image": "assets/images/class_cover/python/python_str.jpg",
             "classification": "python_foundation",
             "previous": "32",
             "next": "34",
@@ -636,7 +636,7 @@
                 "手把手教學"
             ],
             "description": "陣列（List）是在python中常見的資料型態，是由中括號包覆起來的一個或多個資料，且不限定的格式；陣列（List）內的每個資料，以「,」符號進行分割，陣列 （List） 的起始編號為0，下一個編號為1，以此類推...。你可能會很好奇，一個變數裝一個資料就好了，為何一個變數內要",
-            "cover-image": "assets/images/class_cover/python/基本變數－陣列List.jpg",
+            "cover-image": "assets/images/class_cover/python/python_List.jpg",
             "classification": "python_foundation",
             "previous": "33",
             "next": "35",
@@ -655,7 +655,7 @@
                 "手把手教學"
             ],
             "description": "Python變數中的字典（Dict）的詳細解釋，包含字典的應用與如何取得資料，另外能新增、查看、刪除內容。",
-            "cover-image": "assets/images/class_cover/python/基本變數－字典Dict.jpg",
+            "cover-image": "assets/images/class_cover/python/python_Dict.jpg",
             "classification": "python_foundation",
             "previous": "34",
             "next": "36",
@@ -674,7 +674,7 @@
                 "手把手教學"
             ],
             "description": "先講述布林變數的含意，與一中要注意事項。而後教導邏輯運算子not、or，and，並將其帶入IF判斷式子中。另外舉例利用IF做字串（str）與陣列（list）的內容搜尋。",
-            "cover-image": "assets/images/class_cover/python/判斷式If.jpg",
+            "cover-image": "assets/images/class_cover/python/python_If.jpg",
             "classification": "python_foundation",
             "previous": "35",
             "next": "37",
@@ -693,7 +693,7 @@
                 "手把手教學"
             ],
             "description": "教導Python流程控制中的for迴圈，並使用Range來進行編排。另外舉例for與if如何結合，以達到自動篩選的效果。最後依照雙重迴圈的邏輯，實作出99乘法表範例。",
-            "cover-image": "assets/images/class_cover/python/迴圈for.jpg",
+            "cover-image": "assets/images/class_cover/python/python_for.jpg",
             "classification": "python_foundation",
             "previous": "36",
             "next": "38",
@@ -712,7 +712,7 @@
                 "手把手教學"
             ],
             "description": "While與for迴圈的差別究竟在哪裡呢？如何才能實作出無限迴圈，無限迴圈的原理又是甚麼？while與if又如何作結合呢？",
-            "cover-image": "assets/images/class_cover/python/迴圈while.jpg",
+            "cover-image": "assets/images/class_cover/python/python_while.jpg",
             "classification": "python_foundation",
             "previous": "37",
             "next": "39",
@@ -731,7 +731,7 @@
                 "手把手教學"
             ],
             "description": "利用數學機率中的C排列組合範例，來舉例Function的重要性。",
-            "cover-image": "assets/images/class_cover/python/方法function.jpg",
+            "cover-image": "assets/images/class_cover/python/python_function.jpg",
             "classification": "python_foundation",
             "previous": "38",
             "next": "40",
@@ -750,7 +750,7 @@
                 "手把手教學"
             ],
             "description": "自製一個mymath.py檔案，裏頭包含兩個founction，分別為factorial()與accumulate()，舉例如何引入該檔案進行執行，並說明往後若要自己建立py檔案，該如何進行編輯與分類。",
-            "cover-image": "assets/images/class_cover/python/匯入import.jpg",
+            "cover-image": "assets/images/class_cover/python/python_import.jpg",
             "classification": "python_foundation",
             "previous": "39",
             "next": "41",
@@ -769,7 +769,7 @@
                 "手把手教學"
             ],
             "description": "教導head、info、shape、columns、index、max、min、mean、std、count、describe、value_counts、sum的使用方式與查看方式。另外教學如何取得單欄位資料，以及多欄位資料。",
-            "cover-image": "assets/images/class_cover/python/Pandas了解資料－資料剖析、取資料.jpg",
+            "cover-image": "assets/images/class_cover/python/Pandas_data.jpg",
             "classification": "python_foundation",
             "previous": "40",
             "next": "42",
@@ -788,7 +788,7 @@
                 "手把手教學"
             ],
             "description": "內容包含read_csv匯入檔案、sort_values資料排序、drop刪除資料、astype資料型態轉換、replace取代資料內容以及更換columns名稱。",
-            "cover-image": "assets/images/class_cover/python/Pandas基本資料處理－匯入、排序、刪除、型態轉換.jpg",
+            "cover-image": "assets/images/class_cover/python/Pandas_produce.jpg",
             "classification": "python_foundation",
             "previous": "41",
             "next": "43",
@@ -807,7 +807,7 @@
                 "手把手教學"
             ],
             "description": "講解groupby的原理與使用時機",
-            "cover-image": "assets/images/class_cover/python/Pandas進階資料處理groupby－樞紐分析.jpg",
+            "cover-image": "assets/images/class_cover/python/Pandas_groupby.jpg",
             "classification": "python_foundation",
             "previous": "42",
             "next": "44",
@@ -826,7 +826,7 @@
                 "手把手教學"
             ],
             "description": "詳細介紹concat與merge的差別，並且利用圖解的方式，詳細介紹其merge參數how的四種差別。",
-            "cover-image": "assets/images/class_cover/python/Pandas合併資料－concat、merge.jpg",
+            "cover-image": "assets/images/class_cover/python/Pandas_concat_merge.jpg",
             "classification": "python_foundation",
             "previous": "43",
             "next": "45",
@@ -845,7 +845,7 @@
                 "手把手教學"
             ],
             "description": "講解cut資料分割的使用方式。",
-            "cover-image": "assets/images/class_cover/python/Pandas資料分類cut.jpg",
+            "cover-image": "assets/images/class_cover/python/Pandas_cut.jpg",
             "classification": "python_foundation",
             "previous": "44",
             "next": "46",
@@ -864,7 +864,7 @@
                 "手把手教學"
             ],
             "description": "利用範例進行字串（str）型態的欄位轉換成時間（datetime）型態。該範例以民國型態的時間來作範例，告訴您民國的時間型態如何能讓程式辨別。",
-            "cover-image": "assets/images/class_cover/python/Pandas時間欄位處理.jpg",
+            "cover-image": "assets/images/class_cover/python/Pandas_date.jpg",
             "classification": "python_foundation",
             "previous": "45",
             "next": "47",
@@ -883,7 +883,7 @@
                 "手把手教學"
             ],
             "description": "使用to_csv進行資料存檔，並且展現index參數設定的差異。",
-            "cover-image": "assets/images/class_cover/python/Pandas儲存資料.webp",
+            "cover-image": "assets/images/class_cover/python/Pandas_save.webp",
             "classification": "python_foundation",
             "previous": "46",
             "next": "48",
@@ -902,7 +902,7 @@
                 "繪圖"
             ],
             "description": "在利用Matplotlib進行繪圖，時常會碰到中文字無法顯示之問題，教學利用匯入字體檔案，並指定使用該字體檔案，即可根治此問題。",
-            "cover-image": "assets/images/class_cover/python/Windows圖片顯示中文.jpg",
+            "cover-image": "assets/images/class_cover/python/Windows_show_chinese.jpg",
             "classification": "python_foundation",
             "previous": "47",
             "next": "49",
@@ -921,7 +921,7 @@
                 "繪圖"
             ],
             "description": "一次告訴您如何利用Matplotlib繪製出折線圖、棒狀圖、圓餅圖、點陣圖等常用的圖形，並且詳細介紹其中所使用到的參數內容。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib基本繪圖－XY資料、折線、直方、圓餅、點陣圖.jpg",
+            "cover-image": "assets/images/class_cover/python/Matplotlib_draw.jpg",
             "classification": "python_foundation",
             "previous": "48",
             "next": "50",
@@ -940,7 +940,7 @@
                 "繪圖"
             ],
             "description": "教導如何設定Matplotlib的標題與XY標籤。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib標題與XY標籤.webp",
+            "cover-image": "assets/images/class_cover/python/Matplotlib_XYtisk.webp",
             "classification": "python_foundation",
             "previous": "49",
             "next": "51",
@@ -959,7 +959,7 @@
                 "繪圖"
             ],
             "description": "教學如何利用Matplotlib自訂XY軸範圍。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib自訂XY軸範圍.webp",
+            "cover-image": "assets/images/class_cover/python/Matplotlib_XYrange.webp",
             "classification": "python_foundation",
             "previous": "50",
             "next": "52",
@@ -978,7 +978,7 @@
                 "繪圖"
             ],
             "description": "教導如何利用Matplotlib自訂XY刻度。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib自訂XY刻度.webp",
+            "cover-image": "assets/images/class_cover/python/Matplotlib_XY.webp",
             "classification": "python_foundation",
             "previous": "51",
             "next": "53",
@@ -997,7 +997,7 @@
                 "繪圖"
             ],
             "description": "課程中教導如何設定線條的圖樣，並且修該刻度。",
-            "cover-image": "assets/images/class_cover/python/線條Marks圖樣標記.jpg",
+            "cover-image": "assets/images/class_cover/python/Marks.jpg",
             "classification": "python_foundation",
             "previous": "52",
             "next": "54",
@@ -1016,7 +1016,7 @@
                 "繪圖"
             ],
             "description": "在Matplotlib的繪圖中，如何設定圖片的網狀線與多線條呈現？",
-            "cover-image": "assets/images/class_cover/python/Matplotlib網狀線與多線條呈現.webp",
+            "cover-image": "assets/images/class_cover/python/grid.webp",
             "classification": "python_foundation",
             "previous": "53",
             "next": "55",
@@ -1035,7 +1035,7 @@
                 "繪圖"
             ],
             "description": "Matplotlib的圖例設定。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib圖例.webp",
+            "cover-image": "assets/images/class_cover/python/Matplotlib_legend.webp",
             "classification": "python_foundation",
             "previous": "54",
             "next": "56",
@@ -1054,7 +1054,7 @@
                 "繪圖"
             ],
             "description": "Matplotlib的輔助線設定。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib輔助線.webp",
+            "cover-image": "assets/images/class_cover/python/matplotlib_Auxiliary_line.webp",
             "classification": "python_foundation",
             "previous": "55",
             "next": "57",
@@ -1073,7 +1073,7 @@
                 "繪圖"
             ],
             "description": "在圖案中隨意加入文字，且調整文字的細節，如：位置、內容、大小、顏色、透明度、水平位置、垂直位置等。",
-            "cover-image": "assets/images/class_cover/python/輔助標籤文字.jpg",
+            "cover-image": "assets/images/class_cover/python/matplotlib_text.jpg",
             "classification": "python_foundation",
             "previous": "56",
             "next": "58",
@@ -1092,7 +1092,7 @@
                 "繪圖"
             ],
             "description": "圖片存檔需要注意savefig()與show()的順序問題，必須要將show()放在最後面，否則會造成圖片儲存後，整張圖會是白色的。",
-            "cover-image": "assets/images/class_cover/python/Matplotlib圖片存檔.jpg",
+            "cover-image": "assets/images/class_cover/python/matplotlib_save.jpg",
             "classification": "python_foundation",
             "previous": "57",
             "next": "59",
@@ -1111,7 +1111,7 @@
                 "切詞"
             ],
             "description": "jieba.cut內放入字串（str）型態，即可進行切割。結疤（jieba）源自於百度開發，因此在切割上多為使用在簡體字，繁體的切割效果不彰。若想要切割繁體字有優良的效果，可以參考使用台灣中研院所開發之段詞系統，但目前該段詞系統並非完全開源之套件，目前多用於學術用途。",
-            "cover-image": "assets/images/class_cover/python/Jieba切詞基本概念.webp",
+            "cover-image": "assets/images/class_cover/python/jieba_base.webp",
             "classification": "python_foundation",
             "previous": "58",
             "next": "60",
@@ -1130,7 +1130,7 @@
                 "切詞"
             ],
             "description": "結疤（jieba）源自於擺渡開發，因此在切割上多為使用在簡體字，繁體的切割效果不彰。因此在課程中介紹如何引入字典的方式，使切詞能更加精準。",
-            "cover-image": "assets/images/class_cover/python/Jieba自訂字典.webp",
+            "cover-image": "assets/images/class_cover/python/jieba_dictionary.webp",
             "classification": "python_foundation",
             "previous": "59",
             "next": "61",
@@ -1149,7 +1149,7 @@
                 "切詞"
             ],
             "description": "TF-IDF的演算方式在文章「演算法與Google NLP，誰與爭鋒？」中解釋了，能夠避免高度出現的垃圾字詞，篩選出真正有意義的關鍵字。",
-            "cover-image": "assets/images/class_cover/python/TF-IDF關鍵字分析.webp",
+            "cover-image": "assets/images/class_cover/python/jiebe_keyword.webp",
             "classification": "python_foundation",
             "previous": "60",
             "next": "62",
@@ -1168,7 +1168,7 @@
                 "雲端佈署"
             ],
             "description": "Line自從2011年在日本發表後，風靡了亞洲，台灣、日本、泰國等地更是成了重度的用戶大宗。而隨著Line的普遍性越來越高，商業行銷也開始嗅到味道，想要加入官方帳戶、廣告行銷等，而Line的多項服務也順勢而生。在這樣的背景下，Line Bot得到大量的重視而快速的生長，相信您也...",
-            "cover-image": "assets/images/class_cover/linebot/Bot流程與架構介紹LineBot申請與串接.webp",
+            "cover-image": "assets/images/class_cover/linebot/Bot_LineBot.webp",
             "classification": "lineBot",
             "previous": "61",
             "next": "63",
@@ -1187,7 +1187,7 @@
                 "雲端佈署"
             ],
             "description": "如果您走軟體業，不能不知道這個平台。Github是目前全世界最大的git平台，簡單來說，就是能將程式碼傳上去的平台，當然還支援版本控制、共同開發等。很多公司應徵工程師，都會看您在Github上的專案貢獻喔！由於2018年微軟收購了Github平台，本來Github的私有功能...",
-            "cover-image": "assets/images/class_cover/linebot/申請Github｜Line聊天機器人用Github佈署.webp",
+            "cover-image": "assets/images/class_cover/linebot/Github.webp",
             "classification": "lineBot",
             "previous": "62",
             "next": "64",
@@ -1206,7 +1206,7 @@
                 "雲端佈署"
             ],
             "description": "Heroku是支援多種程式語言的雲端平台服務。簡單來說，就是您租用了美國的某台電腦，並將機器人的程式碼傳到上面。我們大家都有電腦，為什麼還要特別租一台電腦呢？因為程式碼放在您自己的電腦，那您的電腦就要24小時不斷電，否則機器人服務會停止。且放在自己電腦，就要承擔所有資安...",
-            "cover-image": "assets/images/class_cover/linebot/申請Heroku｜Line聊天機器人免費佈署上去.webp",
+            "cover-image": "assets/images/class_cover/linebot/Heroku.webp",
             "classification": "lineBot",
             "previous": "63",
             "next": "65",
@@ -1225,7 +1225,7 @@
                 "雲端佈署"
             ],
             "description": "近年來Line經過多次的改革，將原本的Line developer跟分隔成原本的Line developer 與 Line manager（之後兩者都會用到）。商管人可能對於 Line manager會比較熟係，最有名就是Line @，但最近修改條約後，收費大幅度上升，相對我們...",
-            "cover-image": "assets/images/class_cover/linebot/申請LineBotLineDeveloper號與專案申請.webp",
+            "cover-image": "assets/images/class_cover/linebot/LineBotLineDeveloper.webp",
             "classification": "lineBot",
             "previous": "64",
             "next": "66",
@@ -1244,7 +1244,7 @@
                 "雲端佈署"
             ],
             "description": "在執行程式碼前，若為Mac的作業系統，打開Termail。若為Windows作業系統並使用Anaconda，請打開Anaconda Prompt，並輸入以下指令安裝Line Bot所需之套件。機器人的主程式，本文章會修改的程式碼都在這個檔案中。檔案內的方法handle_mess...",
-            "cover-image": "assets/images/class_cover/linebot/LineBot機器人串接與測試.webp",
+            "cover-image": "assets/images/class_cover/linebot/line_bot_base.webp",
             "classification": "lineBot",
             "previous": "65",
             "next": "67",
@@ -1263,7 +1263,7 @@
                 "雲端佈署"
             ],
             "description": "reply message必須要使用者先對機器人傳送訊息，機器人才會「回應」，相對的push message就是機器人可以主動傳訊息給使用者，在「推播文字push_message.py」的檔案中有所介紹。push message的主動回應是透過程式，因此可以直接使用Python..",
-            "cover-image": "assets/images/class_cover/linebot/推播pushreplymessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/line_bot_push.webp",
             "classification": "lineBot",
             "previous": "66",
             "next": "68",
@@ -1282,7 +1282,7 @@
                 "雲端佈署"
             ],
             "description": "在Line Developers的貼圖中心中，Line官方提供了不少貼圖，可以讓我們在使用LineBot的時候傳送，增加與客戶連結的好感度，更能增加趣味性，而在貼圖中心的尋找方式也非常的人性化，藉由選單的方式，查看您想要的貼圖。StickerSendMessage()方法...",
-            "cover-image": "assets/images/class_cover/linebot/傳送貼圖StickerSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/StickerSendMessage.webp",
             "classification": "lineBot",
             "previous": "67",
             "next": "69",
@@ -1301,7 +1301,7 @@
                 "雲端佈署"
             ],
             "description": "想要傳送座標位置的第一步，首先要知道你想傳送的地點他的座標，我們可以利用Gooogle地圖來找到座標。只需要在想要的地標上點右鍵，即可取得該地區的座標位置。傳送座標位置需要用到LocationSendMessage() 方法，LocationSendMessage的使用參數...",
-            "cover-image": "assets/images/class_cover/linebot/傳送位置LocationSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/LocationSendMessage.webp",
             "classification": "lineBot",
             "previous": "68",
             "next": "70",
@@ -1320,7 +1320,7 @@
                 "雲端佈署"
             ],
             "description": "想要傳送的音訊必須要是以URL的形式傳送，換句話說，要先將音訊檔案事先放在網路上，再將該音訊的網址傳送給LineBot聊天機器人，AudioSendMessage() 方法內的兩個參數解釋如下：original_content_url參數是音訊檔案在網路上連結duration...",
-            "cover-image": "assets/images/class_cover/linebot/傳送音訊AudioSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/AudioSendMessage.webp",
             "classification": "lineBot",
             "previous": "69",
             "next": "71",
@@ -1339,7 +1339,7 @@
                 "雲端佈署"
             ],
             "description": "傳送影片的參數有以下2種：original_content_url：該影片所在的網路位置。preview_image_url：在影片顯示之前，跳出來的預覽畫面圖片，輸入也是該影片所在的網路位置。由以上兩個參數可以發現，機器人傳送的影片也是來自於網路上，因此必須事先將影片上傳到...",
-            "cover-image": "assets/images/class_cover/linebot/傳送影片VideoSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/VideoSendMessage.webp",
             "classification": "lineBot",
             "previous": "70",
             "next": "72",
@@ -1358,7 +1358,7 @@
                 "雲端佈署"
             ],
             "description": "兩個參數內都須輸入網址，因此圖片也必須事前傳到網路上。另外preview_image_url參數的目的在於，機器人可能有時會傳送的圖片檔案較大，因此在還沒傳送完成前，先有一個預覽圖片，因此preview_image_url的圖片檔案建議越小越好......",
-            "cover-image": "assets/images/class_cover/linebot/傳送圖片ImageSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/ImageSendMessage.webp",
             "classification": "lineBot",
             "previous": "71",
             "next": "73",
@@ -1377,7 +1377,7 @@
                 "雲端佈署"
             ],
             "description": "ImagemapSendMessage() 方法組圖訊息可以使用傳送圖片、連結、影片等，畫面的呈現主要在於利用座標來排版，在ImagemapSendMessage() 方法當中叫做area參數，坐標軸的原點在左上角，參數有以下四種：X：X軸位置Width：區域寬度height...",
-            "cover-image": "assets/images/class_cover/linebot/組圖訊息ImagemapSendMessage.jpg",
+            "cover-image": "assets/images/class_cover/linebot/ImagemapSendMessage.jpg",
             "classification": "lineBot",
             "previous": "72",
             "next": "74",
@@ -1396,7 +1396,7 @@
                 "雲端佈署"
             ],
             "description": "範例中的按鈕有以下三種：PostbackAction：利用Post概念傳送資料，資料有隱匿性。MessageAction：直接傳送按鈕資料。URIAction：超連結按鈕。使用者在向瀏覽器請求時，瀏覽器會與遠方網站的伺服器溝通，其溝通就是利用封包來傳送，而封包的內容如下圖，裡...",
-            "cover-image": "assets/images/class_cover/linebot/按鈕樣板TemplateSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/TemplateSendMessage.webp",
             "classification": "lineBot",
             "previous": "73",
             "next": "75",
@@ -1415,7 +1415,7 @@
                 "雲端佈署"
             ],
             "description": "CarouselTemplate() 方法可以利用多個CarouselColumn() 方法來串接多個選單，利用陣列的方式將其包再一起。其中要注意altText替代文字，最多 400 字。text內容有圖片最多60個字，沒圖片最多160個字。actions按鈕動作，最多可以放...",
-            "cover-image": "assets/images/class_cover/linebot/多樣版組合按鈕CarouselTemplate.webp",
+            "cover-image": "assets/images/class_cover/linebot/CarouselTemplate.webp",
             "classification": "lineBot",
             "previous": "74",
             "next": "76",
@@ -1434,7 +1434,7 @@
                 "雲端佈署"
             ],
             "description": "範例中使用PostbackAction() 方法與MessageAction() 方法，分別使用post概念傳送資料，與直接傳送文字資料的方式。每個參數的解釋如下：text：問題標題PostbackAction：按鈕。傳送post資料，也就是顯示資料MessageAction...",
-            "cover-image": "assets/images/class_cover/linebot/選擇按鈕ConfirmTemplate.webp",
+            "cover-image": "assets/images/class_cover/linebot/ConfirmTemplate.webp",
             "classification": "lineBot",
             "previous": "75",
             "next": "77",
@@ -1453,7 +1453,7 @@
                 "雲端佈署"
             ],
             "description": "在ImageCarouselColumn() 方法中主要有以下兩個參數：image_url：大圖圖片位置。action：圖片功能。而參數action中通常放置PostbackAction() 方法，且在方法裏頭有三個參數：label：按鈕標題。display_text：按下按...",
-            "cover-image": "assets/images/class_cover/linebot/大圖按鈕ImageCarouselTemplate.webp",
+            "cover-image": "assets/images/class_cover/linebot/ImageCarouselTemplate.webp",
             "classification": "lineBot",
             "previous": "76",
             "next": "78",
@@ -1472,7 +1472,7 @@
                 "雲端佈署"
             ],
             "description": "客製化的選單可以利用Line Bot選單製作網站，選擇自己喜歡的選單，必須要登入後才可以使用。該網站能夠直接將修改的樣式在左方呈現給您看，因此很方便不擅於寫程式的新手們，並且最後產出一份Json檔案，直接貼上到我們自己的機器人當中即可。切記！選單中有任何的「true」或者...",
-            "cover-image": "assets/images/class_cover/linebot/客製化選單FlexSendMessage.webp",
+            "cover-image": "assets/images/class_cover/linebot/FlexSendMessage.webp",
             "classification": "lineBot",
             "previous": "77",
             "next": "79",
@@ -1491,7 +1491,7 @@
                 "雲端佈署"
             ],
             "description": "QuickReply() 方法能夠呈現快問快答的效果，因此在與使用者的互動上能達到許多有趣的效果，特別是在季節活動上。QuickReply() 方法內的按鈕需要使用QuickReplyButton() 方法才可以執行，而QuickReplyButton() 內有label...",
-            "cover-image": "assets/images/class_cover/linebot/快速回復QuickReply.webp",
+            "cover-image": "assets/images/class_cover/linebot/QuickReply.webp",
             "classification": "lineBot",
             "previous": "78",
             "next": "80",
@@ -1510,7 +1510,7 @@
                 "商業分析"
             ],
             "description": "若您寫過網頁，了解Html的網頁結構，那您在學習Python爬蟲上會得心應手。寫一個網頁，需要使用以下語言：Html網頁的主要結構與法，在任何一個網頁按下F12按鍵即可檢視。Html是爬蟲最主要的資料取得來源。CSS網頁的外觀設計，包含常見的顏色、邊框、陰影、大小等。Java....",
-            "cover-image": "assets/images/class_cover/crawler/Html網頁結構介紹－網頁到底如何傳送資料？爬蟲必學.webp",
+            "cover-image": "assets/images/class_cover/crawler/web_structure.webp",
             "classification": "crawler_king",
             "previous": "79",
             "next": "81",
@@ -1529,7 +1529,7 @@
                 "商業分析"
             ],
             "description": "並不是每個網站都歡迎爬蟲，雖然爬蟲爬的都是屬於公開資料，為何網站還不歡迎我們去取得資料呢？因為這些股票網站的資料來源，基本上都是向證券交易所買的，這必須支付一筆月費，當然也有可能不是用買的，但較大的股票資訊網站一定得用買的，因為需要及時取得股價運算出各種分析；因此網站付了一筆...",
-            "cover-image": "assets/images/class_cover/crawler/資料傳遞：Get與Post差異，網路封包傳送的差異.webp",
+            "cover-image": "assets/images/class_cover/crawler/Get_Post.webp",
             "classification": "crawler_king",
             "previous": "80",
             "next": "82",
@@ -1548,7 +1548,7 @@
                 "商業分析"
             ],
             "description": "學習Python爬蟲，Yahoo是您絕佳的選擇。Yahoo因為網站更新幅度小，上面資源又豐富，是新手練習爬蟲的好標的。Get的爬蟲方式，在Python中主要用bs4這個套件進行爬取，而套件中最常被使用的是Beautiful Soup，該方法整合了許多爬蟲需要用到的精華。想知道更..",
-            "cover-image": "assets/images/class_cover/crawler/Html爬蟲Get教學－抓下Yahoo股票資訊，程式交易的第一步.jpg",
+            "cover-image": "assets/images/class_cover/crawler/crawler_yahoo.jpg",
             "classification": "crawler_king",
             "previous": "81",
             "next": "83",
@@ -1567,7 +1567,7 @@
                 "商業分析"
             ],
             "description": "FoodPanda爬蟲！FoodPanda是台灣現在最具知名的美食外送平台，他改變了整個消費者的飲食習慣，創造出一個獨特的線上通路，也讓商家的消費族群不再侷限於方圓一公里內。能爬下Foodpanda等於能夠了解當地的飲食習慣，對於要切入該市場的你，這是很具有參考價值的！在學習完...",
-            "cover-image": "assets/images/class_cover/crawler/Html爬蟲Get實戰－全台最大美食平台FoodPanda爬蟲，把熊貓抓回家.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_foodpanda.webp",
             "classification": "crawler_king",
             "previous": "82",
             "next": "84",
@@ -1586,7 +1586,7 @@
                 "商業分析"
             ],
             "description": "看完「Html爬蟲Get實戰－FoodPanda」以後，相信您也會爬下FoodPanda的資料了。而爬下來的資料又有什麼商業價值呢？FoodPanda的每個店家都會為自己的美食編輯Tag，這個Tag並不能亂標記，否則會是廣告不實或欺瞞消費者，因此每個Tag都會符合該美食特.....",
-            "cover-image": "assets/images/class_cover/crawler/資料分析實戰，熊貓FoodPanda熱門美食系列｜看出地區最火料理種類.webp",
+            "cover-image": "assets/images/class_cover/crawler/analyze_foodpanda.webp",
             "classification": "crawler_king",
             "previous": "83",
             "next": "85",
@@ -1605,7 +1605,7 @@
                 "商業分析"
             ],
             "description": "相信不少人使用過Google趨勢搜尋，而每次都要上網搜尋相當費時。Python爬蟲可以幫您解決這個問題！在 Google趨勢搜尋的頁面，按下「F12」按鈕，並重新整理網頁，即可攔下資料封包，利用此發法即可擷取即時資料的Json檔案。查閱封包的方式可以選擇Network ...",
-            "cover-image": "assets/images/class_cover/crawler/Json爬蟲教學－Google趨勢搜尋｜掌握最火關鍵字.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_GoogleTrends.webp",
             "classification": "crawler_king",
             "previous": "84",
             "next": "86",
@@ -1624,7 +1624,7 @@
                 "商業分析"
             ],
             "description": "在上完「Json爬蟲教學－Google趨勢搜尋」課程以後，接著就來實際爬下PChome商品資料！這次的可交付成果是爬下各個商品的商品名稱、商品ID、價格、品牌、商品文案等，全部爬下來。要找到Json的封包，首先依然在網頁中按下「F12」並且向下滑動商品頁，以取得商品的封包......",
-            "cover-image": "assets/images/class_cover/crawler/Json爬蟲實戰－24小時電商PChome爬蟲｜雖然我不是個數學家但這聽起來很不錯吧.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_PChome.webp",
             "classification": "crawler_king",
             "previous": "85",
             "next": "87",
@@ -1643,7 +1643,7 @@
                 "商業分析"
             ],
             "description": "Goodinfo!台灣股市資訊網相信您不陌生，上頭不只是股票價格資訊，就廉直利率、盈餘分配、董監持股等，資訊極為豐富，但著手寫爬蟲時，卻發現這並不如想像那般容易，您可能也出現了以下的畫面。請勿透過網站內容下載軟體查詢本網站，因為Goodinfo!台灣股市資訊網會檢查封.......",
-            "cover-image": "assets/images/class_cover/crawler/Html爬蟲Post教學－台灣股市資訊｜網韭菜們的救星.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_Goodinfo.webp",
             "classification": "crawler_king",
             "previous": "86",
             "next": "88",
@@ -1662,7 +1662,7 @@
                 "商業分析"
             ],
             "description": "在台灣大多餐飲業都有與Uber合作，尤其在2019年新冠肺炎（COVID-19）的情勢下，Uber Eats 的產值水漲船高，在足不出戶的疫情情況下，外送平台竟成了餐飲業的「唯一通路」，因此藉由 Uber Eats 資料能夠探訪每個地區的餐飲情況分布。本課程使用request...",
-            "cover-image": "assets/images/class_cover/crawler/Html爬蟲Post實戰－全球美食平台UberEat爬蟲.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_ubereat.webp",
             "classification": "crawler_king",
             "previous": "87",
             "next": "89",
@@ -1681,7 +1681,7 @@
                 "商業分析"
             ],
             "description": "在課程「Html爬蟲Get教學－Yahoo」中使用get的方式爬蟲，在課程中也有提到此方法的不便之處。當要爬取Table 標籤內的資料，會因為標籤名稱都一樣，難以取得資料內容。在本課程使用Pandas 套件，利用 pd.read_html 方法，能直接取得網頁中所有的Tabl...",
-            "cover-image": "assets/images/class_cover/crawler/Pandas爬蟲教學－Yahoo股市爬蟲｜不想再盯盤.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_pandas_yahoo.webp",
             "classification": "crawler_king",
             "previous": "87",
             "next": "90",
@@ -1700,7 +1700,7 @@
                 "商業分析"
             ],
             "description": "一定會很好奇，為何不直接爬台灣氣象局的網站，原因在於，台灣氣象局的網站無法抓到「歷史」天氣。我們很常會需要調查一個區域的天氣，不管是從事事業，或者土地建物，都跟天氣非常有關係，因此我選擇到2345天氣王當中查看。觀察該API的網址會發現，主要會有幾個參數： 地區的編號、 台灣...",
-            "cover-image": "assets/images/class_cover/crawler/Pandas爬蟲實戰－爬下全台各地區氣象預報歷史資料.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_weather.webp",
             "classification": "crawler_king",
             "previous": "89",
             "next": "91",
@@ -1719,7 +1719,7 @@
                 "商業分析"
             ],
             "description": "許多產業都會與天氣有關，譬如：農業、建築、餐飲...等，因此在創業之前，對地區的氣候進行調查是非常重要的。我們在「Pandas爬蟲實戰－氣象預報」課程中已經將台北天氣情況.csv檔案給儲存下來，利用此資料進行台北地區的天氣視覺化。可交付成果中紅色為最高溫，藍色為最低溫...",
-            "cover-image": "assets/images/class_cover/crawler/資料分析實戰－天氣預報圖像化｜一張圖巧妙躲過雨季.webp",
+            "cover-image": "assets/images/class_cover/crawler/analyze_weather.webp",
             "classification": "crawler_king",
             "previous": "90",
             "next": "92",
@@ -1738,7 +1738,7 @@
                 "商業分析"
             ],
             "description": "Selenium爬蟲介紹。初學Selenium爬蟲可以解決動態網站的爬蟲問題，簡單來說就是模擬使用者在瀏覽網頁的行為，因此也能夠藉由一些調整來偽裝成真人。常見的動態網站有FaceBook、Dcard、IG、Youtube等等，Selenium爬蟲都可以爬取。以下是在「IG...",
-            "cover-image": "assets/images/class_cover/crawler/Selenium介紹｜Python爬動態網頁的利器.webp",
+            "cover-image": "assets/images/class_cover/crawler/Selenium.webp",
             "classification": "crawler_king",
             "previous": "91",
             "next": "93",
@@ -1757,7 +1757,7 @@
                 "商業分析"
             ],
             "description": "在「Selenium環境設定與測試」課程中已經下載了 phantomjs 與 chromedriver 檔案後，都必須放到主程式的資料夾中（如上圖），讓Python確保能抓到這兩個檔案。若系統為linux，可能會有使用chromedriver與phantomjs檔案權限...",
-            "cover-image": "assets/images/class_cover/crawler/Selenium環境設定與測試｜手把手教您如何設定.jpg",
+            "cover-image": "assets/images/class_cover/crawler/selenium_environment.jpg",
             "classification": "crawler_king",
             "previous": "92",
             "next": "94",
@@ -1776,7 +1776,7 @@
                 "商業分析"
             ],
             "description": "在課程「Selenium介紹」與「Selenium環境設定與測試」中，已經將我們Selenium爬蟲所需要的環境準備好了，接下來我們就以爬下UberEat為範例來進行爬蟲了！首先到UberEat首頁中，輸入想爬取的地區資料，利用 find_element_by_xpath()",
-            "cover-image": "assets/images/class_cover/crawler/Selenium實戰練習－UberEat爬蟲｜爬下美食平台可以更簡單.webp",
+            "cover-image": "assets/images/class_cover/crawler/selenium_UberEat.webp",
             "classification": "crawler_king",
             "previous": "93",
             "next": "95",
@@ -1795,7 +1795,7 @@
                 "商業分析"
             ],
             "description": "Pandas爬蟲，門爬取有標籤的資料，除了 之外的資料也無法爬取，因此限制性較大，但較為方便。Json爬蟲，目前較為主流使用的爬蟲方式，只需要找到網站的API即可爬取大量資料，但也需要網站是以API的形式傳遞資料才行，因此也有限制性。Html爬蟲，大多都要自己...",
-            "cover-image": "assets/images/class_cover/crawler/爬蟲前的工具選擇｜我該怎麼選擇爬蟲的方式？.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_choose.webp",
             "classification": "crawler_king",
             "previous": "94",
             "next": "96",
@@ -1814,7 +1814,7 @@
                 "商業分析"
             ],
             "description": "PTT是台灣少數沒有利益團體介入（理論上）的社群平台，而內容多以文字呈現，因此各品牌業主可以在PTT中找到不少與自己品牌有關的消費者討論，本文章將帶領您爬下您指定的PTT版內容，可以指定要爬的「版」、「頁數」，並且從最新的文章開始爬取........",
-            "cover-image": "assets/images/class_cover/crawler/PTT爬蟲｜爬下全台最大電子布告欄.webp",
+            "cover-image": "assets/images/class_cover/crawler/crawler_PTT.webp",
             "classification": "crawler_king",
             "previous": "95",
             "next": "97",
@@ -1833,7 +1833,7 @@
                 "商業分析"
             ],
             "description": "在學完「PPT爬蟲」課程後，我們就以品牌的角度來實作，如何分析消費者眼中的品牌。以下為實際爬下來的範例資料，共有「8,759筆」資料，其資料來自於PPT的folklore、womentalk、boy-girl、Urban_Plan、Gossiping、Nantou...",
-            "cover-image": "assets/images/class_cover/crawler/資料分析實戰｜利用PTT資料進行消費者關鍵字分析，消費者都在討論什麼？.webp",
+            "cover-image": "assets/images/class_cover/crawler/analyze_PTT.webp",
             "classification": "crawler_king",
             "previous": "96",
             "next": "98",
@@ -1852,7 +1852,7 @@
                 "商業分析"
             ],
             "description": "Dcard是現在台灣年輕組群較長使用的社群軟體，如同年輕一代的PTT。因此若您的品牌目標受眾（TA）屬於30歲之前的年紀，那在Dcard您一定會收到很多使用者回饋。本課程會教您如何找到Dcard的Json封包，並且解析封包後，轉換成CSV檔案進行儲存......",
-            "cover-image": "assets/images/class_cover/crawler/Dcard爬蟲－文章資料｜爬下各版文章標題、作者、Tag….webp",
+            "cover-image": "assets/images/class_cover/crawler/dcard_article.webp",
             "classification": "crawler_king",
             "previous": "97",
             "next": "99",
@@ -1871,7 +1871,7 @@
                 "商業分析"
             ],
             "description": "由連結可以看到after參數是決定向資料庫請求多少留言資料出來。而請求的參數與課程「Dcard文章資料」的一樣，都會看到before這個參數。 因為Dcard的網址參數設計方式，若是第一頁後方不會有「before」參數，因此需要用If判斷式來檢查是否為第一頁，藉此來.....",
-            "cover-image": "assets/images/class_cover/crawler/Dcard爬蟲－留言蒐集｜原來年輕人在討論這些阿！.webp",
+            "cover-image": "assets/images/class_cover/crawler/dcard_message.webp",
             "classification": "crawler_king",
             "previous": "98",
             "next": "100",
@@ -1890,7 +1890,7 @@
                 "商業分析"
             ],
             "description": "天下武功，為快不破，行銷亦如此。本篇文章將解析如何使用我們在Dcard版中爬下來的文章與留言，利用Python 視覺化的方式，呈現出每個文章主題與時間的關係，一眼便能看出短時間內瘋狂竄升的文章主題或關鍵字。將所有的熱門主題顯示出來，因為主題過多會造成難以判讀，因此我們只顯示...",
-            "cover-image": "assets/images/class_cover/crawler/Dcard社群的爆點分析【附Python程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/analyze_Dcard.webp",
             "classification": "crawler_king",
             "previous": "100",
             "next": "102",
@@ -1909,7 +1909,7 @@
                 "商業分析"
             ],
             "description": "在接下來的IG課程中，會教您如何讓機器人幫您自動按愛心。而在這堂課程中，會先教您如何自動登入IG帳號，以便之後的課程進行。整個實作只需要用到Selenium套件，因此若是使用Anaconda，就直接在Anaconda prompt中輸入以下指令，若在系統環境中安裝python...",
-            "cover-image": "assets/images/class_cover/crawler/IG自動登入｜利用Selenium自動登入Instagram.webp",
+            "cover-image": "assets/images/class_cover/crawler/instagram_login.webp",
             "classification": "crawler_king",
             "previous": "101",
             "next": "103",
@@ -1928,7 +1928,7 @@
                 "商業分析"
             ],
             "description": "年輕人已經不用Line了，IG是未來的社交平台！有事情都用IG私訊我，因為我的Line三個小時才回一次，IG十分鐘內就回復了。因為Line已經被「工作海嘯」淹沒，明明是私人的聊天平台，卻充斥著各個工作、活動群組。年輕人在IG的時間日以俱增，品牌也嗅到這個味道，紛紛轉往IG經營...",
-            "cover-image": "assets/images/class_cover/crawler/IG品牌規劃｜想要在Instagram開品牌粉專？先看看如何品牌定位吧.webp",
+            "cover-image": "assets/images/class_cover/crawler/IG_GPS.webp",
             "classification": "crawler_king",
             "previous": "102",
             "next": "104",
@@ -1947,7 +1947,7 @@
                 "商業分析"
             ],
             "description": "經過實測，IG一天按愛心的數量，大約是400次，若超過該帳號會被封鎖一天不能按愛心，若有多次這樣的紀錄，甚至會封鎖3天、一星期，以此類推，因此請適度的使用selenium就好，重點還是在於品牌提供給消費者的價值。我以自己的帳號實驗，將個人吉他的影片上傳，並將所有風格經過整理...",
-            "cover-image": "assets/images/class_cover/crawler/IG增粉機器人｜追蹤莫名其妙的增加啦！.webp",
+            "cover-image": "assets/images/class_cover/crawler/instagram_autoheart.webp",
             "classification": "crawler_king",
             "previous": "103",
             "next": "105",
@@ -1966,7 +1966,7 @@
                 "商業分析"
             ],
             "description": "本教學使用Python 的Selenium 套件進行爬蟲，經由本次的教學，可以爬下您指定的Youtuber頻道中，頻道名稱、頻道網址、開始經營時間、觀看總數、總訂閱數、國家位置、以及該Youtuber頻道中其他子頻道的資料。若您還不知道Selenium 是什麼東西，可以參考...",
-            "cover-image": "assets/images/class_cover/crawler/Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/youtube_channel.webp",
             "classification": "crawler_king",
             "previous": "104",
             "next": "106",
@@ -1985,7 +1985,7 @@
                 "商業分析"
             ],
             "description": "本次教學教您如何使用Python 的Selenium套件，爬下各個Youtube頻道中的社群資料，其中包含Youtube頻道貼文的頻道名稱、頻道網址、文章連結、文章內容、發文時間、按讚數、留言數量、留言內容。並將結果儲存成CSV檔案，之後也可以直接用Excel直接觀看或編輯喔...",
-            "cover-image": "assets/images/class_cover/crawler/Youtube爬蟲－社群資料｜用Python找到Youtuber經營粉絲的秘密【附程式碼.jpg",
+            "cover-image": "assets/images/class_cover/crawler/youtube_social.jpg",
             "classification": "crawler_king",
             "previous": "105",
             "next": "107",
@@ -2004,7 +2004,7 @@
                 "商業分析"
             ],
             "description": "可爬下Youtube每個影片的影片連結、發布時間、讚數、觀看次數、影片文案、留言數量、留言內容，並且留言內容可記錄發言者、發言者的留言、發言者的頻道、讚數，以及回復發言者的留言都會記錄，並最終將結果儲存為CSV檔案，以方便後續分析使用...",
-            "cover-image": "assets/images/class_cover/crawler/Youtube爬蟲－影片資料｜不用API也能爬下所有影片與留言資訊【附程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/youtube_video.webp",
             "classification": "crawler_king",
             "previous": "106",
             "next": "108",
@@ -2023,7 +2023,7 @@
                 "商業分析"
             ],
             "description": "可爬下Youtube每個影片的影片連結、發布時間、讚數、觀看次數、影片文案、留言數量、留言內容，並且留言內容可記錄發言者、發言者的留言、發言者的頻道、讚數，以及回復發言者的留言都會記錄，並最終將結果儲存為CSV檔案，以方便後續分析使用...",
-            "cover-image": "assets/images/class_cover/crawler/KOL分析｜找出最適合合作的Youtuber【附Python程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/youtube_KOL.webp",
             "classification": "crawler_king",
             "previous": "107",
             "next": "109",
@@ -2042,7 +2042,7 @@
                 "商業分析"
             ],
             "description": "若要進行FB的自動化處理，自動登入是逼需經過的門檻。本文章會帶您使用Python 中的Selenium 爬蟲套件來進行FB自動登入，以便於後續課程的進行。因此，在開始課程前請先看過「Selenium介紹」、「Selenium環境設定與測試」，以確保您對 Selenium有...FB",
-            "cover-image": "assets/images/class_cover/crawler/FB自動登入｜利用Selenium自動登入Facebook.webp",
+            "cover-image": "assets/images/class_cover/crawler/FB_login.webp",
             "classification": "crawler_king",
             "previous": "108",
             "next": "110",
@@ -2061,7 +2061,7 @@
                 "商業分析"
             ],
             "description": "利用 Python的 Selenium套件，使用爬蟲幫我們將想要廣宣的FB文章，自動分享到指定的社團。此舉能用較低的成本（比起直接投放FB廣告來說），得到較高的曝光度，並且增加品牌粉絲團的觸擊數量。作者自己測試效果卓越，曾將一個FB粉專在一年內衝向1萬人訂閱....",
-            "cover-image": "assets/images/class_cover/crawler/FB自動分享小幫手｜用Python灑文到各社團，小編從此不用發文發到死.webp",
+            "cover-image": "assets/images/class_cover/crawler/FB_autoShare.webp",
             "classification": "crawler_king",
             "previous": "109",
             "next": "111",
@@ -2080,7 +2080,7 @@
                 "商業分析"
             ],
             "description": "可交付成果有兩個主要檔案，命名方式分別為「XXX_商品資料.csv」與「XXX_留言資料.csv」，其內容為每個商品的所有資訊與留言資料，爬蟲的過程依照需求的不同，可能會爬到好幾夜之久，為了怕途中任何意外導致功歸一匱，因此每爬完一頁（50個商品）就會存檔記錄一次...",
-            "cover-image": "assets/images/class_cover/crawler/「蝦皮爬蟲」最詳細手把手教學｜商品資料＋留言評論一次滿足.webp",
+            "cover-image": "assets/images/class_cover/crawler/shopee_crawler.webp",
             "classification": "crawler_king",
             "previous": "110",
             "next": "112",
@@ -2099,7 +2099,7 @@
                 "商業分析"
             ],
             "description": "本文章統整所有蝦皮市場上「 花襯衫」在不同尺寸、顏色中的銷量，若您是一個正想切入這個市場的廠商，正在苦惱商品的SKU，這個表格能夠很明顯給您市場最高銷量的尺寸與顏色，初入市場進這個型號準沒錯！現在我們就以服飾品牌老闆的角度，來思考該如何進貨。尺寸的部分，很明顯地集中在...",
-            "cover-image": "assets/images/class_cover/crawler/產品開發大補帖｜採購的好幫手，如何決定新商品SKU？.webp",
+            "cover-image": "assets/images/class_cover/crawler/shopee_SKU.webp",
             "classification": "crawler_king",
             "previous": "111",
             "next": "113",
@@ -2118,7 +2118,7 @@
                 "商業分析"
             ],
             "description": "利用所有競爭廠商的銷售資料，依照競爭廠商給商品的 Tag，利用K-means 演算法將每個商品分類。利用所有競爭廠商的銷售資料，依照競爭廠商給商品的 Tag，利用K-means 演算法將每個商品分類。由結果可以看到，每個點代表一種商品，而不同艷色代表不同的類群。分類完成後可...",
-            "cover-image": "assets/images/class_cover/crawler/蝦皮市場大小預估分析－K-means分群的實例應用.jpg",
+            "cover-image": "assets/images/class_cover/crawler/analyze_shopee.jpg",
             "classification": "crawler_king",
             "previous": "112",
             "next": "114",
@@ -2137,7 +2137,7 @@
                 "商業分析"
             ],
             "description": "本次爬蟲以「花襯衫」為例，利用Python 的Selenium 套件進行爬蟲，可以爬下每個商品的品牌名稱、商品名稱、網址、商品定價、星星評分、全球評分、客戶回饋尺寸、大小選項、顏色選項、商品描述、產品資訊、全球排名、留言網址，並且將最終結果儲存成CSV檔案...",
-            "cover-image": "assets/images/class_cover/crawler/Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站.jpg",
+            "cover-image": "assets/images/class_cover/crawler/amazon_goods.jpg",
             "classification": "crawler_king",
             "previous": "113",
             "next": "115",
@@ -2156,7 +2156,7 @@
                 "商業分析"
             ],
             "description": "接續前面課程「Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】」所爬下來的商品結果，進到每個商品中爬下所有的留言內容，其內容包含商品名稱、留言網址、留言者、星等、留言時間、留言地點(區域)、SKU、留言內容、覺得留言有用的人數...",
-            "cover-image": "assets/images/class_cover/crawler/Amazon爬蟲－留言資料｜雖然我不是個數學家，但全部爬下來很棒吧！【附Python程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/amazon_message.webp",
             "classification": "crawler_king",
             "previous": "114",
             "next": "116",
@@ -2175,7 +2175,7 @@
                 "商業分析"
             ],
             "description": "本課程是基於許多行銷小編，時常需要寄送信件給公司客戶，而由於信件大多內容是一樣的，只有少部分是需要調整的，例如每個課程報名的信件中，只有標題的王先生、陳小姐、李先生不同，另一個不同則是報名的課程名稱，其他都是一樣的。但卻因為這微小的不同，使的行銷人員需要一個一個發信，曠日廢時...",
-            "cover-image": "assets/images/class_cover/crawler/Gmail設定自動寄信專案｜從此不用再慢慢發信了【手把手影片教學】.webp",
+            "cover-image": "assets/images/class_cover/crawler/Gmail_setting.webp",
             "classification": "crawler_king",
             "previous": "115",
             "next": "117",
@@ -2194,7 +2194,7 @@
                 "商業分析"
             ],
             "description": "在完成前面的課「Gmail設定自動寄信專案｜從此不用再慢慢發信了【手把手影片教學】」後，緊接著我們要開始了解如何使用Python，將我們想要表達的文字，傳送給Gmail進行寄送的動作，因此本課程將詳細介紹python 的email 套件，與其中的參數內容...",
-            "cover-image": "assets/images/class_cover/crawler/Python寄Gmail基礎－文字樣式教學｜文字粗體、顏色通通可以改【附Python程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/gmail_word.webp",
             "classification": "crawler_king",
             "previous": "116",
             "next": "118",
@@ -2213,7 +2213,7 @@
                 "商業分析"
             ],
             "description": "在前面的課「Python寄Gmail基礎－文字樣式教學｜文字粗體、顏色通通可以改【附Python程式碼】」後，您可能會想問：那附件檔案的部分呢？的確，在企業中mail 除了拿來做訊息溝通外，也時常被拿來傳送一些較為正式的文件，因此本堂課程就來教您如何傳送word檔、PDF檔...",
-            "cover-image": "assets/images/class_cover/crawler/Python寄信基礎－寄送檔案教學｜用程式附檔Word、PDF、CSV、圖片都可以【附程式碼】.webp",
+            "cover-image": "assets/images/class_cover/crawler/gmail_file.webp",
             "classification": "crawler_king",
             "previous": "117",
             "next": "119",
@@ -2232,7 +2232,7 @@
                 "商業分析"
             ],
             "description": "在學習完前面的課程後，基本上在Gmail寄件時會使用到的功能，我們都會用Python幫我們解決了，因此接下來我們便來模擬行銷人常常碰到的問題，如何客製化每封信件，並且達到自動化寄件的目的。這次我們假設的情境，想要讓Python 依照公司的顧客訂單，自動幫...",
-            "cover-image": "assets/images/class_cover/crawler/Gmail客製化寄件實戰｜用Python完全自動化寄件.webp",
+            "cover-image": "assets/images/class_cover/crawler/gmail_autoSend.webp",
             "classification": "crawler_king",
             "previous": "118",
             "next": "120",
@@ -2251,7 +2251,7 @@
                 "小工具"
             ],
             "description": "在mail中cc別人，是一個非常方便的功能，但有時候每個信件必須客製化，譬如在信件開頭必須打上「親愛的XXX小姐您好」，姓名的部分就必須要手動替換，非常麻煩，更別說會員還有上百，甚至上千個。其實用Python程式可以完全自動化這個過程，我們將以Gmail為範例帶領您走向自動化寄信的航道。",
-            "cover-image": "assets/images/article_cover/Python實現Gmail客製化信件大量發送基礎篇.jpg",
+            "cover-image": "assets/images/article_cover/Python_Gmail.jpg",
             "classification": "marketing",
             "previous": "118",
             "next": "115",
@@ -2270,7 +2270,7 @@
                 "投資"
             ],
             "description": "本文章會介紹目前Python的函式庫中，大家最常使用於取得技術分析五個數值「開盤價、收盤價、最高點、最低點、成交量」的套件pandas_datareader，也會使用學完的套件，挑選出全台灣每日「短期突破長期」的股票，也就是俗稱的「黃金交叉」股，是每天全台灣的所有上市櫃股票通通掃一遍喔！",
-            "cover-image": "assets/images/article_cover/高速取得全台股價資訊馬上用黃金交叉練習看看.jpg",
+            "cover-image": "assets/images/article_cover/gold_cross.jpg",
             "classification": "financial",
             "previous": "118",
             "next": "115",
