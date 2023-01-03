@@ -2276,7 +2276,45 @@
             "next": "115",
             "time": "2022-12-30",
             "download": "https://github.com/Marketing-Live-in-Code/golden_cross/archive/refs/heads/main.zip",
-            "article_url": "https://raw.githubusercontent.com/Marketing-Live-in-Code/golden_cross/main/README.md",
+            "article_url": "",
+            "video": ""
+        },
+        "121": {
+            "title": "怎麼知道股票買貴了？用EPS挑選全台合理股票–適用長期穩定投資、定存族【附Python程式碼】",
+            "tag": [
+                "python",
+                "長期投資",
+                "EPS",
+                "合理股價",
+                "投資"
+            ],
+            "description": "除了告訴您計算合理股價的公式外，還會現學現賣！用教您的公式，將台灣所有的股票，利用Python挑選出來「目前價格合理的股票」，理論與實戰的學習一次滿足！",
+            "cover-image": "assets/images/article_cover/reasonable_price.jpg",
+            "classification": "financial",
+            "previous": "120",
+            "next": "122",
+            "time": "2023-01-03",
+            "download": "https://github.com/Marketing-Live-in-Code/reasonable_price/archive/refs/heads/main.zip",
+            "article_url": "",
+            "video": ""
+        },
+        "122": {
+            "title": "定期定額ETF先等等！景氣燈號能讓您投資指數事半功倍，看一張圖就明白【附Python程式碼】",
+            "tag": [
+                "python",
+                "長期投資",
+                "ETF",
+                "景氣燈號",
+                "投資"
+            ],
+            "description": "在本文中除了分享景氣燈號與股市大盤的關係，方便您選擇投資ETF的時機外，更利用Python繪製出視覺化的「大盤與景氣燈號關係曲線」，讓我們能夠更輕鬆的判斷現在的趨勢是否會向上成長，成為開始累積ETF的好時機。",
+            "cover-image": "assets/images/article_cover/monitoring_indicator.jpg",
+            "classification": "financial",
+            "previous": "120",
+            "next": "115",
+            "time": "2023-01-03",
+            "download": "https://github.com/Marketing-Live-in-Code/monitoring_indicator/archive/refs/heads/main.zip",
+            "article_url": "",
             "video": ""
         }
     },
