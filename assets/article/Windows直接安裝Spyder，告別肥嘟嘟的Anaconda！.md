@@ -12,6 +12,7 @@ Anaconda是大部分學習Python的初學者會使用的軟體，其中整合不
 
 Spyder的下載就是取得exe執行檔案，直接執行即可。Python的下載對於初學者來說相對複雜，在一開始下載時就會碰到選擇障礙。選擇要哪個版本的Python後（若沒有想法就選擇最新版），常常碰到x86？64？executable installer？embeddable zip file？web-based installer？
 
+## 下載時我要選擇哪個檔案？
 ![下載時可能碰到的選擇](https://i.imgur.com/2QjUPwu.png)
 
 若現在電腦基本上都是64位元，因此選擇要找「Windows x86–64」的類型，另外excutable installer就是直接安裝的exe執行檔案，因此我們要選擇的是「[Windows x86–64 excutable installer](https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe)」這個選項。
