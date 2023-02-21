@@ -70,11 +70,15 @@
             <div class="col-sm-2 color-block back-major-five"></div>
             <div class="col-sm-2 color-block back-major-one"></div>
         </div>
-        <div class="row text-center  text-white" style="--mdb-gutter-x:0;">
+        <div class="row text-center  text-white">
             <div *ngFor="let image of masonryImages; let recordIndex = index" class="col-sm-4 slide-container">
                 <img [src]="image[1]" alt="Avatar" class="slide-image rounded">
                 <div class="overlay rounded">
-                    <div class="slide-text-title">{{image[0]}}</div>
+                    <div class="rounded" style="position: relative; height: 100%;">
+                        <div class="rounded overlay-background" >
+                            <div class="slide-text-title">{{image[0]}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

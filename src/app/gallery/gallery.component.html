@@ -6,13 +6,17 @@
 
 <div class="container-fluid showblock text-center article-back text-white">
     <div class="container mt-5">
-        <div class="row" style="--mdb-gutter-x:0;">
+        <div class="row">
             <a *ngFor="let mm of masonryImages; let recordIndex = index" class="col-sm-4 slide-container"
                 [routerLink]="['/classification', config[mm]['classification'], mm]" target="_blank">
                 <img [src]="config[mm]['cover-image']" alt="Avatar" class="slide-image rounded">
                 <div class="overlay rounded">
-                    <div class="slide-text-title">{{config[mm]['title']}}</div>
-                    <p class="slide-text-content">{{config[mm]['description']}}</p>
+                    <div class="rounded" style="position: relative; height: 100%;">
+                        <div class="rounded overlay-background" >
+                            <div class="slide-text-title">{{config[mm]['title']}}</div>
+                            <p class="slide-text-content">{{config[mm]['description']}}</p>
+                        </div>
+                    </div>
                 </div>
             </a>
         </div>
