@@ -123,3 +123,6 @@
 /classification/crawler_king/117
 /classification/crawler_king/118
 /classification/marketing/119
+/classification/financial/120
+/classification/financial/121
+/classification/financial/122
