@@ -107,7 +107,7 @@ svg {
 .back-black {background-color: rgb(17, 17, 17, $ten);}
 
 /*--- 文字顏色使用 ---*/
-.text-major {color: rgb(93,130,187)!important;} // 藍色，主色系 
+.text-major, .md-box blockquote {color: rgb(93,130,187)!important;} // 藍色，主色系 
 .text-white, .catalogButton, .mat-tab-label-content, .class-title, thead {color: rgb(227,229,235)!important;} // 白色，背景淡色
 .text-blue, .mat-title {color: rgb(0,36,82)!important;} // 深藍，單色
 .text-yellow {color: rgb(218,162,27)!important;} // 黃色，醒目色
@@ -139,6 +139,7 @@ svg {
 
 .slide-container {
   position: relative;
+  margin-bottom: 24px;
 }
 
 .overlay {
@@ -150,12 +151,15 @@ svg {
   width: 100%;
   height: 50%;
   transition: .5s ease;
+  padding: 0 12px 0 12px;
+}
 
+.overlay-background {
+  height: 100%;
   background: -moz-linear-gradient(bottom,  rgba(155,124,70,0.9) 0%, rgba(155,124,70,0.7) 47%, rgba(255,255,255,0.01) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(bottom,  rgba(155,124,70,0.9) 0%,rgba(155,124,70,0.7) 47%,rgba(255,255,255,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to top,  rgba(155,124,70,0.9) 0%,rgba(155,124,70,0.7) 47%,rgba(255,255,255,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e69b7c46', endColorstr='#03ffffff',GradientType=0 ); /* IE6-9 */
-
 }
 
 .slide-container:hover .overlay {
@@ -306,12 +310,12 @@ svg {
   line-height: 28px;
  }
 
- .md-box table {
-  // margin: 10px 100px 10px 100px;
- }
+ .md-box blockquote {
+  font-weight: bold;
+  letter-spacing: 0.003em;
+  border-left: solid;
+  padding: 0 10px 0 10px;
 
- .md-box pre {
-  // padding-left: 100px;
  }
 
  .md-box code {
