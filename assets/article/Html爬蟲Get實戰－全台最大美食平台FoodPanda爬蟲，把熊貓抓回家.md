@@ -10,9 +10,9 @@
 print(i.find('span',{'class':'name'}).text) #取得店家名稱
 ```
 
-取得評分的部分，因為剛好評分的標籤為strong，正是資料中第一個出現的strong標籤，因此直接抓取strong標籤即可，甚至不需要任何的額外條件設定。
+取得評分的部分（2023/4/3修改，因此與影片中程式碼不同），因為剛好評分的標籤為strong，正是資料中第一個出現的strong標籤，因此直接抓取strong標籤即可，甚至不需要任何的額外條件設定。
 ```python
-print(i.find('strong').text) #取得評分
+print(i.find('span',{'class':'rating--label-primary'}).text) #取得評分
 ```
 
 每家店的標籤則是爬取li標籤中vendor-characteristic的這個class，這個class非常獨一無二，因此不須另外深入擷取，即可拿到我們想要的資料。
@@ -20,8 +20,9 @@ print(i.find('strong').text) #取得評分
 print(i.find('li',{'class':'vendor-characteristic'}).text) #取得標籤
 ```
 
-費用則是爬取li標籤中的delivery-fee這個class（2021/7/25修改，因此與影片中程式碼不同），由於取得的資料位於li的strong標籤裏頭，因此採取兩步驟，第一個變數part1先取得li標籤內容，part2變數則是從li標籤中，取得strong標籤。
+費用則是爬取li標籤中的delivery-fee這個class（2023/4/3修改，因網站中將此資料移除，因此目前爬不到了），由於取得的資料位於li的strong標籤裏頭，因此採取兩步驟，第一個變數part1先取得li標籤內容，part2變數則是從li標籤中，取得strong標籤。
 ```python
+# 2023/4/3修改，因網站中將此資料移除，因此目前爬不到了，在完整程式碼中沒有以下程式
 # 取得外送費用
 print(i.find('li',{'class':'delivery-fee'}).text) # 2021/7/25修改
 part1 = i.find('li',{'class':'delivery-fee'}) # 2021/7/25修改
