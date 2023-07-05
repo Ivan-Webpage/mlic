@@ -3,7 +3,7 @@
 ![可交付成果](https://cdn-images-1.medium.com/max/1200/1*s53C4LKGA5SjEuKL6wy0_w.png)本次爬蟲以「花襯衫」為例，利用Python 的Selenium 套件進行爬蟲，可以爬下每個商品的品牌名稱、商品名稱、網址、商品定價、星星評分、全球評分、客戶回饋尺寸、大小選項、顏色選項、商品描述、產品資訊、全球排名、留言網址，並且將最終結果儲存成CSV檔案。
 
 ## Selenium 登入Amazon
-若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/classification/crawler_king/92)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/classification/crawler_king/93)」。
+若您還不知道Selenium 是什麼東西，可以參考「[Selenium介紹｜Python爬動態網頁的利器](/classification/crawler_king/69)」，並且一定要先將Selenium 需要用到的環境事先設定好，若不知道如何設定可以參考「[Selenium環境設定與測試｜手把手教您如何設定 phantomjs與 chromedriver](/classification/crawler_king/70)」。
 
 ```python
 # 設定基本參數
@@ -167,7 +167,7 @@ else:time.sleep(5)
 
 ### 爬取尺寸大小選項
 ![爬取尺寸大小選項](https://cdn-images-1.medium.com/max/1200/1*01OD3fIon7cpy2CY4AqTrw.png)
-爬取所有商品的所有尺寸，爬取尺寸後有能做什麼呢？這個資料有利於產品開發、剛進入市場的廠商、採購、買手作分析使用，詳情可參考課程「[蝦皮市場大小預估分析－K-means分群的實例應用](/classification/crawler_king/112)」。
+爬取所有商品的所有尺寸，爬取尺寸後有能做什麼呢？這個資料有利於產品開發、剛進入市場的廠商、採購、買手作分析使用，詳情可參考課程「[蝦皮市場大小預估分析－K-means分群的實例應用](/classification/crawler_king/89)」。
 ```python
 # 大小選項
 driver.find_element_by_xpath('//span[@data-csa-interaction-events = "click"]').click()

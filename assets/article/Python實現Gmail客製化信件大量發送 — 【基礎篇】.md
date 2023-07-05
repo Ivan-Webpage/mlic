@@ -5,7 +5,7 @@
 本文章會以以下流程來為各位命苦的小編、行銷人員、秘書解惑：
 1. Gmail設定與申請
 2. Python寄信基礎教學
-3. 客製化寄件案例實戰，這會在「[Gmail客製化寄件實戰｜用Python完全自動化寄件](/classification/crawler_king/118)」中詳細說明。
+3. 客製化寄件案例實戰，這會在「[Gmail客製化寄件實戰｜用Python完全自動化寄件](/classification/crawler_king/95)」中詳細說明。
 
 ## Gmail設定與申請
 本文將使用Gmail為範例，因此我們必須先將Gmail帳號開通，許可Python可以使用自己的帳號發送信件。
@@ -121,4 +121,4 @@ HTML的標籤其實有非常多種類，這裡列出比較常用的幾種供您�
 ![](https://i.imgur.com/9C9KN25.png)
 如何每封信件進行客製化呢？
 
-在下一篇文章「[Gmail客製化寄件實戰｜用Python完全自動化寄件](/classification/crawler_king/118)]」中，我們將以實戰的方式，將本篇文章所學的技能，成功應用到Email廣宣上，從此行銷人員只需要一鍵即可完成往日兩三個小時的工作了。
+在下一篇文章「[Gmail客製化寄件實戰｜用Python完全自動化寄件](/classification/crawler_king/95)]」中，我們將以實戰的方式，將本篇文章所學的技能，成功應用到Email廣宣上，從此行銷人員只需要一鍵即可完成往日兩三個小時的工作了。

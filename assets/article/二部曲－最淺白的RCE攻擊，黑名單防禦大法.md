@@ -1,6 +1,6 @@
 # 二部曲－最淺白的RCE攻擊，黑名單防禦大法
 (參考資料：[splitline](https://github.com/splitline/py-sandbox-escape)課程講義)
-在[首部曲－最淺白的RCE攻擊，用python sendbox 模擬實戰攻擊](/classification/technology/14)文章中有示範，毫無防護的sendbox，是可以輕易地下指令的，這時聰明的您一定會想到，那就把一些有安全疑慮的指令全部排除，不就能達到有效的防護了嗎？其實不盡然，就用簡單的範例帶領您了解。
+在[首部曲－最淺白的RCE攻擊，用python sendbox 模擬實戰攻擊](/classification/technology/98)文章中有示範，毫無防護的sendbox，是可以輕易地下指令的，這時聰明的您一定會想到，那就把一些有安全疑慮的指令全部排除，不就能達到有效的防護了嗎？其實不盡然，就用簡單的範例帶領您了解。
 
 ## 黑名單防禦大法
 ```python

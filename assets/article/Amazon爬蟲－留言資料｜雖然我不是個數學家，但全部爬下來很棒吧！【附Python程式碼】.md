@@ -1,10 +1,10 @@
 # Amazon爬蟲－留言資料｜雖然我不是個數學家，但全部爬下來很棒吧！【附Python程式碼】
 ## 可交付成果
 ![可交付成果](https://cdn-images-1.medium.com/max/1200/1*8jek2_TdrN_4XLF3auGeOA.png)
-接續前面課程「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/classification/crawler_king/113)」所爬下來的商品結果，進到每個商品中爬下所有的留言內容，其內容包含商品名稱、留言網址、留言者、星等、留言時間、留言地點(區域)、SKU、留言內容、覺得留言有用的人數。
+接續前面課程「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/classification/crawler_king/90)」所爬下來的商品結果，進到每個商品中爬下所有的留言內容，其內容包含商品名稱、留言網址、留言者、星等、留言時間、留言地點(區域)、SKU、留言內容、覺得留言有用的人數。
 
 ## 爬蟲前準備
-在開始本課程的爬蟲之前，必須要先將前一堂課「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/classification/crawler_king/113)」的結果放在程式的工作目錄內，若不知道如何在Spyder 中設定工作目錄，也可以參考課程「[Spyder使用教學](/classification/python_foundation/26)」。
+在開始本課程的爬蟲之前，必須要先將前一堂課「[Amazon爬蟲－商品資料｜用Python爬下世界最大電商網站【附程式碼】](/classification/crawler_king/90)」的結果放在程式的工作目錄內，若不知道如何在Spyder 中設定工作目錄，也可以參考課程「[Spyder使用教學](/classification/python_foundation/7)」。
 ```python
 productData = pd.read_csv('Amazon商品資料.csv', encoding = 'utf-8')
 ```
@@ -118,7 +118,7 @@ else:
     
 ```
 ### 爬處購買顏色、尺寸
-在留言中另一個價值就是每個購買者所購買的樣式，由此能窺探這個市場的銷量，進而推算出適合進入市場的位置，這也可以參考課程「[產品開發大補帖｜採購的好幫手，如何決定新商品SKU？]()」的邏輯方式。
+在留言中另一個價值就是每個購買者所購買的樣式，由此能窺探這個市場的銷量，進而推算出適合進入市場的位置，這也可以參考課程「[產品開發大補帖｜採購的好幫手，如何決定新商品SKU？](/classification/crawler_king/88)」的邏輯方式。
 ```python
 # 處理購買顏色、尺寸
 getsku = i.find_all('a', {'data-hook':'format-strip'})

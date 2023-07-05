@@ -1,7 +1,7 @@
 # FB自動登入｜利用Selenium自動登入Facebook
 
 ## 可交付成果
-若要進行FB的自動化處理，自動登入是逼需經過的門檻。本文章會帶您使用Python 中的Selenium 爬蟲套件來進行FB自動登入，以便於後續課程的進行。因此，在開始課程前請先看過「[Selenium介紹](/classification/crawler_king/92)」、「[Selenium環境設定與測試](/classification/crawler_king/93)」，以確保您對 Selenium有一定的了解，並且以確實安裝 [phantomjs](https://phantomjs.org/download.html)與 [chromedriver](https://chromedriver.chromium.org/downloads)軟體。
+若要進行FB的自動化處理，自動登入是逼需經過的門檻。本文章會帶您使用Python 中的Selenium 爬蟲套件來進行FB自動登入，以便於後續課程的進行。因此，在開始課程前請先看過「[Selenium介紹](/classification/crawler_king/69)」、「[Selenium環境設定與測試](/classification/crawler_king/70)」，以確保您對 Selenium有一定的了解，並且以確實安裝 [phantomjs](https://phantomjs.org/download.html)與 [chromedriver](https://chromedriver.chromium.org/downloads)軟體。
 
 ## 輸入帳密
 首先在載入 Selenium套件後，先行設定好登入所需要的帳號密碼。請將您FB的登入帳號密碼打在程式碼中。也因為您的程式碼會在程式碼中顯示，因此這個檔案必須妥善保管，否則您的FB帳密就會外流。

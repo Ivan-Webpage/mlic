@@ -1,7 +1,7 @@
 # Telegram聊天機器人超詳細懶人包，商管人都看得懂【附Python程式碼】
 
 > 相關文章：
-> [打造聊天機器人，商管人也看得懂的最詳細步驟【2020年最新更新版本】](/classification/marketing/13)
+> [打造聊天機器人，商管人也看得懂的最詳細步驟【2023年最新更新版本】](/classification/marketing/103)
 > [一個觀念，開啟Python 網路爬蟲成長之路！(含解說影片與程式碼)](https://medium.com/%E8%AA%A4%E9%97%96%E6%95%B8%E6%93%9A%E5%8F%A2%E6%9E%97%E7%9A%84%E5%95%86%E7%AE%A1%E4%BA%BAzino/%E5%88%9D%E5%AD%B8%E8%80%85%E5%BF%85%E7%9C%8B-%E4%B8%80%E5%80%8B%E8%A7%80%E5%BF%B5-%E9%96%8B%E5%95%9Fpython-%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2%E6%88%90%E9%95%B7%E4%B9%8B%E8%B7%AF-%E5%90%AB%E8%A7%A3%E8%AA%AA%E5%BD%B1%E7%89%87-fac0a17cd261)
 
 您肯定有發現許多名人、政治人物的官方Line帳號，最近都不再發訊息了呢？其實有在經營Line@的朋友都知道，自從Line@的收費機制改變後，每發一次訊息所需的費用高答數十萬（不同粉絲數量金額不同），少有人能付的起。
@@ -19,7 +19,7 @@ Telegram成了品牌與使用者溝通的下一個平台，除了主打免費外
 ![可交付成果](https://i.imgur.com/Ic5TVoY.png)
 
 ## 平台創建
-本文的建造方式與前篇文章[「打造聊天機器人，商管人也看得懂的最詳細步驟【2020年最新更新版本】」](/classification/marketing/13)類似，都有申請Heroku與Github，但基於清楚的流程表達，這裡還是重複帶領您申請一次。若您已經熟悉了，可以自行跳過。
+本文的建造方式與前篇文章[「打造聊天機器人，商管人也看得懂的最詳細步驟【2023年最新更新版本】」](/classification/marketing/103)類似，都有申請Heroku與Github，但基於清楚的流程表達，這裡還是重複帶領您申請一次。若您已經熟悉了，可以自行跳過。
 
 本次專案會使用到Heroku、Telegram、Github三個平台，以下為您詳細說明建立流程。
 ### Telegram API
@@ -49,7 +49,7 @@ telegram並沒有如[Line Developer](https://developers.line.biz/zh-hant/)建立
 
 ### Heroku平台
 [點這裡到Heroku](https://www.heroku.com/)
-平台在文章[「打造聊天機器人，商管人也看得懂的最詳細步驟【2020年最新更新版本】」](/classification/marketing/13)中有詳細介紹。
+平台在文章[「打造聊天機器人，商管人也看得懂的最詳細步驟【2023年最新更新版本】」](/classification/marketing/103)中有詳細介紹。
 
 #### 創辦heroku帳號
 密碼要求必須要英文大小寫、數字混合。接下來的範例，需要將程式碼部屬（傳送）到上面。
@@ -64,7 +64,7 @@ telegram並沒有如[Line Developer](https://developers.line.biz/zh-hant/)建立
 ![創立專案](https://i.imgur.com/aJg1Ehe.png)
 
 ### Github：
-平台在文章[「打造聊天機器人，商管人也看得懂的最詳細步驟【2020年最新更新版本】」](/classification/marketing/13)中有詳細介紹。
+平台在文章[「打造聊天機器人，商管人也看得懂的最詳細步驟【2023年最新更新版本】」](/classification/marketing/103)中有詳細介紹。
 
 #### 創立Github帳號：
 [點這裡到Github](https://github.com/)

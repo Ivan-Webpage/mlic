@@ -35,7 +35,7 @@ Name: quantity, dtype: int64
 ```
 
 ## 資料加減乘除
-我們在前面的課程[Pandas了解資料－資料剖析、取資料](/classification/python_foundation/41)當中已經學會如何取整欄的資料。而若要進行欄與欄的計算，只需要將欄位取出來直接進行數學運算即可。
+我們在前面的課程[Pandas了解資料－資料剖析、取資料](/classification/python_foundation/18)當中已經學會如何取整欄的資料。而若要進行欄與欄的計算，只需要將欄位取出來直接進行數學運算即可。
 ```python
 # 資料+-*/
 salelist['quantity'] * salelist['price']

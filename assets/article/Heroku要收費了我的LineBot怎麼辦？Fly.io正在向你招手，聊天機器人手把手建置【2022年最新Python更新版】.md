@@ -1,6 +1,6 @@
 # Heroku要收費了我的LineBot怎麼辦？Fly.io正在向你招手，聊天機器人手把手建置【2022年最新Python更新版】
 ## 前言
-如果您之前有看過我的[LineBot聊天機器人](/classification/marketing/13)文章，您對Heroku肯定不陌生，介面非常好用又方便佈署我們的LineBot機器人。很不幸的是Heroku即將在2022/11/28停止免費的服務，換句話說，[LineBot聊天機器人](/classification/marketing/13)文章教您的機器人不能用了！這對於[行銷搬進大程式](https://marketingliveincode.com/)來說絕對是災難性的，關於機器人的課程都不能用了，我當然不能讓這種事情發生，因此開始汲汲營營尋找Heroku的替代方案。
+如果您之前有看過我的[LineBot聊天機器人](/classification/marketing/103)文章，您對Heroku肯定不陌生，介面非常好用又方便佈署我們的LineBot機器人。很不幸的是Heroku即將在2022/11/28停止免費的服務，換句話說，[LineBot聊天機器人](/classification/marketing/103)文章教您的機器人不能用了！這對於[行銷搬進大程式](https://marketingliveincode.com/)來說絕對是災難性的，關於機器人的課程都不能用了，我當然不能讓這種事情發生，因此開始汲汲營營尋找Heroku的替代方案。
 
 還好！前幾看到大神[黑暗執行序](https://blog.darkthread.net/)所寫的文章：[Heroku 替代方案 - Fly.io 平台之 ASP.NET Core 部署筆記](https://blog.darkthread.net/blog/deploy-aspnetcore-to-fly-io/)，身為客家人的筆者馬上被吸引，尤其是說到「逐水草而居的免費仔」臉就有點紅紅腫腫的感覺，這就是要的實作！
 ![Line Bot機器人建置圖](https://i.imgur.com/NPgNwCB.png)
@@ -13,7 +13,7 @@
     * 南美亞太非洲地中海 30GB
     * 印度 30GB
 
-以上的條件看起來有些嚴苛，但是您做過[LineBot聊天機器人](/classification/marketing/13)的讀者們肯定知道，這些條件拿來做LineBot已經綽綽有餘了，如果只是掛一些Demo網站也是非常足夠的。
+以上的條件看起來有些嚴苛，但是您做過[LineBot聊天機器人](/classification/marketing/103)的讀者們肯定知道，這些條件拿來做LineBot已經綽綽有餘了，如果只是掛一些Demo網站也是非常足夠的。
 另外筆者也在猜，Fly.io趁著這次Heroku撤除免費服務的機會增加客戶數，這個操作有沒有很熟悉？相信您理解以下兩個道理：
 1. 公司法第一條，公司必須以營利為目的，fly為國外資本社會的企業更是如此。
 2. 養套殺SOP。使用fly的免費服務，還是會要求綁定至少一張信用卡，雖然說不會扣款，但未來一切都很難說。 不排除以後我們還是要繼續逐水草而居，因此請持續關注行銷搬進大程式來獲得最新消息喔！

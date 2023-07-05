@@ -5,7 +5,7 @@
 
 ## 可交付成果
 ![Dcard社群的爆點分析－可交付成果](https://i.imgur.com/IGjcuo9.png)
-我們在前篇文章「[Dcard爬蟲－留言蒐集](/classification/crawler_king/99)」與「[Dcard爬蟲－文章資料](/classification/crawler_king/98)」當中，已經取得Dcard版中的各個文章與留言。本篇文章將解析如何使用我們在Dcard版中爬下來的文章與留言，利用Python 視覺化的方式，呈現出每個文章主題與時間的關係，一眼便能看出短時間內瘋狂竄升的文章主題或關鍵字。
+我們在前篇文章「[Dcard爬蟲－留言蒐集](/classification/crawler_king/76)」與「[Dcard爬蟲－文章資料](/classification/crawler_king/75)」當中，已經取得Dcard版中的各個文章與留言。本篇文章將解析如何使用我們在Dcard版中爬下來的文章與留言，利用Python 視覺化的方式，呈現出每個文章主題與時間的關係，一眼便能看出短時間內瘋狂竄升的文章主題或關鍵字。
 ## 匯入資料
 首先，需要匯入先前爬下來的文章資料與留言資料，並且準備多個色碼，為之後視覺畫作準備。
 ```python

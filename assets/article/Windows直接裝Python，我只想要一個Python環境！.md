@@ -1,5 +1,5 @@
 # Windows直接裝Python，我只想要一個Python環境！
-不管是課程「[Windows直接安裝Spyder](/classification/python_foundation/27)」中自行建立Spyder，或者在「[VS Code安裝與使用](/classification/python_foundation/28)」課程中使用VS Code編輯器，我們想要這兩個編輯器都指向同一個Python環境，最好就是我們的C槽只有一個Python環境，所以編輯器、終端機都使用這個環境，這樣最不會造成困擾，也能夠大大節省電腦空間。
+不管是課程「[Windows直接安裝Spyder](/classification/python_foundation/3)」中自行建立Spyder，或者在「[VS Code安裝與使用](/classification/python_foundation/4)」課程中使用VS Code編輯器，我們想要這兩個編輯器都指向同一個Python環境，最好就是我們的C槽只有一個Python環境，所以編輯器、終端機都使用這個環境，這樣最不會造成困擾，也能夠大大節省電腦空間。
 ![https://www.python.org/downloads/windows/](https://i.imgur.com/vdAvfDs.png)
 
 # 下載Python

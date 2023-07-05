@@ -25,7 +25,7 @@ PTT是台灣少數沒有利益團體介入（理論上）的社群平台，而�
 # 使用範例
 gossip = crawl_ptt_page(Board_Name ='Gossiping' ,page_num= 1)
 ```
-當我們實際在蒐集消費者資訊的時候，關於您的品牌留言可能會散布在各個版中，因此想要爬取多個版的話，就必須使用pandas套件中的 concat來進行資料合併的動作，以利之後的資料分析。如果還不知道文字資料如何分析的話，可以參考「[Python幫你自動化Google 自然語言分析 ，顧客在討論什麼？ — part3](/classification/marketing/4)」文章，裡面有詳細的解析與分享！或者是直接看看「[消費者關鍵字分析](/classification/marketing/24)」課程的實戰案例吧！
+當我們實際在蒐集消費者資訊的時候，關於您的品牌留言可能會散布在各個版中，因此想要爬取多個版的話，就必須使用pandas套件中的 concat來進行資料合併的動作，以利之後的資料分析。如果還不知道文字資料如何分析的話，可以參考「[Python幫你自動化Google 自然語言分析 ，顧客在討論什麼？ — part3](/classification/marketing/121)」文章，裡面有詳細的解析與分享！或者是直接看看「[關鍵字替代方案，比較TF-IDF演算法與Google NLP，誰與爭鋒？](/classification/marketing/113)」課程的實戰案例吧！
 
 ```python
 # 爬蟲實戰情況

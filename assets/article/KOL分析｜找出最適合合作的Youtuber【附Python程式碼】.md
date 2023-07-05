@@ -1,6 +1,6 @@
 # KOL分析｜找出最適合合作的Youtuber【附Python程式碼】
 
-> 在看此篇之前，要先看前面課程喔：[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/classification/crawler_king/104)
+> 在看此篇之前，要先看前面課程喔：[Youtube爬蟲－頻道資料｜Youtuber網紅時代不可或缺的Python技能【附程式碼】](/classification/crawler_king/81)
 
 ## 可交付成果
 ![KOL分析－四象限分析](https://cdn-images-1.medium.com/max/1200/1*VxlJwnk7osm2iF-vwMpJ8Q.png)

@@ -1,5 +1,5 @@
 # Python寄信基礎－寄送檔案教學｜用程式附檔Word、PDF、CSV、圖片都可以【附程式碼】
-在前面的課「[Python寄Gmail基礎－文字樣式教學｜文字粗體、顏色通通可以改【附Python程式碼】](/classification/crawler_king/116)」後，您可能會想問：那附件檔案的部分呢？的確，在企業中mail 除了拿來做訊息溝通外，也時常被拿來傳送一些較為正式的文件，因此本堂課程就來教您如何傳送word檔、PDF檔、圖片檔、CSV檔。
+在前面的課「[Python寄Gmail基礎－文字樣式教學｜文字粗體、顏色通通可以改【附Python程式碼】](/classification/crawler_king/93)」後，您可能會想問：那附件檔案的部分呢？的確，在企業中mail 除了拿來做訊息溝通外，也時常被拿來傳送一些較為正式的文件，因此本堂課程就來教您如何傳送word檔、PDF檔、圖片檔、CSV檔。
 
 ## 信件內容準備
 
@@ -24,7 +24,7 @@ content.attach(MIMEText("Ivan的測試寄信，寄信處女作品～～"))  #郵
 ```
 ## Gmail寄送圖片
 寄送圖片必須要使用MIMEImage() 方法指定圖片，而圖片需要放在工作目錄下，若不知道Spyder 編輯器如何設定工作目錄的話，可以參考課程「
-[Spyder使用教學](/classification/python_foundation/26)」。
+[Spyder使用教學](/classification/python_foundation/2)」。
 ```python
 content.attach(MIMEImage(Path("夕陽.jpg").read_bytes()))  # 郵件圖片內容</code></pre>
 ```

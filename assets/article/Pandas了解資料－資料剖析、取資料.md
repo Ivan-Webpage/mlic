@@ -161,7 +161,7 @@ Name: 姓名, dtype: bool
 ```
 
 ### 多重條件
-在上一段已經知道了dataframe格式中也會有Boolen的格式，那就代表說可以像課程[判斷式If](/classification/python_foundation/36)所教的，進行多個條件的資料判斷與篩選。但在DataFrame的部分比較特別，他們的邏輯運算子有特定的符號：　
+在上一段已經知道了dataframe格式中也會有Boolen的格式，那就代表說可以像課程[判斷式If](/classification/python_foundation/13)所教的，進行多個條件的資料判斷與篩選。但在DataFrame的部分比較特別，他們的邏輯運算子有特定的符號：　
 * and：&
 * or：|
 * not：~

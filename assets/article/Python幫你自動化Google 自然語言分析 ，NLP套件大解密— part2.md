@@ -3,7 +3,7 @@
 > 好奇顧客在網上怎麼說你嗎？Google NLP告訴你！
 
 ## 前情提要
-在[「Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1」](/classification/marketing/2)文章中，手把手帶領您申請屬於自己的GCP平台，並取得NLP的憑證檔案。接下來我們將利用先前申請好的json憑證檔案，開始分析消費者在網路上的輿論。
+在[「Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1」](/classification/marketing/119)文章中，手把手帶領您申請屬於自己的GCP平台，並取得NLP的憑證檔案。接下來我們將利用先前申請好的json憑證檔案，開始分析消費者在網路上的輿論。
 ![前篇文章所產生憑證](https://i.imgur.com/j5x5cKT.png)
 
 ## Google 情緒分析
@@ -85,4 +85,4 @@ return([sentiment.score, sentiment.magnitude])
 作者的網路輿情分析經驗中，會發現網路上的負面評價會比較高；也就是說，假如您同時進行傳統市調與網路市調，網路市調的品牌滿意度都會偏低，而且「低很多」，尤其在特定論壇，如：PTT、Dcard等，滿意度通常不到5成，而且全市場的品牌都一樣。若這是普遍的現象，那您選擇想信哪邊呢？
 
 ## 還沒有完
-難道您只想知道消費者對你正面評價，到底是甚麼讓他對你那麼滿意？將在下篇文章[「Python幫你自動化Google 自然語言分析 ，顧客在討論什麼？ — part3」](/classification/marketing/4)中告訴您，如何利用NLP套件，找出消費者所討論的關鍵字。
+難道您只想知道消費者對你正面評價，到底是甚麼讓他對你那麼滿意？將在下篇文章[「Python幫你自動化Google 自然語言分析 ，顧客在討論什麼？ — part3」](/classification/marketing/121)中告訴您，如何利用NLP套件，找出消費者所討論的關鍵字。

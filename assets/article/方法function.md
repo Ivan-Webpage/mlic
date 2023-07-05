@@ -20,7 +20,7 @@ def 方法名稱(方法所需變數):
   (10-2)! * 2!
 ```
 ### for迴圈:土法煉鋼
-我們在[迴圈for](/classification/python_foundation/37)的課程中知道這種連續型的數字最適合使用for迴圈了，因此分別將三個數字算出來以後做計算，python程式碼如下：　
+我們在[迴圈for](/classification/python_foundation/14)的課程中知道這種連續型的數字最適合使用for迴圈了，因此分別將三個數字算出來以後做計算，python程式碼如下：　
 ```python
 # 問題：用程式實現機率「c的X取Y」
 

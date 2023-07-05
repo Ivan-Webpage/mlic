@@ -1,5 +1,5 @@
 # IG品牌規劃｜想要在Instagram開品牌粉專？先看看如何品牌定位吧
-> 還不沒看過如何自動登入IG嗎？先來看「[IG自動登入｜利用Selenium自動登入Instagram](/classification/crawler_king/101)」課程吧！
+> 還不沒看過如何自動登入IG嗎？先來看「[IG自動登入｜利用Selenium自動登入Instagram](/classification/crawler_king/78)」課程吧！
 
 最近朋友們有事情都用IG私訊我，因為我的Line三個小時才回一次，IG十分鐘內就回復了。因為Line已經被「工作海嘯」淹沒，明明是私人的聊天平台，卻充斥著各個工作、活動群組。
 
@@ -33,4 +33,4 @@
 
 這能讓消費者沒有壓力的持續追蹤品牌粉絲團，也才是讓粉絲團長長久久的不二法門。當一切就緒，才能開始進行「愛心大放送」，網路行銷雖然傳播的快，但負面評價傳得更快，因此一定要準備好再出發。
 
-> 準備好了嗎？那我們就來使用「[IG增粉機器人](/classification/crawler_king/103)」吧！
+> 準備好了嗎？那我們就來使用「[IG增粉機器人](/classification/crawler_king/80)」吧！

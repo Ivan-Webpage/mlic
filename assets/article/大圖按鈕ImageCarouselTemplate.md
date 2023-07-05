@@ -1,6 +1,6 @@
 # 大圖按鈕ImageCarouselTemplate
 ![成品參考](https://i.imgur.com/THgkSrj.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/66)」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/43)」中的影片教學。
 
 在ImageCarouselColumn方法中主要有以下兩個參數：
 * image_url：大圖圖片位置。

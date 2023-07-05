@@ -38,14 +38,14 @@
 1. 歷年平均EPS
 2. 當前股價
 
-當前股價的部分是最容易解決的，我們在「[高速取得全台股價資訊，馬上用黃金交叉練習看看【附Python程式碼】](/classification/financial/120)」這篇文章中，有教各位如何使用pandas_datareader這個套件輕鬆拉下多支股票的股價。那EPS要怎麼辦呢？
+當前股價的部分是最容易解決的，我們在「[高速取得全台股價資訊，馬上用黃金交叉練習看看【附Python程式碼】](/classification/financial/115)」這篇文章中，有教各位如何使用pandas_datareader這個套件輕鬆拉下多支股票的股價。那EPS要怎麼辦呢？
 
 ![撿股讚網站所提供的EPS](https://i.imgur.com/QuwKIIa.png)
 還好作者找到一個歷年EPS列表網站「[撿股讚](https://stock.wespai.com)」，裡面已經幫我們算好全台灣所有上市櫃公司的歷年EPS。更棒的是！這些資訊全部集中在同一個業面，因此我們可以利用之前學過的爬蟲來抓取。
 
 > **還沒學過爬蟲？先看這裡**
-> [Html爬蟲Get教學－抓下Yahoo股票資訊，程式交易的第一步](/classification/crawler_king/82)
-> [Pandas爬蟲教學－Yahoo股市爬蟲｜不想再盯盤](/classification/crawler_king/89)
+> [Html爬蟲Get教學－抓下Yahoo股票資訊，程式交易的第一步](/classification/crawler_king/59)
+> [Pandas爬蟲教學－Yahoo股市爬蟲｜不想再盯盤](/classification/crawler_king/66)
 
 
 ### 取得歷年平均每股盈餘EPS

@@ -23,7 +23,7 @@ Location: c:\users\ivan\appdata\local\programs\python\python310\lib\site-package
 ```
 ![](https://i.imgur.com/OkEGsiv.png)
 
-也可以直接切換到該目錄，可以看到以下的眾多資料夾，這每一個資料夾就是一個套件檔案，也就是我們在輸入指令`pip install 套件名稱`後，下載下來的檔案(課程[安裝套件教學ModuleNotFoundError: No module named](/classification/python_foundation/6))，裡面的程式碼就是前人已經打包好的Python程式，這也是為何我們想要什麼功能，直接輸入一個方法就可以達到的原因！
+也可以直接切換到該目錄，可以看到以下的眾多資料夾，這每一個資料夾就是一個套件檔案，也就是我們在輸入指令`pip install 套件名稱`後，下載下來的檔案(課程[安裝套件教學ModuleNotFoundError: No module named](/classification/python_foundation/8))，裡面的程式碼就是前人已經打包好的Python程式，這也是為何我們想要什麼功能，直接輸入一個方法就可以達到的原因！
 
 ![python套件存放位置，site-packages](https://i.imgur.com/3AizdwV.png)
 
@@ -67,7 +67,7 @@ read_csv('你要讀的檔案.csv')
 
 ## 實作自己的import檔案
 ### 打造一個python套件
-在前面的課程[方法function](/classification/python_foundation/39)我們已經學習了如何建立屬於自己的方法，這裡就以前課程的方法來製作成一個python檔案。此檔案裏面有兩個方法可以拿來import，別是factorial()、accumulate()，分別用來進行階層計算與累加計算
+在前面的課程[方法function](/classification/python_foundation/16)我們已經學習了如何建立屬於自己的方法，這裡就以前課程的方法來製作成一個python檔案。此檔案裏面有兩個方法可以拿來import，別是factorial()、accumulate()，分別用來進行階層計算與累加計算
 ```python
 # 階層計算機
 def factorial(n):
@@ -95,7 +95,7 @@ def accumulate(n):
 
 ### 使用自己的套件
 #### 引入自己的套件
-首先要確認好自己的工作目錄在哪裏，並且將剛剛建立好的python套件放到工作目錄當中，，若您使用[spyder](/classification/python_foundation/26)這個編輯器的話，工作目錄在您的右上角，有一個長條型的輸入方格，可以在那裏貼上您想要的工作目錄。
+首先要確認好自己的工作目錄在哪裏，並且將剛剛建立好的python套件放到工作目錄當中，，若您使用[spyder](/classification/python_foundation/2)這個編輯器的話，工作目錄在您的右上角，有一個長條型的輸入方格，可以在那裏貼上您想要的工作目錄。
 ![spyder的工作目錄位置](https://i.imgur.com/3v7pjRI.png)
 若您是使用[VS code](/classification/python_foundation/28)這個編輯器的話，可以在左方選單的第一個按鈕，點選「Open Folder」選擇您想要的工作目錄。
 ![VS code的工作目錄位置](https://i.imgur.com/jxhviaP.png)

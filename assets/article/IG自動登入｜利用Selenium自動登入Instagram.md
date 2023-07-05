@@ -1,12 +1,12 @@
 # IG自動登入｜利用Selenium自動登入Instagram
-> 本次課程使用Selenium爬蟲，所以你要先看「[Selenium實戰練習－UberEat爬蟲](/classification/crawler_king/94)」教學喔！
+> 本次課程使用Selenium爬蟲，所以你要先看「[Selenium實戰練習－UberEat爬蟲](/classification/crawler_king/65)」教學喔！
 在接下來的IG課程中，會教您如何讓機器人幫您自動按愛心。而在這堂課程中，會先教您如何自動登入IG帳號，以便之後的課程進行。
 
 ## 環境準備
 ### Python環境
 若您是Python的新手，建議可以下載Anaconda來搭建環境。以下兩個Anaconda的介紹：
-> * [PYTHON環境設定－Anaconda安裝](/classification/python_foundation/25)
-> * [PYTHON環境設定－Spyder使用教學](/classification/python_foundation/26)
+> * [PYTHON環境設定－Anaconda安裝](/classification/python_foundation/1)
+> * [PYTHON環境設定－Spyder使用教學](/classification/python_foundation/2)
 
 ### 套件安裝
 整個實作只需要用到Selenium套件，因此若是使用Anaconda，就直接在Anaconda prompt中輸入以下指令，若在系統環境中安裝python，則直接在Terminal貼上指令即可。
@@ -94,4 +94,4 @@ time.sleep(3)
 
 ![機器人自動登入IG](https://i.imgur.com/ckqBo9c.png)
 
-> 在開始前，你的IG品牌規畫好了嗎？快看「[IG品牌規劃｜想要在Instagram開品牌粉專？先看看如何品牌定位吧](/classification/crawler_king/102)」
+> 在開始前，你的IG品牌規畫好了嗎？快看「[IG品牌規劃｜想要在Instagram開品牌粉專？先看看如何品牌定位吧](/classification/crawler_king/79)」

@@ -1,6 +1,6 @@
 # 按鈕樣板TemplateSendMessage
 ![成品參考](https://i.imgur.com/BpTWlkm.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/66)」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/43)」中的影片教學。
 
 範例中的按鈕有以下三種：
 
@@ -18,4 +18,4 @@
 * 優點：訊息的隱密性變高，但不代表就看不到內容，下圖的示範還是可以看到內容，要隱私還是必須要加密。
 * 缺點：資料的打包變得比較慢，若一般資訊都使用這種方式，網路會打結。
 
-詳情可以看文章「[資料傳遞Get與Post差異](/classification/crawler_king/81)」。
+詳情可以看文章「[資料傳遞Get與Post差異](/classification/crawler_king/58)」。

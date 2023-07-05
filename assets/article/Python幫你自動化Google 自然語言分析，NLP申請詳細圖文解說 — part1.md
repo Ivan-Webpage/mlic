@@ -27,6 +27,6 @@
 > 完成後就會產出一個json檔案，之後在Python中執行API，所需支付的費用，就依照這個檔案的帳號所屬來扣款，因此：
 > 這個檔案請妥善保管，否則就如同信用卡遺失一樣的危險。
 ## 精彩可期
-在下一篇[「Python幫你自動化Google 自然語言分析 ，NLP套件大解密 — part2」](/classification/marketing/3)文章中，將為您詳細解說，如何利用Python套件，結合本文章申請好的Gooogle NLP資源，將兩者進行串接。
+在下一篇[「Python幫你自動化Google 自然語言分析 ，NLP套件大解密 — part2」](/classification/marketing/120)文章中，將為您詳細解說，如何利用Python套件，結合本文章申請好的Gooogle NLP資源，將兩者進行串接。
 
 

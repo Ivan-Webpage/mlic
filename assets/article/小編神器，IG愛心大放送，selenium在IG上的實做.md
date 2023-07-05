@@ -87,7 +87,7 @@ desired_capabilities = DesiredCapabilities.PHANTOMJS.copy()
 desired_capabilities['phantomjs.page.customHeaders.User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36'
 
 # PhantomJS driver 路徑 似乎只能絕對路徑
-driver = webdriver.PhantomJS(executable_path = 'phantomjs', desired_capabilities=desired_capabilities
+driver = webdriver.PhantomJS(executable_path = 'phantomjs', desired_capabilities=desired_capabilities)
 ```
 
 ### 開啟chrome

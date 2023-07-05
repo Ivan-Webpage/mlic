@@ -30,7 +30,7 @@ for i in range(5):
 3
 4
 ```
-您可能會很好奇明明輸入5，為何出來的結果只到4，別忘了在[基本變數－陣列List](/classification/python_foundation/34)這堂課中有分享過，Python程式的編號是從0開始喔！可以想像成從0開始，打印五個數字出來。
+您可能會很好奇明明輸入5，為何出來的結果只到4，別忘了在[基本變數－陣列List](/classification/python_foundation/11)這堂課中有分享過，Python程式的編號是從0開始喔！可以想像成從0開始，打印五個數字出來。
 
 但如果不想要從0開始，或者想要公差不一樣的數列，那就先來理解一下range()這個方法有哪些參數可以使用：
 ```python
@@ -70,7 +70,7 @@ for i in thestr:
 ```
 
 ### 字串str
-在[基本變數－文字str，字串處理](/classification/python_foundation/33)課程中有學過，字串也可以理解為每一個文字組成的「陣列」，因此也可以這樣做：
+在[基本變數－文字str，字串處理](/classification/python_foundation/10)課程中有學過，字串也可以理解為每一個文字組成的「陣列」，因此也可以這樣做：
 ```python
 for i in '外資揚言喊到破千':
     print(i)
@@ -93,7 +93,7 @@ for i in thestr:
 ```
 
 ### 字典dict
-在[基本變數－字典Dict](/classification/python_foundation/35)的課程中有分享過，字典與陣列最大的不同在於，陣列才有順序性，因此若用for迴圈將字典的資料格式打開，多半是在「找字典」裡面的某個資料時所使用：
+在[基本變數－字典Dict](/classification/python_foundation/12)的課程中有分享過，字典與陣列最大的不同在於，陣列才有順序性，因此若用for迴圈將字典的資料格式打開，多半是在「找字典」裡面的某個資料時所使用：
 ```python
 dic = {
     '縣市名稱': '台北',
@@ -110,7 +110,7 @@ for i in dic:
 歷年市長
 ```
 
-發現使用for迴圈打開字典，得到的竟然是key，有學過[基本變數－字典Dict](/classification/python_foundation/35)這堂課程的您一定知道要如何取出每筆資料的value了：
+發現使用for迴圈打開字典，得到的竟然是key，有學過[基本變數－字典Dict](/classification/python_foundation/12)這堂課程的您一定知道要如何取出每筆資料的value了：
 ```python
 dic = {
     '縣市名稱': '台北',
@@ -129,7 +129,7 @@ for i in dic:
 
 
 ## for結合if
-for 結合if 是非常常見的，我們就已在課程[判斷式If](/classification/python_foundation/36)賣的關子：**如果想要檢查list的各個物件內，有沒有想要的關鍵字，要怎麼查詢呢？**：
+for 結合if 是非常常見的，我們就已在課程[判斷式If](/classification/python_foundation/13)賣的關子：**如果想要檢查list的各個物件內，有沒有想要的關鍵字，要怎麼查詢呢？**：
 ```python
 news = ['由於本次國際間的晶片短缺', '導致於護國神山的台積電(2330)', '股價一路升突破600大關', '外資揚言喊到破千', '但有專家指出', '目前台灣的景氣燈號', '正轉向', '藍燈'] # 新聞文章
 for i in news:

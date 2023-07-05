@@ -2,9 +2,9 @@
 除非是非常專業的Python開發者，否則一開始進行學習的初學者，非常忌諱開發環境混亂。若有兩個以上的Python開發環境，初學者也搞不清楚自己把某套件安裝在哪個環境中，會導致開發效率降低，甚至想要放棄寫Python的念頭。避免後續的路途坎坷，那現在我就幫你把柏油路鋪好！
 
 ## 還沒安裝Spyder與Python？
-在課程「[Spyder使用教學](/classification/python_foundation/26)」我們已經下載完Spyder，並且再「[Windows直接裝Python](/classification/python_foundation/27)」帶領您如何直接再Windows直接安裝Python，因此若您還沒看以下的文章與教學影片，可以先行觀賞。
-> [Spyder使用教學](/classification/python_foundation/26)
-> [Windows直接裝Python](/classification/python_foundation/27)
+在課程「[Spyder使用教學](/classification/python_foundation/2)」我們已經下載完Spyder，並且再「[Windows直接裝Python](/classification/python_foundation/6)」帶領您如何直接再Windows直接安裝Python，因此若您還沒看以下的文章與教學影片，可以先行觀賞。
+> [Spyder使用教學](/classification/python_foundation/2)
+> [Windows直接裝Python](/classification/python_foundation/6)
 
 ## 我的電腦Python環境在哪裡？
 尋找自己的Python環境位置很簡單，以下依照條列步驟帶領您尋找Python環境位置：　

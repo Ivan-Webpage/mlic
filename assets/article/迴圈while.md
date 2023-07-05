@@ -1,7 +1,7 @@
 # 迴圈while
 
 
-在學完[迴圈for](/classification/python_foundation/37)以後，學習while相對地就快很多了，而while相較於for簡單了許多，while的呈現方式如下：
+在學完[迴圈for](/classification/python_foundation/14)以後，學習while相對地就快很多了，而while相較於for簡單了許多，while的呈現方式如下：
 ```python
 while 條件:
     執行指令

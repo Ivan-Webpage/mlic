@@ -3,7 +3,7 @@
 您一定會很好奇，為何不直接爬台灣氣象局的網站，原因在於，台灣氣象局的網站無法抓到「歷史」天氣。我們很常會需要調查一個區域的天氣，不管是從事事業，或者土地建物，都跟天氣非常有關係，因此我選擇到[2345天氣王](http://tianqi.2345.com/)當中查看。
 
 ![2345天氣王中的歷史天氣](https://i.imgur.com/IoWHY15.png)
-利用「[Json爬蟲教學－Google趨勢搜尋」與「Json爬蟲實戰－PChome](/classification/crawler_king/85)」所教導的Json爬蟲方式，取得該網站地區歷史資料的API，在該網站按下F12後，在重新整理網頁（F5），即可看到API（如下圖所示）。
+利用「[Json爬蟲教學－Google趨勢搜尋」與「Json爬蟲實戰－PChome](/classification/crawler_king/63)」所教導的Json爬蟲方式，取得該網站地區歷史資料的API，在該網站按下F12後，在重新整理網頁（F5），即可看到API（如下圖所示）。
 ![按下F12後，在重新整理網頁（F5），即可看到API](https://i.imgur.com/wJ3zay9.png)
 觀察該API的網址會發現，主要會有幾個參數： 地區的編號、 台灣的編號（固定是2）、 查詢年分、 查詢月份。由此可知，想要取得不同時間或地點的資料，就是在這裡進行調整。
 ```
@@ -23,7 +23,7 @@ getTable = pd.read_html(getJson['data'],header = 0)
 getTable[0] # 抓到資料
 ```
 
-在實際資料抓取時，常會需要至少一年資料，因此程式碼的範例以台北為例，爬取12個月的天氣資料。每個月所完成的資料，利用「[Pandas合併資料－concat、merge](/classification/python_foundation/44)」課程所教的pd.concat 方法進行合併，方能率先整理資料。
+在實際資料抓取時，常會需要至少一年資料，因此程式碼的範例以台北為例，爬取12個月的天氣資料。每個月所完成的資料，利用「[Pandas合併資料－concat、merge](/classification/python_foundation/21)」課程所教的pd.concat 方法進行合併，方能率先整理資料。
 ```python
 #--- 取得大量資料，該地區12個月
 today = datetime.datetime.today()

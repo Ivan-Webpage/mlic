@@ -1,6 +1,6 @@
 # 傳送位置LocationSendMessage
 ![成品參考](https://i.imgur.com/RzwLDau.png)
-> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/66)」中的影片教學。
+> 若不知如何修改「你自己的token」、「你自己的secret」、「你自己的ID」，請參考文章「[Line Bot機器人串接與測試](/classification/lineBot/43)」中的影片教學。
 
 想要傳送座標位置的第一步，首先要知道你想傳送的地點他的座標，我們可以利用Gooogle地圖來找到座標。只需要在想要的地標上點右鍵，即可取得該地區的座標位置。
 ![Gooogle地圖](https://i.imgur.com/tkuiOGP.png)

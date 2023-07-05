@@ -1,7 +1,7 @@
 # Pandas進階資料處理groupby－樞紐分析
 
 
-接續著[前面課程](/classification/python_foundation/42)中所使用到的salelist.csv檔案。在該檔案中有很多的商品銷售紀錄。若今天您是老闆，您會不會想要看各個產品品項的銷售總金額，找出公司的金雞母呢？groupby()這個方法可以幫您做到。
+接續著[前面課程](/classification/python_foundation/19)中所使用到的salelist.csv檔案。在該檔案中有很多的商品銷售紀錄。若今天您是老闆，您會不會想要看各個產品品項的銷售總金額，找出公司的金雞母呢？groupby()這個方法可以幫您做到。
 ![匯入資料salelist.csv](https://i.imgur.com/ASgSxtp.png)
 
 
