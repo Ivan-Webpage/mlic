@@ -1,7 +1,3 @@
  {
-    "backend_host":"mlic.fly.dev",
-    "jwt": {
-        "screct": "0vPAsf%$45Y8$GH-=)==++79R%B!!$%ggFE%^6nyur_j=mk215^3)9",
-        "user": "Why_You_Can_See_me?"
-    }
+    "backend_host":"mlic.fly.dev"
 }
