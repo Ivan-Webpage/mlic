@@ -10,6 +10,32 @@
 <url>
   <loc>https://marketingliveincode.com/</loc>
   <lastmod>2023-07-06T08:26:57+00:00</lastmod>
+  <video:video>
+    <video:thumbnail_loc>https://i9.ytimg.com/vi_webp/xh4aECbPaHQ/mqdefault.webp?v=60c87bf9&sqp=CNj28rAG&rs=AOn4CLAr4MBKOv80KRY9UwZ0TIa0e3laZA</video:thumbnail_loc>
+    <video:title>行銷人轉職爬蟲王實戰｜5大社群＋2大電商　介紹影片</video:title>
+    <video:description>
+      想學爬蟲技能，增加競爭力卻不知從何開始嗎？想取得網路消費者輿情，卻只能漫無目的的瀏覽網頁嗎？提出的企畫案缺乏數據佐證，一直被老闆打搶嗎？在數據的時代，您值得去做更有價值的事情，這些工作都交給程式吧！本課程分為兩個階段，新兵營階段，會從最基礎的網頁架構，來帶領您深入了解爬蟲原理...
+    </video:description>
+    <video:content_loc>
+      https://www.youtube.com/embed/xh4aECbPaHQ?&autoplay=1&showinfo=1&modestbranding=1&rel=0
+    </video:content_loc>
+    <video:player_loc>
+      https://www.youtube.com/embed/xh4aECbPaHQ?&autoplay=1&showinfo=1&modestbranding=1&rel=0
+    </video:player_loc>
+    <video:duration>600</video:duration>
+    <video:expiration_date>2024-04-15T19:20:30+08:00</video:expiration_date>
+    <video:rating>4.2</video:rating>
+    <video:view_count>12345</video:view_count>
+    <video:publication_date>2024-04-15T19:20:30+08:00</video:publication_date>
+    <video:family_friendly>yes</video:family_friendly>
+    <video:restriction relationship="allow">IE GB US CA</video:restriction>
+    <video:price currency="EUR">1.99</video:price>
+    <video:requires_subscription>yes</video:requires_subscription>
+    <video:uploader
+      info="https://marketingliveincode.com">Ivan Yang
+    </video:uploader>
+    <video:live>no</video:live>
+  </video:video>
 </url>
 
 <url>
@@ -259,6 +285,32 @@
 <url>
   <loc>https://marketingliveincode.com/classification/python_foundation/25</loc>
   <lastmod>2023-07-06T08:26:57+00:00</lastmod>
+  <video:video>
+    <video:thumbnail_loc>https://i9.ytimg.com/vi/0H5Bx3Ob30g/mqdefault.jpg?v=60de759f&sqp=CIT58rAG&rs=AOn4CLBclmh_X3bQEDriwDEbxehV3A7j6w</video:thumbnail_loc>
+    <video:title>6-1. Windows圖片顯示中文－【行銷搬進大程式】</video:title>
+    <video:description>
+      在利用Matplotlib進行繪圖，時常會碰到中文字無法顯示之問題，教學利用匯入字體檔案，並指定使用該字體檔案，即可根治此問題。
+    </video:description>
+    <video:content_loc>
+      https://www.youtube.com/embed/0H5Bx3Ob30g?autoplay=1&amp;showinfo=1&amp;modestbranding=1&amp;rel=0
+    </video:content_loc>
+    <video:player_loc>
+      https://www.youtube.com/embed/0H5Bx3Ob30g?autoplay=1&amp;showinfo=1&amp;modestbranding=1&amp;rel=0
+    </video:player_loc>
+    <video:duration>600</video:duration>
+    <video:expiration_date>2024-04-15T19:20:30+08:00</video:expiration_date>
+    <video:rating>4.2</video:rating>
+    <video:view_count>12345</video:view_count>
+    <video:publication_date>2024-04-15T19:20:30+08:00</video:publication_date>
+    <video:family_friendly>yes</video:family_friendly>
+    <video:restriction relationship="allow">IE GB US CA</video:restriction>
+    <video:price currency="EUR">1.99</video:price>
+    <video:requires_subscription>yes</video:requires_subscription>
+    <video:uploader
+      info="https://marketingliveincode.com">Ivan Yang
+    </video:uploader>
+    <video:live>no</video:live>
+  </video:video>
 </url>
 <url>
   <loc>https://marketingliveincode.com/classification/python_foundation/26</loc>
