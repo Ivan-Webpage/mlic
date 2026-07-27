@@ -36,7 +36,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       onSameUrlNavigation: 'reload', //網頁物件有變化時，允許重新整理
-      enableTracing: true, //網頁物件有變化時，允許重新整理
+      enableTracing: false, //正式站不應該把每個路由事件都印到 console
       useHash: false, //去掉url的#符號
       initialNavigation: 'enabledBlocking',
     })

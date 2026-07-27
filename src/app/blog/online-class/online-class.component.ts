@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Router,NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { makeMeta } from '../../makeMeta'
-declare var require: any
+import { onNavigationEnd } from '../../onNavigationEnd';
+import configJson from '../../../assets/config.json';
 @Component({
   selector: 'app-online-class',
   templateUrl: './online-class.component.html',
@@ -12,7 +13,7 @@ declare var require: any
 export class OnlineClassComponent implements OnInit {
   postData_classification = "" //抓取post傳遞過來的課程編號
   postData_article = "" //抓取post傳遞過來的文章編號
-  config = require("src/assets/config.json"); // 存放文章資訊
+  config: any = configJson; // 存放文章資訊
   thearticle: string;
   classObj: any;
   cover: string;
@@ -32,15 +33,13 @@ export class OnlineClassComponent implements OnInit {
     this.postData_article = String(this.route.snapshot.params['id']);
     meta.makeMeta(this.postData_classification, this.postData_article);
 
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.chapter = [];
-        this.thearticle = '';
-        this.video = '';
-        this.classObj = null;
-        this.cover = '';
-        this.reset();
-      }
+    onNavigationEnd(this.router, () => {
+      this.chapter = [];
+      this.thearticle = '';
+      this.video = '';
+      this.classObj = null;
+      this.cover = '';
+      this.reset();
     });
   }
 

@@ -1,9 +1,9 @@
 import { Title, Meta } from '@angular/platform-browser';
 import { Injectable } from "@angular/core";
-declare var require: any
+import configJson from '../assets/config.json';
 @Injectable()
 export class makeMeta {
-    config = require("src/assets/config.json"); // 存放文章資訊
+    config: any = configJson; // 存放文章資訊
 
     constructor(private titleService: Title, private metaService: Meta) { }
 
@@ -67,7 +67,6 @@ export class makeMeta {
                     default: // 首頁
                         title = '行銷搬進大程式｜Python基礎 爬蟲 商業分析 行銷 數據'
                 }
-                console.log(postData_article)
                 this.titleService.setTitle(title  + '－行銷搬進大程式');
                 this.metaService.addTags([
                     { name: 'title', content: title  + '－行銷搬進大程式' },

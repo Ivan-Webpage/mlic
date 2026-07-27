@@ -1,10 +1,11 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MarkdownService } from 'ngx-markdown';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { ActivatedRoute, Router, NavigationEnd  } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { makeMeta } from '../../makeMeta'
-declare var require: any
+import { onNavigationEnd } from '../../onNavigationEnd';
+import configJson from '../../../assets/config.json';
 @Component({
   selector: 'app-article',
   template: '',
@@ -16,7 +17,7 @@ export class ArticleComponent implements OnInit {
   // 網頁建構區塊
   faGithub = faGithub;
   faFacebook = faFacebook;
-  config = require("src/assets/config.json");; // 存放文章資訊
+  config: any = configJson; // 存放文章資訊
   title = ""; // 網頁標題
   description = ""; // SEO呈現描述
   article = ''; // 文章檔案
@@ -24,7 +25,6 @@ export class ArticleComponent implements OnInit {
   urlDownload = ''; // 檔案下載
   showDownload = true; // 有沒有檔案可以下載
   pageurl = '' // 上下篇文章的連結，分成文章、課程
-  @Output() size: number;
   // 參數區塊
   postData_classification = "" //抓取post傳遞過來的課程編號
   postData_article = "" //抓取post傳遞過來的文章編號
@@ -53,14 +53,12 @@ export class ArticleComponent implements OnInit {
     this.postData_article = String(this.route.snapshot.params['id']);
     meta.makeMeta(this.postData_classification, this.postData_article);
 
-    this.router.events.subscribe((event: any) => {
-      if (event instanceof NavigationEnd) {
-        // 重新載入前，要先把之前的變數全部清掉
-        this.catalog_arr = [[], [], [], [], []];
-        this.catalog_map = new Map();
-        this.count = [0, 0, 0, 0, 0];
-        this.reset();
-      }
+    onNavigationEnd(this.router, () => {
+      // 重新載入前，要先把之前的變數全部清掉
+      this.catalog_arr = [[], [], [], [], []];
+      this.catalog_map = new Map();
+      this.count = [0, 0, 0, 0, 0];
+      this.reset();
     });
   }
 
@@ -69,6 +67,7 @@ export class ArticleComponent implements OnInit {
   }
 
   reset() {
+    // 內文路徑是用 title 現組出來的，config.json 裡的 article_url 欄位目前沒有被讀取
     this.article = './assets/article/' + this.config['article'][this.postData_article]['title'] + '.md';
     this.cover = this.config['article'][this.postData_article]['cover-image'];
     this.urlDownload = this.config['article'][this.postData_article]['download'];

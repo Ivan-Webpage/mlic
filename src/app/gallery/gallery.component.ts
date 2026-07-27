@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { makeMeta } from '../makeMeta'
-declare var require: any
+import { onNavigationEnd } from '../onNavigationEnd';
+import configJson from '../../assets/config.json';
 
 @Component({
   selector: 'app-gallery',
@@ -12,7 +13,7 @@ declare var require: any
 export class GalleryComponent implements OnInit {
 
   postData_classification = "" //抓取post傳遞過來的類別
-  config = require("src/assets/config.json")['article']; // 存放文章資訊
+  config: any = configJson['article']; // 存放文章資訊
   title = '';
   star_icon = faStar;
   rndArray: number[]=[];
@@ -28,11 +29,7 @@ export class GalleryComponent implements OnInit {
       this.postData_classification = String(this.route.snapshot.params['cls']);
       meta.makeMeta('gallery', this.postData_classification);
 
-      this.router.events.subscribe((event) => {
-        if (event instanceof NavigationEnd) {
-          window.location.reload();
-        }
-      });
+      onNavigationEnd(this.router, () => window.location.reload());
     }
 
   ngOnInit(): void {
