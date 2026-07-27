@@ -83,7 +83,7 @@
                     </div>
                     <div class="md-box {{article_col}}">
                         <div class="row" style="--mdb-gutter-x:0;">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6" *ngIf="config['article'][prev_art]">
 
                                 <a type="button" class="back-blow-ten text-white btn next-button" [routerLink]="['/classification', this.config['article'][this.prev_art]['classification'], this.prev_art]" target="_blank">
                                     <fa-icon [icon]="faChevronLeft"></fa-icon>
@@ -93,7 +93,7 @@
                                     {{this.config['article'][this.prev_art]['title']}}
                                 </a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6" *ngIf="config['article'][next_art]">
                                 <a type="button" class="back-blow-ten text-white btn next-button" [routerLink]="['/classification', this.config['article'][this.next_art]['classification'], this.next_art]" target="_blank">
                                     下一篇
                                     <fa-icon [icon]="faChevronRight"></fa-icon>

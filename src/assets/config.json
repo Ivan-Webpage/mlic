@@ -1,4 +1,4 @@
- {
+{
     "article": {
         "1": {
             "title": "Chia Network奇亞幣挖礦！成為農夫詳細安裝教學",
@@ -16,7 +16,8 @@
             "time": "2021-05-03",
             "download": "",
             "article_url": "assets/article/Chia Network奇亞幣挖礦！成為農夫詳細安裝教學.md",
-            "video": ""
+            "video": "",
+            "next": "123"
         },
         "2": {
             "title": "Python幫你自動化Google 自然語言分析，NLP申請詳細圖文解說 — part1",
@@ -1143,7 +1144,7 @@
             "title": "TF-IDF關鍵字分析",
             "tag": [
                 "python",
-                "基礎", 
+                "基礎",
                 "jieba",
                 "資料處理",
                 "切詞"
@@ -2316,9 +2317,88 @@
             "download": "https://github.com/Marketing-Live-in-Code/monitoring_indicator/archive/refs/heads/main.zip",
             "article_url": "",
             "video": ""
+        },
+        "123": {
+            "title": "【首部曲】Python最火紅框架Django：0到1的建立",
+            "tag": [
+                "python",
+                "django",
+                "後端框架",
+                "網頁開發",
+                "admin後台"
+            ],
+            "description": "以Python語言為基礎的網頁框架中，Django是最熱門的選擇：內建強大後台管理介面、豐富的套件生態（Rest API、JWT等）、採用MVT架構方便維護。本篇從安裝到建立第一個專案，帶你完整走過Django從0到1的建置流程。",
+            "cover-image": "assets/images/article_cover/首部曲Python最火紅框架Django0到1的建立.jpg",
+            "classification": "technology",
+            "previous": "1",
+            "next": "124",
+            "time": "2026-07-27",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "124": {
+            "title": "【二部曲】Python最火紅框架Django：後台Admin與資料庫功能懶人包",
+            "tag": [
+                "python",
+                "django",
+                "admin後台",
+                "資料庫",
+                "list_display"
+            ],
+            "description": "本文接續「【首部曲】Python最火紅框架Django：0到1的建立」，帶你認識Django內建的Admin後台管理介面，從建立管理者帳號、註冊資料庫模型，到利用list_display、list_filter等參數快速客製化後台的資料呈現與篩選功能。",
+            "cover-image": "assets/images/article_cover/二部曲Python最火紅框架Django後台Admin與資料庫功能懶人包.jpg",
+            "classification": "technology",
+            "previous": "123",
+            "next": "125",
+            "time": "2026-07-27",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "125": {
+            "title": "【三部曲】Python最火紅框架Django：後台Admin的外觀客製化調整，自行修改Html、CSS、插入logo！",
+            "tag": [
+                "python",
+                "django",
+                "admin後台",
+                "客製化",
+                "css"
+            ],
+            "description": "延續前篇對Django Admin資料呈現與篩選的介紹，本篇更進一步教你修改Admin後台的Html、CSS等檔案，包含插入自訂Logo、調整外觀樣式，讓後台介面能以你想要的樣子呈現，不再只是預設的陽春畫面。",
+            "cover-image": "assets/images/article_cover/三部曲Python最火紅框架Django後台Admin的外觀客製化調整自行修改HtmlCSS插入logo.jpg",
+            "classification": "technology",
+            "previous": "124",
+            "next": "126",
+            "time": "2026-07-27",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "126": {
+            "title": "【四部曲】Python最火紅框架Django：好強的API套件，Rest Framework！",
+            "tag": [
+                "python",
+                "django",
+                "api",
+                "rest_framework",
+                "serializer"
+            ],
+            "description": "Django不只是網頁後端，在前後端分離的趨勢下，更需要一套好用的API方案。本篇詳細介紹Django最強大的套件Django REST Framework，從安裝、Serializer、ViewSet到路由設定，讓Django後端的API功能完整到位。",
+            "cover-image": "assets/images/article_cover/四部曲Python最火紅框架Django好強的API套件Rest_Framework.jpg",
+            "classification": "technology",
+            "previous": "125",
+            "time": "2026-07-27",
+            "download": "",
+            "article_url": "",
+            "video": ""
         }
     },
     "class": {
+        "5": {
+            "title": "實用工具分享",
+            "chapter": {}
+        },
         "python_foundation": {
             "title": "Python 基礎教學",
             "cover-image": "assets/images/class_cover/python.jpg",
@@ -2475,10 +2555,6 @@
         "telegramBot": {
             "title": "Telegram Bot 聊天機器人",
             "cover-image": "assets/images/class_cover/telegram.jpg",
-            "chapter": {}
-        },
-        "5": {
-            "title": "實用工具分享",
             "chapter": {}
         }
     }
