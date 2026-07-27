@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block title %}使用者登入{% endblock %}
+
+{% block main %}
+<div class="container-fluid p-5 back-major-ten text-white text-center">
+    <h1>使用者登入</h1>
+    <p>Login</p>
+</div>
+
+<form action="/login/" method="post" class="container mt-5" style="max-width: 300px;">
+    {% csrf_token %}
+    <div class="mb-3 mt-3">
+        <label for="uName" class="form-label">帳號：</label>
+        <input type="text" class="form-control" id="uName" placeholder="請輸入帳號" name="uName">
+    </div>
+    <div class="mb-3">
+        <label for="uPass" class="form-label">密碼：</label>
+        <input type="password" class="form-control" id="uPass" placeholder="請輸入密碼" name="uPass">
+    </div>
+    <button type="submit" class="btn back-blow-ten text-white justify-content-center">送出</button>
+</form>
+{% endblock %}

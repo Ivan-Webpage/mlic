@@ -1,0 +1,58 @@
+.sidenav {
+    position: fixed;
+    bottom: 120px;
+    right: 0;
+}
+
+#mySidenav a {
+    position: absolute;
+    right: -150px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    z-index: 10000;
+  }
+  
+#mySidenav a:hover {
+  right: 0;
+}
+
+#mySidenav a fa-icon {
+  padding-right: 30px;
+}
+
+.gmail {bottom: -40px;}
+.gmail:hover {background: rgb(4, 170, 109);}
+.youtube {bottom: 0px;}
+.youtube:hover {background: rgb(244, 67, 54);}
+.github {bottom: 40px;}
+.github:hover {background: rgb(17, 17, 17);}
+.medium {bottom: 80px;}
+.medium:hover {background: rgb(85, 85, 85);}
+.fb {bottom: 120px;}
+.fb:hover {  background: rgb(93,130,187);}
+.telegram {bottom: 160px;}
+.telegram:hover {  background: rgb(0,36,82);}
+
+.gotop {
+  background-color: rgb(155,124,70);
+  color: #fff;
+}
+
+.gotop:hover {
+  background-color: rgb(93,130,187);
+}
+
+@media screen and (max-width: 580px) {
+  .sidenav {
+    display: none;
+  }
+}

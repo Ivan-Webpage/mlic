@@ -1,0 +1,28 @@
+{% extends "admin/base.html" %}
+
+{% load static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrastyle %}
+<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/x-icon" href="{% static 'img/logo_icon.svg' %}"> 
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo_icon.svg' %}"> 
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" class="back-major-ten">
+    <a href="{% url 'admin:index' %}">
+        <img src="{% static 'img/logo_icon.svg' %}" height="40px" />
+        行銷搬進大程式
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %}
+<div id="footer" class="text-white">
+    <p style="text-align: center; font-size: 10px;">©2023 行銷搬進大程式 Marketing Live in Code</p>
+</div>
+{% endblock %}

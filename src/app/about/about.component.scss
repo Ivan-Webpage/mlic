@@ -1,0 +1,36 @@
+.hero-img {
+    width: 100%;
+
+}
+
+.row-block {
+    margin-top: 30px;
+}
+
+.black-background {
+    padding-bottom: 50px;
+}
+
+.color-block {
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.003em;
+}
+
+@media screen and (max-width: 580px) {
+    .color-block {
+        height: 9px;
+        width: 9px;
+        margin: 3px;
+        border-radius: 8px;
+    }
+}
