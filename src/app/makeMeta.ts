@@ -1,15 +1,21 @@
 import { Title, Meta } from '@angular/platform-browser';
-import { Injectable } from "@angular/core";
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable } from "@angular/core";
 import configJson from '../assets/config.json';
 @Injectable()
 export class makeMeta {
     config: any = configJson; // 存放文章資訊
 
-    constructor(private titleService: Title, private metaService: Meta) { }
+    constructor(
+        private titleService: Title,
+        private metaService: Meta,
+        @Inject(DOCUMENT) private document: Document,
+    ) { }
 
     makeMeta(postData_classification: string, postData_article: string) {
         var getobj = this.config['article'][postData_article]
-        
+        var canonicalUrl = '';
+
         switch (postData_classification) {
             case 'home':
                 this.titleService.setTitle('首頁－行銷搬進大程式｜Python基礎 爬蟲 商業分析 行銷 數據');
@@ -29,6 +35,7 @@ export class makeMeta {
                     { property: "og:url", content: "https://marketingliveincode.com/home/" },
                     { property: "al:web:url", content: "https://marketingliveincode.com/home/" },
                 ])
+                canonicalUrl = "https://marketingliveincode.com/home/";
                 break;
             case 'about':
                 this.titleService.setTitle('關於Ivan－行銷搬進大程式｜Python基礎 爬蟲 商業分析 行銷 數據');
@@ -48,6 +55,7 @@ export class makeMeta {
                     { property: "og:url", content: "https://marketingliveincode.com/about/" },
                     { property: "al:web:url", content: "https://marketingliveincode.com/about/" },
                 ])
+                canonicalUrl = "https://marketingliveincode.com/about/";
                 break;
             case 'gallery':
                 var title = '';
@@ -84,6 +92,7 @@ export class makeMeta {
                     { property: "og:url", content: "https://marketingliveincode.com/classification/"+postData_article+'/' },
                     { property: "al:web:url", content: "https://marketingliveincode.com/classification/"+postData_article+'/' },
                 ])
+                canonicalUrl = "https://marketingliveincode.com/classification/"+postData_article+'/';
                 break;
             default:
                 this.titleService.setTitle(getobj['title'] + '－行銷搬進大程式');
@@ -104,7 +113,11 @@ export class makeMeta {
                     { property: "al:web:url", content: "https://marketingliveincode.com/classification/"+postData_classification+'/'+ postData_article+'/'},
                     { property: "article:published_time", content: getobj['time'] },
                 ])
+                canonicalUrl = "https://marketingliveincode.com/classification/"+postData_classification+'/'+ postData_article+'/';
+                this.setArticleJsonLd(canonicalUrl, getobj);
         }
+
+        this.setCanonicalUrl(canonicalUrl);
 
         this.metaService.addTags([
             { name: 'viewport', content: 'width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1' },
@@ -117,6 +130,45 @@ export class makeMeta {
             { property: "og:site_name", content: "Marketing Live in Code" },
             { property: "article:publisher", content: "https://www.facebook.com/marketingliveincode" },
         ]);
+    }
+
+    // 設定 <link rel="canonical">，避免同一頁面被搜尋引擎判定成重複內容
+    private setCanonicalUrl(url: string) {
+        if (!url) {
+            return;
+        }
+        var link: HTMLLinkElement | null = this.document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = this.document.createElement('link');
+            link.setAttribute('rel', 'canonical');
+            this.document.head.appendChild(link);
+        }
+        link.setAttribute('href', url);
+    }
+
+    // 單篇文章頁注入 JSON-LD 結構化資料，幫助 Google 呈現豐富搜尋結果摘要
+    private setArticleJsonLd(url: string, article: any) {
+        if (!article) {
+            return;
+        }
+        var existing = this.document.getElementById('article-json-ld');
+        if (existing) {
+            existing.remove();
+        }
+        var script = this.document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'article-json-ld';
+        script.text = JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: article['title'],
+            image: ['https://marketingliveincode.com/' + article['cover-image']],
+            datePublished: article['time'],
+            author: { '@type': 'Person', name: '楊超霆' },
+            publisher: { '@type': 'Organization', name: 'Marketing Live in Code' },
+            mainEntityOfPage: url,
+        });
+        this.document.head.appendChild(script);
     }
 
 }

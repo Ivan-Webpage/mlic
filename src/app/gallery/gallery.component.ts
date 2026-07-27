@@ -27,7 +27,11 @@ export class GalleryComponent implements OnInit {
     private meta: makeMeta
     ) {
       this.postData_classification = String(this.route.snapshot.params['cls']);
-      meta.makeMeta('gallery', this.postData_classification);
+      // GalleryComponent 也被 HomeComponent 直接內嵌當「最新文章」區塊使用（此時路由沒有 cls 參數）。
+      // 只有在真的走 /classification/:cls 這條路由時才設定 SEO meta，避免蓋掉 HomeComponent 自己設定的 title/canonical。
+      if (this.route.snapshot.params['cls']) {
+        meta.makeMeta('gallery', this.postData_classification);
+      }
 
       onNavigationEnd(this.router, () => window.location.reload());
     }

@@ -6,6 +6,9 @@
 /out-tsc
 /bazel-out
 
+# 由 scripts/generate-sitemap.js 從 src/assets/config.json 產生，`npm run build` 時會自動重新產生
+/src/sitemap.xml
+
 # Node
 /node_modules
 npm-debug.log
