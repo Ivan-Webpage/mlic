@@ -6,31 +6,27 @@
 
 Ivan（楊超霆）的個人部落格＋線上課程網站，網域 `marketingliveincode.com`。內容以 Python／爬蟲／行銷數據分析／管理思維為主，並有付費／免費線上課程章節。網站語言為繁體中文（`zh-Hant`）。
 
-## ⚠️ 目前最重要的事實：前端已經是「靜態內容」驅動
+## ⚠️ 這是一個純靜態網站（後端已移除）
 
-這點會大幅影響重構策略，務必先理解：
-
-- 前端**完全沒有**在 runtime 呼叫 `mlic_backend-main` 的任何 API（已用 grep 全面確認過，找不到 `HttpClient` 打 API、`fetch`、表單送出等行為）。
-- 所有文章 metadata 其實已經寫死在 [`src/assets/config.json`](src/assets/config.json)，文章內文是純 Markdown 檔放在 [`src/assets/article/`](src/assets/article/)，圖片放在 `src/assets/images/`。
-- Django 後端（`mlic_backend-main/`）目前的真實角色，比較像是**過去用來管理／上傳文章內容的 CMS 後台**（透過 Django Admin 上傳文章 Markdown 檔、封面圖片），其上傳結果（`static/upload/markdown/`、`static/upload/image/`）才是內容的「原始資料來源」，之後被人工搬到前端 `src/assets/`。並沒有自動同步腳本。
-- 因此「移除後端、改全靜態」這件事，**難度遠低於一般「拔掉後端 API」的重構**——前端本來就不吃後端資料。真正要解決的是：**內容更新／新增文章的工作流程，之後要怎麼做**（見 [`docs/refactor-plan.md`](docs/refactor-plan.md)）。
+- 網站**沒有任何後端／資料庫**。所有文章 metadata 寫死在 [`src/assets/config.json`](src/assets/config.json)，文章內文是純 Markdown 檔放在 [`src/assets/article/`](src/assets/article/)，圖片放在 `src/assets/images/`。
+- 原本有一個 Django REST 後端（`mlic_backend-main/`），但它從來不是前端 runtime 會呼叫的 API——只是過去用來上傳文章的 CMS 後台，其上傳結果會人工搬到前端 `src/assets/`。這個後端已經在重構時整個移除，歷史細節與移除前的內容比對記錄在 [`docs/backend-legacy.md`](docs/backend-legacy.md)（僅供歷史參考，`mlic_backend-main/` 資料夾本身已經不存在，但可從 `git log` 找回）。
+- **新增／編輯文章不需要任何後端或工具**，直接照 [`docs/how-to-add-article.md`](docs/how-to-add-article.md) 的步驟改 `config.json` + 放檔案即可。
 
 ## 技術棧
 
-- **前端（本目錄）**：Angular 15 + Angular Universal SSR（`@nguniversal/express-engine`），Angular Material、ng-bootstrap、mdb-angular-ui-kit、ngx-markdown（渲染文章 `.md`）、ngx-masonry（About 頁相片牆）、Font Awesome。
-- **後端（`mlic_backend-main/`，即將移除）**：Django 4.2 + Django REST Framework，SQLite，部署在 Zeabur（gunicorn + whitenoise）。詳見 [`docs/backend-legacy.md`](docs/backend-legacy.md)。
+- **前端（本目錄，唯一存在的部分）**：Angular 15 + Angular Universal SSR（`@nguniversal/express-engine`），Angular Material、ng-bootstrap、mdb-angular-ui-kit、ngx-markdown（渲染文章 `.md`）、ngx-masonry（About 頁相片牆）、Font Awesome。
+- 部署型態維持 SSR（非純 CSR、非 prerender），有 SEO 考量，見 [`docs/architecture.md`](docs/architecture.md)。
 
 ## Repo 結構
 
 ```
-mlic/                          ← 本目錄，Angular 前端
+mlic/                          ← 本目錄，Angular 前端，也是整個網站的全部
 ├── src/app/                   ← 元件（見 docs/architecture.md）
 ├── src/assets/config.json     ← 所有文章／課程 metadata（見 docs/content-model.md）
 ├── src/assets/article/*.md    ← 文章內文
 ├── src/assets/images/         ← 封面圖／內文圖
 ├── server.ts                  ← Angular Universal 的 Express SSR server
-├── docs/                      ← 給 AI agent 看的詳細文件（本次新增）
-└── mlic_backend-main/         ← Django 後端原始碼（僅供參考，重構後會整包移除）
+└── docs/                      ← 給 AI agent／人類看的詳細文件
 ```
 
 ## 常用指令
@@ -44,14 +40,13 @@ npm run serve:ssr    # 跑編譯好的 SSR server
 npm test             # Karma/Jasmine 單元測試
 ```
 
-## 重構目標（進行中）
-
-目標：拿掉 Django 後端，讓網站變成**完全靜態網站**。重構前請先讀：
+## 文件索引
 
 1. [`docs/architecture.md`](docs/architecture.md) — 前端模組、路由、SSR 架構
-2. [`docs/content-model.md`](docs/content-model.md) — `config.json` schema、文章／課程資料怎麼串起來、怎麼新增一篇文章
-3. [`docs/backend-legacy.md`](docs/backend-legacy.md) — Django 後端的 models／API／admin，做為移除前的參考文件
-4. [`docs/refactor-plan.md`](docs/refactor-plan.md) — 拔後端的具體階段、待確認事項、已發現的資料落差
+2. [`docs/content-model.md`](docs/content-model.md) — `config.json` schema、文章／課程資料怎麼串起來
+3. [`docs/how-to-add-article.md`](docs/how-to-add-article.md) — **新增一篇文章的完整操作 SOP**（取代原本 Django Admin 的角色）
+4. [`docs/backend-legacy.md`](docs/backend-legacy.md) — 已移除的 Django 後端，歷史參考用
+5. [`docs/refactor-plan.md`](docs/refactor-plan.md) — 這次靜態化／SEO 重構的執行記錄
 
 ## 專案慣例
 

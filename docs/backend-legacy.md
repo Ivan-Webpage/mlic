@@ -1,6 +1,8 @@
-# Django 後端參考文件（`mlic_backend-main/`，重構後將整包移除）
+# Django 後端參考文件（已移除，僅供歷史參考）
 
-這份文件記錄 `mlic_backend-main/` 現有的樣貌，供拆除前參考。**確認過前端在 runtime 完全不呼叫這個後端的任何 API**（見 [CLAUDE.md](../CLAUDE.md) 開頭的說明），所以這裡不是「拔 API 整合」，而是「確認可以安全刪除、並把它曾經扮演的角色（內容上傳/管理）想清楚替代方案」。
+> **狀態：`mlic_backend-main/` 資料夾已經從專案中刪除。** 這份文件記錄它被移除前的樣貌，純粹作為歷史紀錄與未來若要查資料時的參考。移除前的完整原始碼仍在 git 歷史裡（第一個 commit「chore: initial commit before backend removal & SEO refactor」），需要的話可以用 `git show <commit>:mlic_backend-main/...` 找回任何檔案。
+>
+> 移除前已確認**前端在 runtime 完全不呼叫這個後端的任何 API**（見 [CLAUDE.md](../CLAUDE.md) 開頭的說明），它真正的角色只是過去用來上傳文章的 CMS 後台。移除前發現它比前端多 4 篇未發佈文章（Django 教學系列），已經在移除前一併搬到前端發佈（見下方「內容檔案盤點」與 [refactor-plan.md](refactor-plan.md)）。取代它「上傳文章」這個角色的新流程，見 [how-to-add-article.md](how-to-add-article.md)。
 
 ## 技術棧
 
@@ -68,4 +70,8 @@ Router 掛在 `/api/`：
   - 對應的封面圖也只在後端有
 - 另外「想找意見領袖（KOL）…」這篇在兩邊都有，只是檔名的標點符號（全形/半形括號、破折號）不同，前端版本應視為正式版，後端那份可視為舊檔。
 
-這代表：**`mlic_backend-main` 不是「前端內容的純備份」，它比前端多 4 篇未發佈文章**。刪除後端前，務必先跟 Ivan 確認這 4 篇 Django 教學文章是否要一併搬到前端發佈，還是刻意不發佈——細節與行動項目見 [refactor-plan.md](refactor-plan.md)。
+這代表：**`mlic_backend-main` 不是「前端內容的純備份」，它比前端多 4 篇未發佈文章**。
+
+✅ **後續處理（已完成）**：這 4 篇文章已在移除後端前搬到前端發佈，成為 `config.json` 的 id `123`～`126`（classification `technology`），並串進既有的 previous/next 鏈結（`1 → 123 → 124 → 125 → 126`）。細節見 [refactor-plan.md](refactor-plan.md)。
+
+⚠️ **發現一個內容缺口，交給 Ivan 決定要不要補**：四部曲文章結尾寫道「這些問題將在下篇文章『【五部曲】Python最火紅框架Django：CORS與CSRF錯誤怎麼排除?』為您解惑」，但**無論前端或後端都找不到這篇「五部曲」的文章**，看起來當初計畫寫但沒有完成／沒有上傳。目前前端沒有這篇文章，四部曲也就沒有「下一篇」按鈕（已用 `*ngIf` 妥善處理成隱藏，不會顯示壞掉的連結，但內文提到的五部曲仍然是個沒有兌現的內容缺口）。

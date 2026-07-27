@@ -1,37 +1,26 @@
-# 重構計畫：移除 Django 後端，改為純靜態網站
+# 重構執行紀錄：移除 Django 後端、程式碼優化、SEO 優化、移除 GA 追蹤碼
 
-## 目標
+這份文件原本是「待確認的重構計畫」，所有問題都已經跟 Ivan 確認過、且已執行完畢，現在改成執行紀錄，供之後查閱「當初為什麼這樣做」。
 
-- 移除 `mlic_backend-main/` 整個資料夾與其部署
-- 前端維持 Angular，但不再需要一個「隨時在跑、要人維護」的 Django 服務
-- 之後內容更新交給 AI agent 處理（改 `config.json` + `.md` 檔 + 圖片 → build → 部署）
+## 已確認的決策
 
-## 現況基礎（已確認，不用重新調查）
+1. **完全移除後端依賴**：`mlic_backend-main/` 已整個刪除。刪除前已用 git 存檔（見 initial commit），需要的話可以從 git 歷史復原任何檔案。
+2. **部署型態維持 SSR**：不改成純 CSR，也不做全站 prerender，理由是 SSR 對 SEO／社群分享預覽比較有利，且改動風險較低。`post-routes.txt` 因為內容過時、且沒有被任何程式碼實際使用，已在 SEO 優化階段被 `sitemap.xml` 產生腳本取代並移除。
+3. **4 篇未發佈的 Django 教學文章一併搬到前端發佈**：id `123`～`126`，classification `technology`，串進既有的 previous/next 鏈結（`1 → 123 → 124 → 125 → 126`）。細節見 [backend-legacy.md](backend-legacy.md)「內容檔案盤點」一節。
+4. **取代 Django Admin 上傳功能的方式**：Ivan 選擇「先給一份步驟文件（SOP）就好」，不寫自動化工具。見 [how-to-add-article.md](how-to-add-article.md)。
+5. **Google 追蹤碼**：確認過 `src/index.html` 裡的 `gtag.js`／`UA-193650099-1` 是舊版 Universal Analytics（Google 已在 2023 年停用資料收集），Ivan 確認直接整段移除，不換 GA4。
+6. **`class["5"]`（實用工具分享）**：查證目前沒有任何文章使用這個分類，是空分類，不算 bug，這次不用改程式碼，僅在 [content-model.md](content-model.md) 註記，供之後決定是否沿用。
 
-- 前端目前**沒有任何 runtime API 呼叫**指向後端，內容已經 100% 是靜態的（`config.json` + `src/assets/article/*.md` + 圖片），詳見 [content-model.md](content-model.md)
-- 後端唯一還在扮演的角色，是**過去用來上傳/管理文章的 CMS**（Django Admin），資料已經（大部分）人工搬到前端，詳見 [backend-legacy.md](backend-legacy.md)
-- 兩邊內容有落差：**後端多 4 篇未發佈的 Django 教學文章**（+對應封面圖），前端沒有
+## 執行內容摘要
 
-## 待與 Ivan 確認的問題（開始大改之前先問，不要自己猜）
+- **內容遷移**：4 篇 Django 教學文章的 md／封面圖複製進 `src/assets/`，`config.json` 新增對應 4 筆資料並串接鏈結。過程中發現一個既有 bug：文章的 `previous`/`next` 鏈結若指到不存在的 id（例如鏈結最新端沒有 `next`），`article.component.html` 會直接噴 `TypeError` 而不是優雅地隱藏按鈕——已修成 `*ngIf` 防呆，不改變其他行為。
+- **前端程式碼優化**：清掉死碼（未使用的 `@Output`、`console.log`）、把讀 `config.json` 的 `require()` 改成標準 ES `import`（`tsconfig.json` 加 `resolveJsonModule`）、關閉正式站不該開的 `enableTracing`、把四個元件重複的「路由變化時重置頁面」邏輯抽成共用 helper（行為不變，純減少重複）。
+- **SEO 優化**：修正 `<html lang="en">` 應為 `zh-Hant` 的錯誤、新增 canonical link、新增 `robots.txt`／`sitemap.xml`（含產生腳本）、在文章頁加入 JSON-LD 結構化資料。
+- **移除 GA 追蹤碼**：`src/index.html` 的 `gtag.js`／`UA-193650099-1` 整段移除。
 
-1. **那 4 篇「Django 教學系列」文章要不要一併發佈到前端？** 如果要，需要走一次[content-model.md](content-model.md)裡的「新增文章」流程，並補上 `previous`/`next` 鏈結（要接進哪個系列由 Ivan 決定，程式碼看不出來原本打算放哪）。
-2. **日後怎麼「寫文章」？** 現在等於是靠人工編輯 `config.json` + 丟 `.md` 檔 + 丟圖片。是否要做一個小工具（CLI script 或簡單表單）幫忙：自動配下一個 id、自動維護 `previous`/`next` 雙向鏈結、自動更新 `class[].chapter[]`？還是就維持全手動（畢竟更新頻率不高，AI agent 之後可以直接照流程手改）？
-3. **SSR（Node/Express server）要不要留？** 目前正式站是 Angular Universal SSR（`server.ts` 起一個 Express process）。純靜態化有兩個方向可選：
-   - **(a) 全站 prerender**：用 `@nguniversal/builders:prerender`，把 `post-routes.txt`（[../post-routes.txt](../post-routes.txt)，目前未被使用、但剛好列出了所有文章路徑）接進 `angular.json` 的 `prerender.options.routes`，build 出純 HTML/JS/CSS，丟到任何靜態 hosting（GitHub Pages / Cloudflare Pages / Zeabur static 等），完全不用跑 Node process。SEO 效果跟現在 SSR 接近，但少了一個要顧的 server。
-   - **(b) 純 CSR**：拿掉 SSR，直接 `ng build` 丟靜態檔（`index.html` 由瀏覽器端 Angular 接管路由）。最簡單，但初次載入的 SEO/OG 分享預覽會變差（`makeMeta.ts` 設的 meta tag 是 client-side 才設定的，社群爬蟲抓到的會是空的 `index.html`）。
-   - 目前傾向 (a)，但需要 Ivan 確認 SEO／社群分享預覽的重要性，以及是否接受多一道 prerender build 步驟。
-4. **`class["5"]`（實用工具分享）沒有被 `blog.component.ts` 的線上課程判斷清單納入**，是否為刻意設計（希望它走一般文章頁而非課程頁）？如果不是，重構時要一併修正這個不一致（見 [content-model.md](content-model.md)）。
+## 明確沒有做的事（刻意排除，避免過度工程）
 
-## 建議的執行階段（等問題 1–4 確認後再排優先序）
-
-1. **內容補齊**：視問題 1 的答案，把缺的 4 篇文章（若要發佈）搬進前端，跑一次完整的「新增文章」流程驗證沒問題。
-2. **內容工作流程**：視問題 2 的答案，寫（或不寫）一個小工具取代 Django Admin 的上傳功能。
-3. **部署形態**：視問題 3 的答案，調整 `angular.json` 的 `prerender` 設定／拿掉 `server.ts` 與 SSR 相關 npm scripts、依賴（`@nguniversal/*`、`express`）。
-4. **修資料一致性小問題**：`class["5"]` 分類判斷、`article_url` 死欄位、缺 `next`/`previous` 的舊文章防呆（見 [content-model.md](content-model.md)「已知的資料一致性問題」）。
-5. **刪除 `mlic_backend-main/`**，並取消其在 Zeabur（或其他平台）上的部署／關閉服務。
-6. **收尾**：確認 `.gitignore`、README、部署文件都不再提到 Django 後端；`src/index.html` 裡的 Google Analytics（`gtag.js`，`UA-193650099-1`）等第三方追蹤碼維持不動，跟後端無關。
-
-## 明確不需要做的事（避免過度工程）
-
-- 不需要幫「前端呼叫後端 API」寫遷移層——因為本來就沒有這種呼叫。
-- 不需要保留後端的 JWT/`Temp` model 邏輯，那段程式碼跟部落格內容無關（見 [backend-legacy.md](backend-legacy.md)）。
+- 沒有重寫全部 126 篇文章內容的圖片 alt text（量體太大，屬於內容編修工作，寫進 [how-to-add-article.md](how-to-add-article.md) 當作日後新增文章的建議規範）。
+- 沒有幫「前端呼叫後端 API」寫遷移層——因為本來就沒有這種呼叫。
+- 沒有保留後端的 JWT/`Temp` model 邏輯，那段程式碼跟部落格內容無關（見 [backend-legacy.md](backend-legacy.md)）。
+- **五部曲文章缺口未補**：四部曲文章內文提到「下篇文章『【五部曲】…CORS與CSRF錯誤怎麼排除』」，但這篇文章在後端／前端都不存在，看起來是當初沒寫完。這不是這次重構的範圍（沒有內容可搬），但值得 Ivan 知道，如果之後想補完這篇可以再處理。

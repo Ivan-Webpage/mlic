@@ -2,10 +2,10 @@
 
 網站所有「文章」與「線上課程」的資料，全部來自一個檔案：[`src/assets/config.json`](../src/assets/config.json)，搭配 [`src/assets/article/*.md`](../src/assets/article/)（內文）與 `src/assets/images/`（圖片）。**沒有資料庫、沒有 API**——這就是靜態網站的資料層。
 
-## 現況統計（2026-07-27 盤點）
+## 現況統計（2026-07-27 盤點，已含後端搬遷的 4 篇文章）
 
-- `article` 物件：122 筆（id 從 `"1"` 到 `"122"`，皆為字串 key）
-- 對應 `src/assets/article/*.md`：122 個檔案，與 `article` 筆數一致
+- `article` 物件：126 筆（id 從 `"1"` 到 `"126"`，皆為字串 key；`123`～`126` 是從 Django 後端搬遷過來的 Django 教學系列，見 [backend-legacy.md](backend-legacy.md)）
+- 對應 `src/assets/article/*.md`：126 個檔案，與 `article` 筆數一致
 - `class` 物件：5 筆線上課程分類
 
 ## Schema：`config.json`
@@ -46,7 +46,7 @@
 }
 ```
 
-`class` 目前有 5 筆：`5`（實用工具分享，chapter 是空物件 `{}`）、`python_foundation`、`lineBot`、`crawler_king`、`telegramBot`。這些 key 同時也是 `blog.component.ts` 裡硬寫的「線上課程分類清單」，兩邊要保持一致（目前 `class` 多了一個 `"5"`，但 `blog.component.ts` 的判斷清單沒有 `"5"`——如果 `"5"` 底下的文章要用課程頁呈現，這是一個需要修的不一致，見 [refactor-plan.md](refactor-plan.md)）。
+`class` 目前有 5 筆：`5`（實用工具分享，chapter 是空物件 `{}`）、`python_foundation`、`lineBot`、`crawler_king`、`telegramBot`。這些 key 同時也是 `blog.component.ts` 裡硬寫的「線上課程分類清單」，但清單裡沒有 `"5"`。**已查證目前沒有任何 `article` 使用 `classification: "5"`**，所以這是一個空分類，不影響任何實際頁面，不算 bug；若之後要用 `"5"` 發文章，記得同時把 `"5"` 加進 `blog.component.ts` 的判斷清單，不然文章會被誤判成一般文章頁而非課程頁。
 
 ## 資料如何被前端使用
 
@@ -59,18 +59,9 @@
 ## 已知的資料一致性問題（重構前建議先處理或至少記錄）
 
 1. **`ArticleComponent` 不是用 `article_url` 欄位讀檔**，而是自己用 `config['article'][id]['title'] + '.md'` 現組檔名。這代表 `article_url` 欄位目前其實是死欄位（僅少數幾篇例如「NLP 系列」被拿來當外部連結範例，但 component 程式碼並沒有讀它）。重構時可以考慮讓 `article_url` 真正被使用，或乾脆拿掉這個欄位、統一用 title 組檔名的邏輯。
-2. **`class["5"]` 沒有被 `blog.component.ts` 的線上課程判斷清單納入**，目前效果應該是被當一般文章走 `ArticleComponent`（除非它底下沒有文章使用它，需要實測確認）。
-3. 少數早期文章缺 `next` 欄位（只有 `previous`），`ArticleComponent` 若遇到 `undefined` 的 `next`/`previous` id 讀取 `config['article'][undefined]` 會壞掉，需要在重構時補上或做防呆。
+2. **`class["5"]` 沒有被 `blog.component.ts` 的線上課程判斷清單納入**——已查證是空分類（見上），目前不影響任何頁面。
+3. ~~少數早期文章缺 `next` 欄位（只有 `previous`），`ArticleComponent` 若遇到 `undefined` 的 `next`/`previous` id 讀取 `config['article'][undefined]` 會壞掉~~ ✅ 已修復：`article.component.html` 的上/下篇按鈕加了 `*ngIf="config['article'][prev_art]"` / `*ngIf="config['article'][next_art]"` 防呆，遇到鏈結兩端（目前是鏈結最新端的文章）就直接不顯示該按鈕，不會噴 `TypeError`。
 
-## 目前「新增一篇文章」的手動流程（重構後要有替代方案）
+## 新增一篇文章
 
-依現有程式碼與檔案結構推斷出的流程（**沒有自動化腳本**，純手動）：
-
-1. 把封面圖放進 `src/assets/images/article_cover/`（或線上課程的 `class_cover/`）
-2. 把文章內文（Markdown）存成 `src/assets/article/{title}.md`，檔名必須跟 `config.json` 裡的 `title` 完全一致（因為 `ArticleComponent` 是拿 title 組檔名）
-3. 在 `config.json` `article` 物件新增一筆，key 是下一個流水號 id（字串）
-4. 手動把「上一篇」文章的 `next`、以及被指定為 `previous` 的那篇文章的 `next`，更新成新文章的 id（目前 `previous`/`next` 是雙向手動維護的鏈結串列，不是自動算的）
-5. 若是線上課程單元，額外要把新 id 塞進對應 `class[cls].chapter[章節名稱]` 的陣列裡
-6. 重新 `ng build`（因為 `config.json` 是 `require()` 進 JS bundle）
-
-這個流程目前**很容易手動出錯**（漏改 next/previous、id 打錯字），是重構的一個好機會，見 [refactor-plan.md](refactor-plan.md) 的建議。
+完整操作步驟（含如何找鏈結起點、常見錯誤）已經整理成獨立的 SOP 文件：[how-to-add-article.md](how-to-add-article.md)，取代原本 Django Admin 上傳文章的角色。
