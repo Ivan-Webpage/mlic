@@ -32,12 +32,13 @@ mlic/                          ← 本目錄，Angular 前端，也是整個網�
 ## 常用指令
 
 ```bash
-npm start          # ng serve，本機開發 (http://localhost:4200)
-npm run build       # ng build，純前端 build
-npm run dev:ssr      # 本機跑 SSR
-npm run build:ssr    # build 前端 + server bundle
-npm run serve:ssr    # 跑編譯好的 SSR server
-npm test             # Karma/Jasmine 單元測試
+npm start               # ng serve，本機開發 (http://localhost:4200)
+npm run generate-sitemap # 依 config.json 重新產生 src/sitemap.xml（build 前會自動跑一次）
+npm run build            # 先跑 generate-sitemap，再 ng build（純前端 build）
+npm run dev:ssr           # 本機跑 SSR
+npm run build:ssr         # generate-sitemap + build 前端 + server bundle
+npm run serve:ssr         # 跑編譯好的 SSR server
+npm test                  # Karma/Jasmine 單元測試
 ```
 
 ## 文件索引
@@ -51,6 +52,8 @@ npm test             # Karma/Jasmine 單元測試
 ## 專案慣例
 
 - 元件採 Angular 傳統 NgModule 架構（非 standalone），每個 feature 一個 module（`about.module.ts`、`home.module.ts` 等），共用元件集中在 [`src/app/shared.module.ts`](src/app/shared.module.ts)。
-- SEO/social meta tag 統一由 [`src/app/makeMeta.ts`](src/app/makeMeta.ts) 的 `makeMeta` service 處理，各頁面元件在 constructor 呼叫 `meta.makeMeta(classification, article)`。
+- SEO/social meta tag（含 `<title>`、OG/Twitter meta、canonical link、文章頁的 JSON-LD 結構化資料）統一由 [`src/app/makeMeta.ts`](src/app/makeMeta.ts) 的 `makeMeta` service 處理，各頁面元件在 constructor 呼叫 `meta.makeMeta(classification, article)`。**`GalleryComponent` 會被 `HomeComponent` 內嵌當「最新文章」小工具用，這種情況下不能呼叫 `meta.makeMeta()`，否則會蓋掉 host 頁面自己的 SEO tag**——判斷方式是檢查 `route.snapshot.params['cls']` 是否真的存在。
+- 路由切換時「重置頁面狀態」的邏輯統一用 [`src/app/onNavigationEnd.ts`](src/app/onNavigationEnd.ts) 這個共用 helper（`onNavigationEnd(router, callback)`），不要在各元件裡各自寫 `router.events.subscribe(...)`。
 - 沒有 `src/environments/` 環境設定檔，也沒有任何 `apiUrl` 之類的設定——因為前端本來就不打 API。
-- `config.json` 用 `require()` 在 build time 被 webpack 打進 JS bundle；`.md` 文章檔則是透過 `<markdown src="...">`（ngx-markdown）在 runtime 用 HTTP 抓取，SSR 時也是靠 `MarkdownModule.forRoot({ loader: HttpClient })` 在 server 端發請求抓檔案。修改 `config.json` 需要重新 build 才會生效；新增/修改 `.md` 檔案內容則不用。
+- `config.json` 用標準 ES `import config from '....config.json'` 讀取（`tsconfig.json` 開了 `resolveJsonModule`），在 build time 被打進 JS bundle；`.md` 文章檔則是透過 `<markdown src="...">`（ngx-markdown）在 runtime 用 HTTP 抓取，SSR 時也是靠 `MarkdownModule.forRoot({ loader: HttpClient })` 在 server 端發請求抓檔案。修改 `config.json` 需要重新 build 才會生效；新增/修改 `.md` 檔案內容則不用。
+- `robots.txt`／`sitemap.xml` 原始檔放在 `src/`（不是 `src/assets/`），透過 `angular.json` 的 asset glob 輸出到 dist 根目錄；`sitemap.xml` 是 [`scripts/generate-sitemap.js`](scripts/generate-sitemap.js) 從 `config.json` 產生的 build 產物，本身不進版控（見 `.gitignore`）。
