@@ -26,6 +26,21 @@ GitHub Pages 的自訂網域設定，實際上是靠 `gh-pages` 分支根目錄�
 
 只要這個檔案持續存在於 `gh-pages` 分支裡，Custom domain 設定就不會再被重設，不需要每次手動回 GitHub 網頁重填。
 
+## ⚠️ 深連結（deep link）目前是用 404.html fallback，不是 prerender（跟舊部署不同，是已知取捨）
+
+2026-07-28 第一次用這支工具部署時發現：**GitHub Pages 上除了首頁根目錄，其他所有路徑（`/about`、`/classification/xxx/yyy`…）都是 404**。原因是這裡是純 CSR（client-side render）的 `ng build` 產物，GitHub Pages 只會照實體檔案路徑找檔案，沒有像 SSR 那樣「不管什麼路徑都渲染正確內容」的伺服器。
+
+比對舊的 `gh-pages` 分支內容後發現，**舊的部署方式其實有做 prerender**（`gh-pages` 分支根目錄下有實體的 `home/`、`about/`、`classification/` 資料夾，每個都各自有 `index.html`），應該是透過 `angular.json` 裡本來就有的 `prerender` architect target（`ng run mlic:prerender`）搭配 `post-routes.txt`（已在 SEO 重構時移除，見 [refactor-plan.md](refactor-plan.md)）產生的。Prerender 出來的頁面，搜尋引擎爬到時拿到的是真正的 200 狀態碼＋完整內容，SEO 效果比較好。
+
+**目前這支 `npm run deploy` 用的是比較簡單的作法**：[`scripts/copy-404.js`](../scripts/copy-404.js) 把 `index.html` 複製成 `404.html`，讓 GitHub Pages 在找不到實體路徑時，改吐出這份 404.html（內容就是完整的 Angular App shell），瀏覽器載入後由前端 Router 自己讀網址、渲染正確頁面——**使用者看到的畫面是正常的**，但 HTTP 狀態碼仍然是 404，這對搜尋引擎爬蟲不夠友善（爬蟲可能不會好好收錄回傳 404 的頁面）。
+
+這是刻意先做的權宜之計，讓網站至少能用；**如果要恢復到舊部署那種「每個路由都是真正 200 的 prerender」**，需要另外：
+1. 寫一支腳本從 `config.json` 產生一份純文字的路由清單（邏輮跟 `scripts/generate-sitemap.js` 差不多，只是輸出格式改成一行一個路徑）
+2. 用 `ng run mlic:prerender --routes-file=<路由清單檔案>` 取代單純的 `ng build`，這會需要同時 build 出 server bundle（`ng run mlic:server`）當作 prerender 的渲染引擎，跑完後 `dist/mlic/browser` 底下就會多出每個路由對應的實體資料夾
+3. `npm run deploy` 改成部署這個 prerender 過的 `dist/mlic/browser`，而不是純 CSR 版本
+
+這件事目前還沒做，因為量體不小（139 篇文章 x 各自的 URL）、需要額外測試 prerender 是否對每篇文章都能正常渲染。如果 SEO 表現不理想，這是下一步該做的優化。
+
 ## 第一次部署前要手動確認的事（GitHub 網頁上）
 
 以下這些是 GitHub repo 的設定，不是程式碼，沒辦法用這支腳本自動做，需要手動到 `https://github.com/<owner>/<repo>/settings/pages` 確認一次：
