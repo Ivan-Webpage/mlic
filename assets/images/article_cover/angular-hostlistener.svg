@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#002452"/>
+      <stop offset="1" stop-color="#5D82BB"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#ffffff" stroke-width="2">
+    <line x1="0" y1="0" x2="0" y2="720"/>
+    <line x1="160" y1="0" x2="160" y2="720"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="480" y1="0" x2="480" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="800" y1="0" x2="800" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+    <line x1="1120" y1="0" x2="1120" y2="720"/>
+    <line x1="1280" y1="0" x2="1280" y2="720"/>
+  </g>
+  <rect width="1280" height="720" fill="url(#fade)"/>
+
+  <g>
+    <rect x="64" y="64" width="52" height="52" rx="12" fill="#DAA21B"/>
+    <text x="90" y="100" font-size="30" font-weight="700" font-family="sans-serif" fill="#002452" text-anchor="middle">ng</text>
+    <text x="130" y="98" font-size="26" font-weight="600" letter-spacing="2" font-family="sans-serif" fill="#DAA21B">HOSTLISTENER</text>
+  </g>
+
+  <g>
+    <circle cx="960" cy="150" r="14" fill="#DAA21B"/>
+    <path d="M992 118 a48 48 0 0 1 0 64" fill="none" stroke="#DAA21B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M1014 96 a80 80 0 0 1 0 108" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+    <path d="M928 118 a48 48 0 0 0 0 64" fill="none" stroke="#DAA21B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M906 96 a80 80 0 0 0 0 108" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <text x="64" y="470" font-family="'Noto Sans TC', 'Microsoft JhengHei', sans-serif" font-size="50" font-weight="700" fill="#ffffff">Angular 監聽大師：@HostListener 裝飾器</text>
+  </g>
+
+  <text x="64" y="660" font-size="24" font-family="sans-serif" fill="#ffffffaa">行銷搬進大程式・Angular 系列</text>
+</svg>
