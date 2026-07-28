@@ -72,6 +72,9 @@ export class makeMeta {
                     case 'manage':
                         title = '管理與經理人思維';
                         break;
+                    case 'angular':
+                        title = 'Angular 前端開發';
+                        break;
                     default: // 首頁
                         title = '行銷搬進大程式｜Python基礎 爬蟲 商業分析 行銷 數據'
                 }

@@ -2391,6 +2391,253 @@
             "time": "2026-07-27",
             "download": "",
             "article_url": "",
+            "video": "",
+            "next": "127"
+        },
+        "127": {
+            "title": "Angular 非同步處理：使用 async 與 await 管理執行順序",
+            "tag": [
+                "angular",
+                "typescript",
+                "async await",
+                "非同步",
+                "promise"
+            ],
+            "description": "在 Angular 專案中處理非同步資料（例如 API 請求）時，該用 Promise 的 .then() 還是 async/await？本篇整理兩種寫法的差異，並示範如何用 async/await 控制多個非同步請求的執行順序，讓程式邏輯更清晰易讀。",
+            "cover-image": "assets/images/article_cover/angular-async-await.svg",
+            "classification": "angular",
+            "previous": "126",
+            "next": "128",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "128": {
+            "title": "Angular 監聽大師：@HostListener 裝飾器",
+            "tag": [
+                "angular",
+                "hostlistener",
+                "事件監聽",
+                "directive",
+                "typescript"
+            ],
+            "description": "@HostListener 是 Angular 內建的裝飾器，功能類似 JavaScript 的 addEventListener()，能簡化元件內監聽 DOM 事件的寫法。本篇整理常見事件類型、參數用法與實戰範例，讓你在元件裡優雅地處理各種使用者互動。",
+            "cover-image": "assets/images/article_cover/angular-hostlistener.svg",
+            "classification": "angular",
+            "previous": "127",
+            "next": "129",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "129": {
+            "title": "Angular Component 父子資料傳遞：@Input() 與 @Output() 全攻略",
+            "tag": [
+                "angular",
+                "component",
+                "input",
+                "output",
+                "元件溝通"
+            ],
+            "description": "Angular Component 之間如何傳遞資料？本篇完整整理 @Input() 讓父元件把資料傳給子元件、@Output() 讓子元件透過 EventEmitter 通知父元件的用法與語法細節，是元件溝通最基礎也最重要的一組工具。",
+            "cover-image": "assets/images/article_cover/angular-input-output.svg",
+            "classification": "angular",
+            "previous": "128",
+            "next": "130",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "130": {
+            "title": "Angular Directive 實戰：輸入格式化與事件監聽",
+            "tag": [
+                "angular",
+                "directive",
+                "輸入格式化",
+                "事件監聽",
+                "typescript"
+            ],
+            "description": "Directive 是 Angular 用來擴充 HTML 標籤功能的工具，分為 Structural（如 *ngIf、*ngFor）與 Attribute（如 ngClass）兩類。本篇透過實戰範例，示範如何自製 Directive 處理 input 輸入格式化與事件監聽。",
+            "cover-image": "assets/images/article_cover/angular-directive-format.svg",
+            "classification": "angular",
+            "previous": "129",
+            "next": "131",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "131": {
+            "title": "Angular Router Guard：使用 CanActivate 保護路由",
+            "tag": [
+                "angular",
+                "router",
+                "canactivate",
+                "guard",
+                "路由保護"
+            ],
+            "description": "當某些頁面需要登入或特定權限才能進入時，該怎麼保護路由？本篇整理 Angular Router Guard 的 CanActivate 用法，示範如何依使用者狀態決定是否允許進入頁面，是打造有權限控管網站的必備技巧。",
+            "cover-image": "assets/images/article_cover/angular-router-guard.svg",
+            "classification": "angular",
+            "previous": "130",
+            "next": "132",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "132": {
+            "title": "Angular Directive：處理 Input 中文輸入問題與格式化",
+            "tag": [
+                "angular",
+                "directive",
+                "中文輸入",
+                "ime",
+                "typescript"
+            ],
+            "description": "使用者用中文輸入法組字時，鍵盤事件的觸發時機跟英文輸入不一樣，很容易讓輸入驗證誤判。本篇整理常見輸入法事件（compositionstart/compositionend 等）的差異，並示範如何自製 Directive 正確處理中文輸入格式化。",
+            "cover-image": "assets/images/article_cover/angular-directive-ime.svg",
+            "classification": "angular",
+            "previous": "131",
+            "next": "133",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "133": {
+            "title": "Angular Library 建立與發佈完整指南",
+            "tag": [
+                "angular",
+                "library",
+                "npm",
+                "套件發佈",
+                "元件封裝"
+            ],
+            "description": "當專案裡有共用的元件、服務或 Pipe 想要重複利用，甚至發佈給其他專案使用時，就該考慮建立 Angular Library。本篇完整整理從建立、封裝到發佈到 npm 的流程，讓常用邏輯不用再到處複製貼上。",
+            "cover-image": "assets/images/article_cover/angular-library.svg",
+            "classification": "angular",
+            "previous": "132",
+            "next": "134",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "134": {
+            "title": "Angular 表單驗證與日期檢查：避免不合法輸入",
+            "tag": [
+                "angular",
+                "表單驗證",
+                "日期檢查",
+                "防呆",
+                "typescript"
+            ],
+            "description": "把使用者輸入送往後端 API 前，該檢查哪些東西才不會出包？本篇整理常見的表單防呆邏輯，包含 null 值判斷與日期格式（如民國年 111/11/06）的合法性檢查，避免不合法輸入造成後端錯誤。",
+            "cover-image": "assets/images/article_cover/angular-form-validation.svg",
+            "classification": "angular",
+            "previous": "133",
+            "next": "135",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "135": {
+            "title": "Angular Pipe 教學：自訂民國日期轉換與使用方式",
+            "tag": [
+                "angular",
+                "pipe",
+                "民國日期",
+                "日期轉換",
+                "自訂管線"
+            ],
+            "description": "Angular 內建 DatePipe、CurrencyPipe 等管線可以在畫面顯示時格式化資料，但遇到台灣常用的民國年日期格式呢？本篇教你自訂 Pipe，把西元日期轉換成民國年格式，並說明在樣板裡的使用方式。",
+            "cover-image": "assets/images/article_cover/angular-pipe-date.svg",
+            "classification": "angular",
+            "previous": "134",
+            "next": "136",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "136": {
+            "title": "Angular Services：封裝 API 呼叫、HttpHeaders 與 RxJS 管線",
+            "tag": [
+                "angular",
+                "service",
+                "rxjs",
+                "httpclient",
+                "api封裝"
+            ],
+            "description": "把 API 請求邏輯搬進 Service，是讓 Component 專注畫面、程式碼更好維護的關鍵一步。本篇完整整理如何封裝 HttpClient 呼叫、設定 HttpHeaders，並用 RxJS 管線處理非同步資料流，寫出乾淨好測試的 Service。",
+            "cover-image": "assets/images/article_cover/angular-services-rxjs.svg",
+            "classification": "angular",
+            "previous": "135",
+            "next": "137",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "137": {
+            "title": "用 ngFor產生目錄：巢狀資料渲染與子元件拆分",
+            "tag": [
+                "angular",
+                "ngfor",
+                "巢狀資料",
+                "子元件",
+                "目錄"
+            ],
+            "description": "文章頁常需要顯示多層級的目錄（父/子/孫），資料結構是巢狀的，畫面卻要攤平渲染，還要方便維護。本篇示範如何用 *ngFor 渲染巢狀目錄資料，並搭配子元件拆分，讓複雜的多層級選單好維護、好擴充。",
+            "cover-image": "assets/images/article_cover/angular-ngfor-catalog.svg",
+            "classification": "angular",
+            "previous": "136",
+            "next": "138",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "138": {
+            "title": "Angular 圖片延遲載入（Lazy Loading）實作指南",
+            "tag": [
+                "angular",
+                "lazy loading",
+                "圖片延遲載入",
+                "效能優化",
+                "intersectionobserver"
+            ],
+            "description": "當頁面有大量圖片時，一次全部載入會拖慢速度、浪費流量，尤其使用者根本不一定會捲到那麼下面。本篇整理 Angular 圖片延遲載入（Lazy Loading）的實作方式，讓圖片捲到可視範圍才載入，改善網頁效能。",
+            "cover-image": "assets/images/article_cover/angular-lazy-loading.svg",
+            "classification": "angular",
+            "previous": "137",
+            "next": "139",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
+            "video": ""
+        },
+        "139": {
+            "title": "Angular：使用 MatDialog 實作 Loading 與 Message 遮罩",
+            "tag": [
+                "angular",
+                "matdialog",
+                "loading遮罩",
+                "angular material",
+                "modal"
+            ],
+            "description": "專案裡常常需要一個「讀取中」或「訊息通知」的全螢幕遮罩，若在每個頁面各自刻一份很難維護。本篇整理如何用 Angular Material 的 MatDialog 統一實作 Loading 與 Message 遮罩，讓畫面在資料處理時能一致地阻擋誤操作。",
+            "cover-image": "assets/images/article_cover/angular-matdialog.svg",
+            "classification": "angular",
+            "previous": "138",
+            "time": "2026-07-28",
+            "download": "",
+            "article_url": "",
             "video": ""
         }
     },

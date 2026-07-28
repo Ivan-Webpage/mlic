@@ -55,6 +55,9 @@ export class GalleryComponent implements OnInit {
         case 'manage':
           this.title = '管理與經理人思維';
           break;
+        case 'angular':
+          this.title = 'Angular 前端開發';
+          break;
       }
       for (var i = this.howlong;i>=1;i--){
         if (this.config[i]['classification'] == this.postData_classification){
@@ -64,7 +67,7 @@ export class GalleryComponent implements OnInit {
     } else {
       this.title = '最新文章'
       for (var i = this.howlong;i>=1;i--){
-        if ( ['marketing','financial','technology','manage'].find(x => x === this.config[i]['classification'])){
+        if ( ['marketing','financial','technology','manage','angular'].find(x => x === this.config[i]['classification'])){
           this.rndArray.push(Number(i))
         }
       }

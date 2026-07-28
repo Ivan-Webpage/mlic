@@ -2,11 +2,13 @@
 
 網站所有「文章」與「線上課程」的資料，全部來自一個檔案：[`src/assets/config.json`](../src/assets/config.json)，搭配 [`src/assets/article/*.md`](../src/assets/article/)（內文）與 `src/assets/images/`（圖片）。**沒有資料庫、沒有 API**——這就是靜態網站的資料層。
 
-## 現況統計（2026-07-27 盤點，已含後端搬遷的 4 篇文章）
+## 現況統計（2026-07-28 盤點）
 
-- `article` 物件：126 筆（id 從 `"1"` 到 `"126"`，皆為字串 key；`123`～`126` 是從 Django 後端搬遷過來的 Django 教學系列，見 [backend-legacy.md](backend-legacy.md)）
-- 對應 `src/assets/article/*.md`：126 個檔案，與 `article` 筆數一致
-- `class` 物件：5 筆線上課程分類
+- `article` 物件：139 筆（id 從 `"1"` 到 `"139"`，皆為字串 key）
+  - `123`～`126`：從 Django 後端搬遷過來的 Django 教學系列，classification `technology`，見 [backend-legacy.md](backend-legacy.md)
+  - `127`～`139`：Ivan 提供的 13 篇 Angular 教學文章（原始素材放在 `new_articla/`，已搬進 `src/assets/` 後刪除），classification `angular`（新分類），封面是手繪 SVG（`src/assets/images/article_cover/angular-*.svg`）
+- 對應 `src/assets/article/*.md`：139 個檔案，與 `article` 筆數一致
+- `class` 物件：5 筆線上課程分類（跟一般文章的 `classification` 是分開的機制，見下）
 
 ## Schema：`config.json`
 
@@ -30,7 +32,7 @@
 }
 ```
 
-`classification` 的合法值：`marketing`、`financial`、`technology`、`manage`（一般文章分類）或線上課程分類 key（見下）。
+`classification` 的合法值：`marketing`、`financial`、`technology`、`manage`、`angular`（一般文章分類，`angular` 是 2026-07-28 新增的 Angular 前端開發分類）或線上課程分類 key（見下）。新增分類時要同步改三個地方：`gallery.component.ts`（`showImages()` 的 title 對照 switch、首頁最新文章的分類清單）、`makeMeta.ts`（`gallery` case 的 title 對照）、`navbar.component.html`（文章分類下拉選單）——這三處目前都是硬寫的分類清單，沒有共用單一設定來源。
 
 ### `class[classId]`
 

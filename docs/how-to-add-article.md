@@ -32,7 +32,8 @@
 
 ### 分類（classification）要填什麼
 
-- 一般文章：`marketing`（行銷與商業分析）、`financial`（投資與程式金融）、`technology`（工程技術紀錄）、`manage`（管理與經理人思維）
+- 一般文章：`marketing`（行銷與商業分析）、`financial`（投資與程式金融）、`technology`（工程技術紀錄）、`manage`（管理與經理人思維）、`angular`（Angular 前端開發）
+  - 如果要開一個全新的分類（目前的分類都是寫死的，沒有共用設定來源），除了 `config.json` 之外還要記得同步改：`src/app/gallery/gallery.component.ts`（`showImages()` 的 title 對照、首頁最新文章的分類清單）、`src/app/makeMeta.ts`（`gallery` case 的 title 對照）、`src/app/layout/navbar/navbar.component.html`（文章分類下拉選單），並跑 `npm run generate-sitemap` 更新 `/classification/{新分類}` 這個靜態頁到 sitemap（`scripts/generate-sitemap.js` 裡的 `staticUrls` 也要手動加一行）
 - 線上課程單元：填課程的 key，目前有 `python_foundation`、`lineBot`、`crawler_king`、`telegramBot`（`class["5"]` 目前是空分類，見 [content-model.md](content-model.md)，除非確定要用，否則不要填這個）
   - 如果是線上課程單元，除了 `article` 物件要新增這筆，還要多一步：把新 id 加進 `config.json` 的 `class[該課程].chapter[章節名稱]` 陣列裡（陣列順序＝顯示順序），沒有對應章節就新增一個章節 key
 

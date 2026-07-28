@@ -17,6 +17,7 @@ const staticUrls = [
   '/classification/financial',
   '/classification/technology',
   '/classification/manage',
+  '/classification/angular',
 ];
 
 const articleUrls = Object.entries(config.article).map(
