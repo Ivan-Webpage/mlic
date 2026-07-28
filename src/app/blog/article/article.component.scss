@@ -95,6 +95,29 @@
 }
 
 
+// 目錄選單：mat-title 預設是 Material 的標題字級（20px），塞進窄側欄會爆版、跟下一列疊在一起，
+// 這裡把字級縮小、允許自動換行，並讓 expansion panel header 跟著內容自動長高，避免文字溢出格子。
+.catalog {
+  .mat-expansion-panel-header {
+    height: auto !important;
+    min-height: 48px;
+    padding: 10px 16px;
+  }
+
+  .mat-content {
+    overflow: visible;
+  }
+
+  a.mat-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .catalog {
     display: none;
