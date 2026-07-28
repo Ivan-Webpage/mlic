@@ -51,7 +51,7 @@
 
 - `server.ts` 是 Express server，用 `ngExpressEngine` 渲染 `AppServerModule`，`npm run serve:ssr` 啟動；正式站目前跑這個 Node server。這是重構後刻意維持的決定（見 [refactor-plan.md](refactor-plan.md)），不是待處理項目。
 - `angular.json` 的 `architect.prerender` 只設定了 `/` 這一個 route，實際上沒有被使用到——正式站走的是 SSR（每個 request 都即時 render），不是 prerender 靜態輸出。
-- Build asset pipeline：`angular.json` 的 `assets` 除了整包複製 `src/assets` 之外，另外用兩個 glob entry 把 `src/robots.txt`／`src/sitemap.xml`（注意：這兩個放在 `src/` 底下，不是 `src/assets/`）輸出到 dist **根目錄**（`/robots.txt`、`/sitemap.xml`），這樣搜尋引擎才抓得到，放在 `/assets/` 底下的話 URL 會變成 `/assets/robots.txt`，不符合慣例。
+- Build asset pipeline：`angular.json` 的 `assets` 除了整包複製 `src/assets` 之外，另外用三個 glob entry 把 `src/robots.txt`／`src/sitemap.xml`／`src/CNAME`（注意：這幾個放在 `src/` 底下，不是 `src/assets/`）輸出到 dist **根目錄**（`/robots.txt`、`/sitemap.xml`、`/CNAME`），這樣搜尋引擎跟 GitHub Pages 才抓得到，放在 `/assets/` 底下的話 URL 會變成 `/assets/robots.txt`，不符合慣例。`CNAME` 是給 GitHub Pages 自訂網域用的，見 [deployment.md](deployment.md)。
 - `sitemap.xml` 是 [`scripts/generate-sitemap.js`](../scripts/generate-sitemap.js) 依 `config.json` 產生的，`npm run build`／`npm run build:ssr` 都會在 `ng build` 之前先跑這支腳本；它本身不進版控（是 build 產物，見 `.gitignore`），本機沒 build 過的話 `src/sitemap.xml` 不會存在。
 
 ## 內容渲染細節（重要，影響 SSR/靜態化決策）

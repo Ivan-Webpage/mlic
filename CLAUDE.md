@@ -39,6 +39,7 @@ npm run dev:ssr           # 本機跑 SSR
 npm run build:ssr         # generate-sitemap + build 前端 + server bundle
 npm run serve:ssr         # 跑編譯好的 SSR server
 npm test                  # Karma/Jasmine 單元測試
+npm run deploy            # build + push main + 發布 dist 到 gh-pages（GitHub Pages），見 docs/deployment.md
 ```
 
 ## 文件索引
@@ -48,6 +49,7 @@ npm test                  # Karma/Jasmine 單元測試
 3. [`docs/how-to-add-article.md`](docs/how-to-add-article.md) — **新增一篇文章的完整操作 SOP**（取代原本 Django Admin 的角色）
 4. [`docs/backend-legacy.md`](docs/backend-legacy.md) — 已移除的 Django 後端，歷史參考用
 5. [`docs/refactor-plan.md`](docs/refactor-plan.md) — 這次靜態化／SEO 重構的執行記錄
+6. [`docs/deployment.md`](docs/deployment.md) — `npm run deploy` 怎麼把網站發布到 GitHub Pages（自訂網域 `marketingliveincode.com`）
 
 ## 專案慣例
 
