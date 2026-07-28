@@ -39,7 +39,7 @@ npm run dev:ssr           # 本機跑 SSR
 npm run build:ssr         # generate-sitemap + build 前端 + server bundle
 npm run serve:ssr         # 跑編譯好的 SSR server
 npm test                  # Karma/Jasmine 單元測試
-npm run deploy            # build + push main + 發布 dist 到 gh-pages（GitHub Pages），見 docs/deployment.md
+npm run deploy            # prerender 全站 + push main + 發布 dist 到 gh-pages（GitHub Pages），見 docs/deployment.md
 ```
 
 ## 文件索引

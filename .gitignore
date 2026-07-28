@@ -9,6 +9,9 @@
 # 由 scripts/generate-sitemap.js 從 src/assets/config.json 產生，`npm run build` 時會自動重新產生
 /src/sitemap.xml
 
+# 由 scripts/generate-prerender-routes.js 產生，給 GitHub Pages 的 prerender 部署用
+/prerender-routes.txt
+
 # Node
 /node_modules
 npm-debug.log

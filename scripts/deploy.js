@@ -1,5 +1,7 @@
 // 一鍵部署腳本：
-//   1) npm run build            打包純前端 build（含 CNAME/robots.txt/sitemap.xml）
+//   1) 產生 sitemap.xml + prerender 路由清單，並用 `ng run mlic:prerender` 把每個
+//      路由都渲染成實體的靜態 HTML（跟舊部署一樣，GitHub Pages 上每個網址都是
+//      真正的 200，不是 404 fallback），browser 產物再補上一份 404.html 當保險
 //   2) git push origin HEAD:main 把目前分支的內容推到遠端 main 分支
 //   3) gh-pages -d dist/mlic/browser 把 build 產物推到 gh-pages 分支
 //
@@ -29,8 +31,11 @@ try {
     console.warn(dirty);
   }
 
-  console.log('\n=== 1) Build 前端 ===');
-  run('npm run build');
+  console.log('\n=== 1) 產生路由清單 + Prerender 所有頁面 ===');
+  run('npm run generate-sitemap');
+  run('node scripts/generate-prerender-routes.js');
+  run('npx ng run mlic:prerender --routes-file=prerender-routes.txt');
+  run('node scripts/copy-404.js');
 
   console.log('\n=== 2) Push 原始碼到 origin main ===');
   run('git push origin HEAD:main');
