@@ -5,10 +5,11 @@ import { makeMeta } from '../../makeMeta'
 import { onNavigationEnd } from '../../onNavigationEnd';
 import configJson from '../../../assets/config.json';
 @Component({
-  selector: 'app-online-class',
-  templateUrl: './online-class.component.html',
-  styleUrls: ['./online-class.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-online-class',
+    templateUrl: './online-class.component.html',
+    styleUrls: ['./online-class.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class OnlineClassComponent implements OnInit {
   postData_classification = "" //抓取post傳遞過來的課程編號

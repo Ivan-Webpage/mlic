@@ -3,9 +3,10 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF,faYoutube,faGithub,faMedium,faGoogle,faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
-  selector: 'app-right-botton',
-  templateUrl: './right-botton.component.html',
-  styleUrls: ['./right-botton.component.scss']
+    selector: 'app-right-botton',
+    templateUrl: './right-botton.component.html',
+    styleUrls: ['./right-botton.component.scss'],
+    standalone: false
 })
 export class RightBottonComponent implements OnInit {
   up = faChevronUp;

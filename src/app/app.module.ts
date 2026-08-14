@@ -1,4 +1,4 @@
-import { NgModule, SecurityContext } from '@angular/core';
+import { APP_ID, NgModule, SecurityContext } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,12 +22,15 @@ import { HttpClient } from '@angular/common/http';
     SharedModule, // 共用套件
     BrowserAnimationsModule,
     AppRoutingModule,
-    BrowserModule.withServerTransition({appId:'serverApp'}),
+    BrowserModule,
     MarkdownModule.forRoot({
       sanitize: SecurityContext.NONE, // 關閉安全模式，這樣才能在ngx-markdown套件中使用ID
       loader: HttpClient, // optional, only if you use [src] attribute
     }),
 
+  ],
+  providers: [
+    { provide: APP_ID, useValue: 'serverApp' } // BrowserModule.withServerTransition() 已移除，改用 APP_ID provider 維持原本的 SSR app id
   ],
   bootstrap: [AppComponent]
 })

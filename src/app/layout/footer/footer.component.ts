@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { faFacebookF,faYoutube,faGithub,faMedium,faGoogle,faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.scss'],
+    standalone: false
 })
 export class FooterComponent implements OnInit {
   mail_icon = faGoogle;

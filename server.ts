@@ -2,7 +2,7 @@
 import 'zone.js/node';
 
 import { APP_BASE_HREF } from '@angular/common';
-import { CommonEngine } from '@angular/ssr';
+import { CommonEngine } from '@angular/ssr/node';
 import * as express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -16,7 +16,13 @@ export function app(): express.Express {
     ? join(distFolder, 'index.original.html')
     : join(distFolder, 'index.html');
 
-  const commonEngine = new CommonEngine();
+  // Angular 19 加入 host 白名單檢查，沒列進來的 host 會靜默退回 CSR（不會噴錯，只是回傳的
+  // HTML 沒有真的做 SSR）。localhost 是本機驗證/serve:ssr 用，marketingliveincode.com 是
+  // 正式網域（目前實際上線走 GitHub Pages 靜態 prerender，不是這支 SSR server，但保留起見
+  // 一併列入，避免之後真的接上即時 SSR 時被同一個問題卡住）。
+  const commonEngine = new CommonEngine({
+    allowedHosts: ['localhost', 'marketingliveincode.com'],
+  });
 
   server.set('view engine', 'html');
   server.set('views', distFolder);

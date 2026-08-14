@@ -7,8 +7,9 @@ import { WINDOW } from "@ng-web-apis/common";
 const THRESHOLD = 0;
 
 @Directive({
-  selector: "[sticky]",
-  providers: [DestroyService]
+    selector: "[sticky]",
+    providers: [DestroyService],
+    standalone: false
 })
 export class StickyDirective {
   constructor(

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MarkdownService } from 'ngx-markdown';
+import { Tokens } from 'marked';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { ActivatedRoute, Router } from '@angular/router';
 import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -7,10 +8,11 @@ import { makeMeta } from '../../makeMeta'
 import { onNavigationEnd } from '../../onNavigationEnd';
 import configJson from '../../../assets/config.json';
 @Component({
-  selector: 'app-article',
-  template: '',
-  templateUrl: './article.component.html',
-  styleUrls: ['./article.component.scss']
+    selector: 'app-article',
+    template: '',
+    templateUrl: './article.component.html',
+    styleUrls: ['./article.component.scss'],
+    standalone: false
 })
 
 export class ArticleComponent implements OnInit {
@@ -80,7 +82,7 @@ export class ArticleComponent implements OnInit {
     };
 
     // 圖片下面會黏文字，因此加兩個換行
-    this.MDservice.renderer.image = (href: string, title: string | null, text: string) => {
+    this.MDservice.renderer.image = ({ href, text }: Tokens.Image) => {
       if (text == null) {
         text = "行銷搬進大程式";
       };
@@ -88,7 +90,7 @@ export class ArticleComponent implements OnInit {
     };
 
     // 標題樣式
-    this.MDservice.renderer.heading = (text: string, level: number, raw: string) => {
+    this.MDservice.renderer.heading = ({ text, depth: level }: Tokens.Heading) => {
 
       switch (String(level)) {
         case '1': // 拿來做標題與介紹使用
