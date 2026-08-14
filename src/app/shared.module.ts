@@ -21,8 +21,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
-import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
 
 var importModule=[
   StickyModule,
@@ -33,12 +31,10 @@ var importModule=[
   MatButtonModule,
   CommonModule,
   MarkdownModule,
-  RouterModule, 
+  RouterModule,
   FontAwesomeModule,
   NgxScrollTopModule,
-  HttpClientModule,
-  MdbCollapseModule,
-  MdbDropdownModule
+  HttpClientModule
 ]
 @NgModule({
   imports: importModule,

@@ -8,14 +8,16 @@ import { Component, ViewChild } from '@angular/core';
 export class NavbarComponent {
   constructor() {}
 
+  isNavbarCollapsed = true;
+
   @ViewChild('dropdown1') articleDropdownMenu1: any;
   @ViewChild('dropdown2') articleDropdownMenu2: any;
-  @ViewChild('basicNavbar') mdbCollapse: any;
+  @ViewChild('basicNavbar') ngbCollapse: any;
 
   // 點下去以後，選單全部要關起來
-  hideNavbar() { 
-    this.mdbCollapse.toggle(); 
-    this.articleDropdownMenu1.hide();
-    this.articleDropdownMenu2.hide();
+  hideNavbar() {
+    this.ngbCollapse.toggle();
+    this.articleDropdownMenu1.close();
+    this.articleDropdownMenu2.close();
   }
 }

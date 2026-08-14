@@ -11,16 +11,16 @@
             <i class="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse to-left" mdbCollapse #basicNavbar="mdbCollapse">
+        <div class="collapse navbar-collapse to-left" [ngbCollapse]="isNavbarCollapsed" #basicNavbar="ngbCollapse">
             <ul class="navbar-nav">
                 <!-- <li class="nav-item">
                     <a class="nav-link active nav-button" aria-current="page" (click)="hideNavbar()">服務項目</a>
                 </li> -->
 
-                <li  mdbDropdown class="nav-item dropdown" #dropdown1>
+                <li  ngbDropdown class="nav-item dropdown" #dropdown1="ngbDropdown">
                     <a class="nav-link dropdown-toggle text-white nav-button" id="articleDropdownMenuLink" role="button"
-                        mdbDropdownToggle aria-expanded="false">文章分類</a>
-                    <ul mdbDropdownMenu class="dropdown-menu back-major-ten dropdownbox" aria-labelledby="articleDropdownMenuLink">
+                        ngbDropdownToggle aria-expanded="false">文章分類</a>
+                    <ul ngbDropdownMenu class="dropdown-menu back-major-ten dropdownbox" aria-labelledby="articleDropdownMenuLink">
                         <li>
                             <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'marketing']" (click)="hideNavbar()">行銷與商業分析</a>
                         </li>
@@ -39,10 +39,10 @@
                     </ul>
                 </li>
 
-                <li  mdbDropdown class="nav-item dropdown" #dropdown2>
+                <li  ngbDropdown class="nav-item dropdown" #dropdown2="ngbDropdown">
                     <a class="nav-link dropdown-toggle text-white nav-button" id="classDropdownMenuLink" role="button"
-                        mdbDropdownToggle aria-expanded="false">所有線上課程</a>
-                    <ul mdbDropdownMenu class="dropdown-menu back-major-ten dropdownbox" aria-labelledby="classDropdownMenuLink">
+                        ngbDropdownToggle aria-expanded="false">所有線上課程</a>
+                    <ul ngbDropdownMenu class="dropdown-menu back-major-ten dropdownbox" aria-labelledby="classDropdownMenuLink">
                         <li>
                             <a class="dropdown-item" class="text-white" [routerLink]="['/classification', 'python_foundation', 25]" (click)="hideNavbar()" target="_blank">Python 基礎教學</a>
                         </li>
