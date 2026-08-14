@@ -19,7 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MarkdownModule } from 'ngx-markdown';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 var importModule=[
@@ -33,8 +33,7 @@ var importModule=[
   MarkdownModule,
   RouterModule,
   FontAwesomeModule,
-  NgxScrollTopModule,
-  HttpClientModule
+  NgxScrollTopModule
 ]
 @NgModule({
   imports: importModule,
@@ -56,7 +55,7 @@ var importModule=[
     NavbarComponent,
     RightBottonComponent
   ],
-  providers: [makeMeta ]
+  providers: [makeMeta, provideHttpClient(withInterceptorsFromDi())]
 })
 
 export class SharedModule {
