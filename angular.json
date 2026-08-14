@@ -41,7 +41,6 @@
             "scripts": [
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js",
               "node_modules/clipboard/dist/clipboard.min.js",
-              "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
               "node_modules/prismjs/components/prism-python.min.js"
@@ -114,7 +113,6 @@
             "scripts": [
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js",
               "node_modules/clipboard/dist/clipboard.min.js",
-              "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
               "node_modules/prismjs/components/prism-python.min.js"
