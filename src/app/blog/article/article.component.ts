@@ -80,7 +80,7 @@ export class ArticleComponent implements OnInit {
     };
 
     // 圖片下面會黏文字，因此加兩個換行
-    this.MDservice.renderer.image = (href: string, text: string) => {
+    this.MDservice.renderer.image = (href: string, title: string | null, text: string) => {
       if (text == null) {
         text = "行銷搬進大程式";
       };
@@ -88,7 +88,7 @@ export class ArticleComponent implements OnInit {
     };
 
     // 標題樣式
-    this.MDservice.renderer.heading = (text: string, level: number) => {
+    this.MDservice.renderer.heading = (text: string, level: number, raw: string) => {
 
       switch (String(level)) {
         case '1': // 拿來做標題與介紹使用
