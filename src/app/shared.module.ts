@@ -14,9 +14,7 @@ import { makeMeta } from './makeMeta'; // 自設套件
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MarkdownModule } from 'ngx-markdown';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
@@ -25,8 +23,6 @@ import { RouterModule } from '@angular/router';
 var importModule=[
   StickyModule,
   NgbModule,
-  MatIconModule,
-  MatSidenavModule,
   MatExpansionModule,
   MatButtonModule,
   CommonModule,
