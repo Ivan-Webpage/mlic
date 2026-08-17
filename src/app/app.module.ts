@@ -1,5 +1,4 @@
 import { APP_ID, NgModule, SecurityContext } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +19,6 @@ import { HttpClient } from '@angular/common/http';
   ],
   imports: [
     SharedModule, // 共用套件
-    BrowserAnimationsModule,
     AppRoutingModule,
     BrowserModule,
     MarkdownModule.forRoot({

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxMasonryOptions,  } from 'ngx-masonry';
 import { makeMeta } from '../makeMeta'
 @Component({
     selector: 'app-about',
@@ -8,10 +7,6 @@ import { makeMeta } from '../makeMeta'
     standalone: false
 })
 export class AboutComponent implements OnInit {
-
-  public masonryOptions: NgxMasonryOptions = {
-    gutter: 10,
-  };
 
   masonryImages: (string)[][] = [
     ['中華電信', 'assets/images/about/1.jpg'],
