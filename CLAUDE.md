@@ -14,8 +14,18 @@ Ivan（楊超霆）的個人部落格＋線上課程網站，網域 `marketingli
 
 ## 技術棧
 
-- **前端（本目錄，唯一存在的部分）**：Angular 15 + Angular Universal SSR（`@nguniversal/express-engine`），Angular Material、ng-bootstrap、mdb-angular-ui-kit、ngx-markdown（渲染文章 `.md`）、ngx-masonry（About 頁相片牆）、Font Awesome。
-- 部署型態維持 SSR（非純 CSR、非 prerender），有 SEO 考量，見 [`docs/architecture.md`](docs/architecture.md)。
+- **前端（本目錄，唯一存在的部分）**：Angular 21（2026-08 從 Angular 15 逐版升級上來，見
+  git log 與 [`docs/architecture.md`](docs/architecture.md) 開頭的升級記錄）+ Angular
+  內建 SSR（`@angular/ssr`，取代已停止維護的 `@nguniversal/express-engine`），Angular
+  Material、ng-bootstrap（含 navbar 的收合/下拉選單，原本用 `mdb-angular-ui-kit` 的
+  Angular 元件，已改用 ng-bootstrap）、mdb-angular-ui-kit（現在只當純 CSS 框架來源，
+  `styles.scss` 還在 import 它，不再有任何 Angular TypeScript 依賴）、ngx-markdown
+  （渲染文章 `.md`）、ngx-masonry（About 頁相片牆）、Font Awesome。
+- **實際上線走 GitHub Pages 靜態 prerender**（`npm run deploy`，見
+  [`docs/deployment.md`](docs/deployment.md)），不是即時 SSR。`server.ts`/
+  `npm run serve:ssr` 的 Node SSR server 是保留給之後可能改用別的平台（例如原本
+  規劃的 Zeabur）才會用到的路徑，目前不是正式站實際在跑的東西，見
+  [`docs/architecture.md`](docs/architecture.md)。
 
 ## Repo 結構
 
@@ -25,7 +35,7 @@ mlic/                          ← 本目錄，Angular 前端，也是整個網�
 ├── src/assets/config.json     ← 所有文章／課程 metadata（見 docs/content-model.md）
 ├── src/assets/article/*.md    ← 文章內文
 ├── src/assets/images/         ← 封面圖／內文圖
-├── server.ts                  ← Angular Universal 的 Express SSR server
+├── server.ts                  ← @angular/ssr 的 Express SSR server（目前正式站不走這條路徑）
 └── docs/                      ← 給 AI agent／人類看的詳細文件
 ```
 
