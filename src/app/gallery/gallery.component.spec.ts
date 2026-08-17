@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ActivatedRoute } from '@angular/router';
 
 import { GalleryComponent } from './gallery.component';
+import { makeMeta } from '../makeMeta';
 
 describe('GalleryComponent', () => {
   let component: GalleryComponent;
@@ -8,7 +12,13 @@ describe('GalleryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GalleryComponent ]
+      imports: [ RouterTestingModule ],
+      declarations: [ GalleryComponent ],
+      providers: [
+        makeMeta,
+        { provide: ActivatedRoute, useValue: { snapshot: { params: {} } } }
+      ],
+      schemas: [ NO_ERRORS_SCHEMA ]
     })
     .compileComponents();
 
